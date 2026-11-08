@@ -1,0 +1,29 @@
+/* توکن‌های طراحی ISB: رنگ، فاصله، گوشهٔ گرد، تایپوگرافی، لایه‌ها و حرکت.
+   همهٔ بخش‌های جدید از این متغیرها استفاده می‌کنند تا ظاهر سایت یکدست بماند.
+   نام‌ها با --t- شروع می‌شوند تا با متغیرهای قدیمی (--blue، --gold، ...) تداخل نکنند. */
+:root{
+  /* رنگ‌ها (هم‌خوان با رنگ‌های فعلی سایت) */
+  --t-navy-950:#050c26; --t-navy-900:#071d45; --t-navy-700:#223981;
+  --t-blue-500:#2f5fd0; --t-ice-300:#8fa3d6; --t-mist-100:#dce4f5;
+  --t-green-500:#00a54e; --t-gold-400:#f4c65e; --t-cyan-300:#7edcff;
+  --t-line:rgba(169,204,255,.22); --t-glass:rgba(10,24,64,.55);
+  /* فاصله‌ها (مضرب ۴ پیکسل) */
+  --t-s1:4px; --t-s2:8px; --t-s3:12px; --t-s4:16px; --t-s5:24px; --t-s6:32px; --t-s7:48px; --t-s8:72px; --t-s9:112px;
+  /* گوشهٔ گرد */
+  --t-r-sm:10px; --t-r-md:16px; --t-r-lg:24px; --t-r-pill:999px;
+  /* تایپوگرافی: اندازه خودکار بین موبایل و دسکتاپ تغییر می‌کند */
+  --t-fs-xs:clamp(.75rem,.72rem + .15vw,.82rem);
+  --t-fs-sm:clamp(.85rem,.82rem + .2vw,.95rem);
+  --t-fs-md:clamp(1rem,.96rem + .25vw,1.12rem);
+  --t-fs-lg:clamp(1.25rem,1.1rem + .7vw,1.65rem);
+  --t-fs-xl:clamp(1.7rem,1.3rem + 1.8vw,2.6rem);
+  --t-fs-2xl:clamp(2.2rem,1.5rem + 3.2vw,4rem);
+  --t-lh-tight:1.25; --t-lh-body:1.9;           /* ارتفاع خط فارسی کمی بلندتر است */
+  --t-title-gap:var(--t-s5);                    /* حداقل فاصلهٔ بین تیترها و عنوان‌ها */
+  /* لایه‌ها (از پایین به بالا) */
+  --t-z-scene:0; --t-z-ui:6; --t-z-page:20; --t-z-modal:40; --t-z-mascot:60;
+  /* لمس و حرکت */
+  --t-tap:44px;                                 /* کوچک‌ترین اندازهٔ دکمه برای انگشت */
+  --t-ease:cubic-bezier(.22,.8,.24,1); --t-dur-fast:160ms; --t-dur:320ms; --t-dur-slow:640ms;
+  --t-safe-b:env(safe-area-inset-bottom,0px); --t-safe-t:env(safe-area-inset-top,0px);
+}

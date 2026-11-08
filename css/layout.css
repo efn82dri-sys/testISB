@@ -1,0 +1,69 @@
+/* چیدمان و لایهٔ ظاهری نهایی: هدر شیشه‌ای، پوستر معرفی، HUD پیمایش، نوار پیشرفت، قطب‌نما و حالت موبایل. این فایل باید بعد از base.css لود شود. */
+:root{--isb-gold:#f4c65e;--isb-cyan:#7edcff;--isb-line:rgba(169,204,255,.22)}
+html{scroll-behavior:smooth}
+body{background:#071d45}
+#gl{filter:saturate(1.08) contrast(1.035)}
+#hd{background:linear-gradient(180deg,rgba(5,20,52,.88),rgba(5,20,52,.48));border-bottom:1px solid rgba(142,190,255,.12);backdrop-filter:blur(18px)}
+#hd.sc{box-shadow:0 10px 40px rgba(0,0,0,.18)}
+#nv button{position:relative;transition:color .25s,opacity .25s}
+#nv button::after{content:"";position:absolute;left:18%;right:18%;bottom:-10px;height:2px;transform:scaleX(0);transform-origin:center;background:linear-gradient(90deg,var(--isb-gold),var(--isb-cyan));transition:transform .35s}
+#nv button.on::after,#nv button:hover::after{transform:scaleX(1)}
+#hv::before{background:linear-gradient(90deg,rgba(5,19,49,.78),rgba(5,19,49,.28) 58%,transparent)}
+.hh{max-width:34rem;gap:15px}
+.hh .kick{font-size:.7rem;color:#8edcff;letter-spacing:.18em}
+.hh h1{font-size:clamp(2.15rem,4.5vw,4.1rem);line-height:1.22;text-shadow:0 8px 28px rgba(0,0,0,.22)}
+.hh .gd{line-height:1.55;text-wrap:balance}
+.hh .lead{font-size:.96rem;line-height:2;color:#d8e6ff}
+.hh .btn.p{background:linear-gradient(110deg,#e9b84e,#ffda7d);color:#08234c;border:1px solid rgba(255,255,255,.5);box-shadow:0 8px 30px rgba(237,185,71,.2)}
+.view{transition:opacity .45s ease}
+.vh{top:112px;max-width:min(54rem,78vw);gap:14px}
+.tb{border:1px solid rgba(126,220,255,.72);border-radius:7px;box-shadow:0 8px 30px rgba(0,0,0,.14);background:rgba(6,29,70,.76);backdrop-filter:blur(12px)}
+.vh p{line-height:1.9;color:#d5e4ff}
+.it{border-color:rgba(163,209,255,.36);background:rgba(111,171,255,.035);border-radius:5px}
+.it:hover,.it:focus-visible{border-color:var(--isb-gold);background:rgba(244,198,94,.11);box-shadow:0 0 0 1px var(--isb-gold),0 0 38px rgba(244,198,94,.24)}
+.cp{border-inline-start-color:var(--isb-cyan);background:linear-gradient(110deg,rgba(5,23,59,.95),rgba(10,48,105,.88));box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.lb2{border-radius:7px;box-shadow:0 8px 26px rgba(0,0,0,.2);backdrop-filter:blur(12px)}
+#idx{gap:15px}
+#idx button{font-size:.79rem;letter-spacing:.01em}
+#idx button::after{height:2px}
+#idx button.on{font-weight:700;text-shadow:0 0 18px rgba(244,198,94,.25)}
+.tg{font-size:.78rem;letter-spacing:.02em;color:#b8cbe9}
+.scr{gap:5px;color:#dceaff}
+.scr i{font-size:1.25rem;color:var(--isb-gold)}
+.cmp{box-shadow:0 0 0 5px rgba(244,198,94,.06),0 12px 28px rgba(0,0,0,.2);transition:transform .3s,box-shadow .3s}
+.cmp:hover{transform:scale(1.06);box-shadow:0 0 0 8px rgba(244,198,94,.08),0 12px 32px rgba(0,0,0,.25)}
+#isb-hud{position:fixed;z-index:7;left:clamp(18px,4vw,64px);bottom:clamp(86px,10vh,112px);width:min(280px,34vw);padding:15px 17px 14px;border:1px solid rgba(158,201,255,.23);border-radius:14px;background:linear-gradient(145deg,rgba(5,23,57,.82),rgba(9,42,91,.54));backdrop-filter:blur(16px);box-shadow:0 18px 48px rgba(0,0,0,.18);color:#eaf3ff;pointer-events:none;direction:rtl}
+#isb-hud .eyebrow{display:flex;justify-content:space-between;gap:12px;font:600 9px/1.6 ui-monospace,monospace;letter-spacing:.14em;color:#8edcff;direction:ltr}
+#isb-hud .current{font:700 15px/1.8 Kalameh,sans-serif;margin-top:5px;color:#fff}
+#isb-hud .sub{font:400 10px/1.8 Kalameh,sans-serif;color:#a9bfdf;margin-top:1px}
+#isb-hud .meter{height:3px;background:rgba(172,204,255,.17);border-radius:8px;margin-top:11px;overflow:hidden;direction:ltr}
+#isb-hud .meter i{display:block;width:0;height:100%;background:linear-gradient(90deg,#64d8ef,#f4c65e);box-shadow:0 0 12px rgba(126,220,255,.45);transition:width .12s linear}
+#isb-hud .foot{display:flex;justify-content:space-between;align-items:center;margin-top:8px;color:#9fb5d8;font:9px/1.6 ui-monospace,monospace;direction:ltr}
+#isb-hud .foot b{font-weight:600;color:#f4c65e}
+#isb-progress{position:fixed;z-index:8;top:0;left:0;right:0;height:2px;display:flex;gap:3px;padding:0 2px;pointer-events:none}
+#isb-progress span{height:100%;flex:1;background:rgba(163,198,245,.16);overflow:hidden}
+#isb-progress span i{display:block;height:100%;width:0;background:linear-gradient(90deg,#5bd2ec,#f4c65e);box-shadow:0 0 9px rgba(126,220,255,.45)}
+#isb-compass{position:fixed;z-index:6;right:clamp(20px,4vw,58px);bottom:clamp(90px,10vh,118px);width:56px;height:56px;border:1px solid rgba(160,205,255,.28);border-radius:50%;display:grid;place-items:center;background:rgba(5,23,57,.55);backdrop-filter:blur(12px);pointer-events:none;opacity:.8}
+#isb-compass svg{width:36px;height:36px;overflow:visible}
+#isb-compass .needle{transform-origin:18px 18px;transition:transform .4s}
+#isb-compass small{position:absolute;top:-15px;font:8px ui-monospace,monospace;letter-spacing:.12em;color:#9bb8e6}
+#lbs .lb2{font-size:.86rem;font-weight:700}
+#track>.sc{height:100vh;min-height:100vh}
+@media(max-width:900px){
+ #isb-hud{width:235px;bottom:80px;left:18px;padding:11px 13px}
+ #isb-compass{width:46px;height:46px;right:18px;bottom:82px}
+ #isb-compass svg{width:29px;height:29px}
+}
+@media(max-width:640px){
+ #isb-hud{width:calc(100vw - 36px);max-width:none;left:18px;right:18px;bottom:76px}
+ #isb-hud .sub{display:none}
+ #isb-compass{display:none}
+ .vh{top:86px;inset-inline-start:18px;max-width:calc(100vw - 36px)}
+ .vh p{font-size:.75rem}
+ .hh{max-width:100%;padding-inline:0}
+ .hh h1{font-size:2rem}
+ #hv{padding:0 7vw}
+ .scr{bottom:15px}
+ .tg{display:none}
+}
+@media(prefers-reduced-motion:reduce){#isb-hud .meter i{transition:none}#isb-compass .needle{transition:none}}

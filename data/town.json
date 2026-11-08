@@ -1,0 +1,189 @@
+{
+  "sections": [
+    {
+      "name": {
+        "fa": "مسیر پایداری",
+        "en": "Sustainability Journey"
+      },
+      "cameraCenter": [
+        0,
+        -34
+      ],
+      "labelOffset": [
+        0,
+        -100
+      ]
+    },
+    {
+      "name": {
+        "fa": "درباره ما",
+        "en": "About"
+      },
+      "cameraCenter": [
+        -24,
+        -4
+      ],
+      "labelOffset": [
+        -170,
+        -40
+      ]
+    },
+    {
+      "name": {
+        "fa": "پروژه‌ها",
+        "en": "Projects"
+      },
+      "cameraCenter": [
+        24,
+        -4
+      ],
+      "labelOffset": [
+        170,
+        -70
+      ]
+    },
+    {
+      "name": {
+        "fa": "پایداری در عمل",
+        "en": "Sustainability in Action"
+      },
+      "cameraCenter": [
+        -24,
+        26
+      ],
+      "labelOffset": [
+        -170,
+        30
+      ]
+    },
+    {
+      "name": {
+        "fa": "خدمات",
+        "en": "Services"
+      },
+      "cameraCenter": [
+        24,
+        26
+      ],
+      "labelOffset": [
+        170,
+        0
+      ]
+    },
+    {
+      "name": {
+        "fa": "تیم و اعتبارنامه",
+        "en": "Team & Credentials"
+      },
+      "cameraCenter": [
+        -24,
+        56
+      ],
+      "labelOffset": [
+        -170,
+        50
+      ]
+    },
+    {
+      "name": {
+        "fa": "تماس",
+        "en": "Contact"
+      },
+      "cameraCenter": [
+        24,
+        56
+      ],
+      "labelOffset": [
+        170,
+        60
+      ]
+    }
+  ],
+  "sustainabilityHighlights": [
+    [
+      {
+        "fa": "مقاومت حرارتی بام",
+        "en": "Roof Resistance",
+        "value": "R > 3.6 m²·K/W"
+      },
+      {
+        "fa": "شیشه‌های کم‌گسیل",
+        "en": "Low-E Glazing",
+        "value": "U < 1.8 W/m²·K"
+      },
+      {
+        "fa": "تحلیل پل حرارتی ۲بعدی",
+        "en": "2D Finite Element",
+        "value": "THERM / ISO 10211"
+      }
+    ],
+    [
+      {
+        "fa": "روشنایی روز فضایی (sDA)",
+        "en": "Spatial Daylight Autonomy",
+        "value": "۶۰٪ تا ۹۳٪"
+      },
+      {
+        "fa": "در معرض تابش سالانه (ASE)",
+        "en": "Annual Sunlight Exposure",
+        "value": "< ۱۵٪ (کنترل خیرگی)"
+      },
+      {
+        "fa": "سایبان‌های زاویه‌دار",
+        "en": "Calibrated Louvers",
+        "value": "پروژه‌های مشهد و کرمان"
+      }
+    ],
+    [
+      {
+        "fa": "تهویه متقاطع طبیعی",
+        "en": "Natural Cross-Ventilation",
+        "value": "کاهش بارهای میانی"
+      },
+      {
+        "fa": "اثر دودکشی آتریوم",
+        "en": "Solar Stack Buoyancy",
+        "value": "تخلیه هوای گرم"
+      },
+      {
+        "fa": "سرمایش آزاد شبانه",
+        "en": "Night Economizer",
+        "value": "Free Cooling"
+      }
+    ],
+    [
+      {
+        "fa": "آبگرمکن خورشیدی",
+        "en": "Solar Water Heaters",
+        "value": "۲۹.۸٪ پوشش نیاز آبگرم"
+      },
+      {
+        "fa": "فتوولتائیک بام",
+        "en": "Rooftop Photovoltaics",
+        "value": "تأمین برق مشاعات"
+      },
+      {
+        "fa": "پوشش بازتابنده بام",
+        "en": "Cool Roof Albedo",
+        "value": "کاهش جذب حرارتی"
+      }
+    ],
+    [
+      {
+        "fa": "بازچرخانی آب خاکستری",
+        "en": "Greywater Reclamation",
+        "value": "استفاده در فلاش‌تانک"
+      },
+      {
+        "fa": "جمع‌آوری آب باران",
+        "en": "Rainwater Cisterns",
+        "value": "آبیاری بام و منظر"
+      },
+      {
+        "fa": "تجهیزات کاهنده مصرف",
+        "en": "Low-Flow Fixtures",
+        "value": "تا ۴۰٪ صرفه‌جویی"
+      }
+    ]
+  ]
+}

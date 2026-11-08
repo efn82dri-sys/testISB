@@ -1,0 +1,186 @@
+{
+  "guide": {
+    "fa": {
+      "headings": [
+        "ISB · آنلاین",
+        "۰۱ · مسیر پایداری",
+        "۰۲ · درباره ما",
+        "۰۳ · پروژه‌ها",
+        "۰۴ · پایداری در عمل",
+        "۰۵ · خدمات",
+        "۰۶ · تیم و اعتبارنامه",
+        "۰۷ · تماس"
+      ],
+      "tips": [
+        "سلام! به شهرک پایدار ISB خوش اومدید 👋 من دستیار ISB هستم. برای مشاوره معماری و انرژی همین‌جا تیکت بفرستید، یا اسکرول کنید تا شهرک رو با هم بگردیم.",
+        "این شش ایستگاه، مسیر پایداری ماست؛ از ساختمان سبز تا پسماند. روی هر ایستگاه {tap} تا توضیحش رو ببینید.",
+        "اینجا ISB رو بهتر می‌شناسید: داستان، رویکرد و چشم‌اندازمون. روی هر کدوم {tap} تا بخونید.",
+        "نمونه‌کارهامون اینجاست! روی عکس هر پروژه {tap} تا جزئیات، گالری تصاویر و شاخص‌هاش رو مرور کنید.",
+        "پایداری در عمل: پوسته، نور روز، تهویه، انرژی تجدیدپذیر، آب و وزن حوزه‌های سرو سبز. روی هر کدوم {tap} تا توضیحش رو ببینید.",
+        "اینجا سیزده حوزهٔ خدمات مهندسی و دوره‌های آموزشی ما رو می‌بینید. روی هر حوزه {tap} تا جزئیاتش باز بشه.",
+        "تیم و اعتبارنامه: گواهی سرو طلایی، تیم اصلی، مشاوران و دفاتر همکار. روی هر کدوم {tap} تا بیشتر بشناسیدشون.",
+        "برای شروع همکاری، تماس بگیرید یا فرم تماس رو پر کنید. سؤال سریع دارید؟ همین‌جا تیکت مشاوره بفرستید."
+      ],
+      "shortTips": [
+        "سلام! به شهرک پایدار ISB خوش اومدید 👋 برای مشاوره معماری و انرژی همین‌جا تیکت بفرستید.",
+        "این شش ایستگاه، مسیر پایداری ماست. روی هر ایستگاه {tap} تا توضیحش رو ببینید.",
+        "اینجا ISB رو بهتر می‌شناسید: داستان، رویکرد و چشم‌انداز. روی هر کدوم {tap}.",
+        "روی عکس هر پروژه {tap} تا جزئیات، تصاویر و شاخص‌هاش رو مرور کنید.",
+        "پوسته، نور روز، تهویه، انرژی و آب؛ روی هر کدوم {tap} تا توضیحش رو ببینید.",
+        "سیزده حوزهٔ خدمات و دوره‌های آموزشی؛ روی هر کدوم {tap} تا جزئیاتش باز بشه.",
+        "گواهی سرو طلایی، تیم، مشاوران و دفاتر همکار؛ روی هر کدوم {tap} تا بیشتر بشناسیدشون.",
+        "برای شروع همکاری تماس بگیرید یا فرم رو پر کنید؛ سؤال سریع دارید؟ تیکت مشاوره بفرستید."
+      ],
+      "startButton": "شروع مشاوره",
+      "ticketButton": "ثبت تیکت مشاوره",
+      "laterButton": "بعداً",
+      "closeButton": "بستن",
+      "tapWords": [
+        "ضربه بزنید",
+        "کلیک کنید"
+      ]
+    },
+    "en": {
+      "headings": [
+        "ISB · Online",
+        "01 · Sustainability journey",
+        "02 · About",
+        "03 · Projects",
+        "04 · Sustainability in action",
+        "05 · Services",
+        "06 · Team & credentials",
+        "07 · Contact"
+      ],
+      "tips": [
+        "Hi! Welcome to the ISB sustainable district 👋 I'm the ISB assistant. Send a ticket here for architecture and energy consulting, or scroll and we'll explore the district together.",
+        "These six stations are our sustainability journey, from green building to waste. {tap} any station to read about it.",
+        "Get to know ISB: our story, our approach and our vision. {tap} any card to read more.",
+        "Here are our projects! {tap} a project's photo to browse its details, gallery and key metrics.",
+        "Sustainability in action: envelope, daylight, ventilation, renewables, water and the Sarv Sabz weights. {tap} any topic to explore it.",
+        "Thirteen engineering service domains plus training programs live here. {tap} any domain to open its details.",
+        "Team & credentials: the Sarv Tala certificate, core team, consultants and partner offices. {tap} any card to see more.",
+        "Ready to start? Call us or fill in the contact form. Got a quick question? Send a consultation ticket right here."
+      ],
+      "shortTips": [
+        "Hi! Welcome to the ISB sustainable district 👋 Send a ticket here for architecture and energy consulting.",
+        "These six stations are our sustainability journey. {tap} any station to read about it.",
+        "Our story, approach and vision. {tap} any card to read more.",
+        "{tap} a project's photo to browse its details, gallery and key metrics.",
+        "Envelope, daylight, ventilation, energy and water. {tap} any topic to explore it.",
+        "Thirteen service domains plus training programs. {tap} any domain for details.",
+        "Sarv Tala certificate, team, consultants and partner offices. {tap} any card to see more.",
+        "Ready to start? Call us or fill in the form. Quick question? Send a consultation ticket."
+      ],
+      "startButton": "Start",
+      "ticketButton": "Send a ticket",
+      "laterButton": "Later",
+      "closeButton": "Close",
+      "tapWords": [
+        "Tap",
+        "Click"
+      ]
+    }
+  },
+  "assistantTexts": {
+    "fa": {
+      "btn": "مشاوره آنلاین",
+      "bHead": "ISB · آنلاین",
+      "bText": "سلام! من دستیار ISB هستم. برای مشاوره معماری و انرژی، همین‌جا تیکت بفرستید.",
+      "bGo": "شروع مشاوره",
+      "bNo": "بعداً",
+      "pTitle": "مشاوره آنلاین ISB",
+      "pStatus": "آنلاین · پاسخ‌گویی در کمتر از ۲ ساعت کاری",
+      "pMsg": "سلام 👋 موضوع مشاوره‌تون رو انتخاب کنید و پیام‌تون رو بنویسید؛ همکاران ما با شما تماس می‌گیرند.",
+      "fName": "نام و نام خانوادگی",
+      "fContact": "موبایل یا ایمیل",
+      "fMsg": "پیام شما",
+      "fSend": "ارسال تیکت",
+      "okTitle": "تیکت شما ثبت شد",
+      "okText": "کارشناسان ISB به‌زودی با شما تماس می‌گیرند. شماره تیکت را نگه دارید.",
+      "okMail": "ارسال نسخه از طریق ایمیل",
+      "okAgain": "ثبت تیکت جدید",
+      "topics": [
+        "طراحی معماری",
+        "انرژی و پایداری",
+        "شبیه‌سازی عملکرد",
+        "همکاری در پروژه",
+        "سایر"
+      ],
+      "eName": "نام را وارد کنید",
+      "eContact": "شماره موبایل یا ایمیل معتبر وارد کنید",
+      "eMsg": "پیام را کمی کامل‌تر بنویسید",
+      "eNet": "ارسال به سرور انجام نشد؛ تیکت روی این دستگاه ذخیره شد.",
+      "sending": "در حال ارسال…",
+      "hover": [
+        "وای سلام! 😄",
+        "بزن بریم مشاوره!",
+        "تیکت بفرست، جواب می‌دیم!"
+      ]
+    },
+    "en": {
+      "btn": "Online consultation",
+      "bHead": "ISB · Online",
+      "bText": "Hi! I'm the ISB assistant. Send a ticket here for architecture and energy consulting.",
+      "bGo": "Start",
+      "bNo": "Later",
+      "pTitle": "ISB Online Consultation",
+      "pStatus": "Online · we reply within 2 working hours",
+      "pMsg": "Hi 👋 Pick a topic and write your message — our team will get back to you.",
+      "fName": "Full name",
+      "fContact": "Phone or email",
+      "fMsg": "Your message",
+      "fSend": "Send ticket",
+      "okTitle": "Your ticket is registered",
+      "okText": "An ISB specialist will contact you soon. Keep your ticket number.",
+      "okMail": "Send a copy by email",
+      "okAgain": "New ticket",
+      "topics": [
+        "Architecture design",
+        "Energy & sustainability",
+        "Performance simulation",
+        "Project collaboration",
+        "Other"
+      ],
+      "eName": "Please enter your name",
+      "eContact": "Enter a valid phone number or email",
+      "eMsg": "Please write a slightly longer message",
+      "eNet": "Could not reach the server; the ticket was saved on this device.",
+      "sending": "Sending…",
+      "hover": [
+        "Oh hi! 😄",
+        "Let's talk!",
+        "Send a ticket!"
+      ]
+    }
+  },
+  "hudLabels": [
+    {
+      "title": "مسیر پایداری",
+      "subtitle": "از اصول طراحی پایدار تا شکل‌گیری یک اکوسیستم زنده"
+    },
+    {
+      "title": "درباره ما",
+      "subtitle": "هویت، رویکرد و چشم‌انداز گروه بنای پایدار ایران زمین"
+    },
+    {
+      "title": "پروژه‌ها",
+      "subtitle": "نمونه‌کارها و تجربه‌های طراحی و مهندسی"
+    },
+    {
+      "title": "پایداری در عمل",
+      "subtitle": "راهکارهای انرژی، آب، پوسته و عملکرد محیطی"
+    },
+    {
+      "title": "خدمات",
+      "subtitle": "خدمات تخصصی معماری، مهندسی و مشاوره"
+    },
+    {
+      "title": "تیم و اعتبارنامه",
+      "subtitle": "سرمایه انسانی، تخصص و مستندات حرفه‌ای"
+    },
+    {
+      "title": "تماس و راه‌های ارتباطی",
+      "subtitle": "مسیر ارتباط و آغاز همکاری با ISB"
+    }
+  ]
+}
