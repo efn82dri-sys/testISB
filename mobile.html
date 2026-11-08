@@ -34,6 +34,8 @@ body.mn,body.mo{overflow:hidden}
 @property --c2{syntax:"<color>";inherits:true;initial-value:#2F5FD0}
 #bg{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(120% 70% at 50% 108%,var(--c2),transparent 62%),linear-gradient(180deg,var(--c1),#050c26);transition:--c1 .9s ease,--c2 .9s ease}
 #bg::before{content:"";position:absolute;inset:-60px 0 0;background-image:linear-gradient(rgba(143,163,214,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(143,163,214,.05) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 70%);mask-image:linear-gradient(180deg,transparent,#000 70%);animation:gridmove 14s linear infinite}
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block;opacity:0;transition:opacity .8s ease;pointer-events:none}body.gl #gl{opacity:1}body.gl #bg::before{animation:none;opacity:0}
+.lg b{font:900 1.45rem/1 Kalameh,sans-serif;letter-spacing:.04em}.lg .dv{width:1px;height:26px;background:rgba(255,255,255,.3)}.lg #dep{font-size:.74rem;font-weight:700;color:var(--mist);white-space:normal;line-height:1.3;max-width:34vw}.lg svg{height:34px;width:auto;color:#fff}.tile svg{height:96px;width:auto;color:#fff}.tile{padding:20px 30px}
 @keyframes gridmove{to{transform:translate3d(0,56px,0)}}
 @media (prefers-reduced-motion:reduce){#bg::before{animation:none}}
 main,header,footer{position:relative;z-index:2}
@@ -117,7 +119,8 @@ footer{padding:36px clamp(14px,4vw,32px) calc(36px + env(safe-area-inset-bottom,
 </head>
 <body>
 <div id="bg" aria-hidden="true"></div>
-<header id="hd"><a class="lg" href="#hero" data-a="go" data-v="hero"><svg viewBox="0 0 100 135" fill="none" stroke="#fff" stroke-width="9" stroke-linejoin="round"><path d="M 50 10 L 58 10 L 58 20 L 66 20 L 66 32 L 74 32 L 74 46 L 82 46 L 82 72 C 82 96 56 112 56 112 L 56 128 L 44 122 L 44 112 C 44 112 18 96 18 72 L 18 46 L 26 46 L 26 32 L 34 32 L 34 20 L 42 20 L 42 10 Z"/></svg><span>ISB GROUP<small id="dep"></small></span></a><nav id="nv"></nav><span style="display:flex;gap:8px;align-items:center"><button class="lb glass" data-a="lang" id="lb"></button><button class="mb" data-a="menu" aria-label="menu">☰</button></span><i id="pg"></i></header>
+<canvas id="gl" aria-hidden="true"></canvas>
+<header id="hd"><a class="lg" href="#hero" data-a="go" data-v="hero"><svg viewBox="529 186 141 261" fill="currentColor" aria-label="ISB Group"><g><path d="M 589.679688 444.589844 L 589.679688 385.757812 L 609.316406 374.417969 L 609.316406 433.253906 Z M 589.679688 444.589844 "/><path d="M 668.191406 324.359375 L 668.191406 349.390625 C 668.191406 388.074219 636.78125 420.101562 598.101562 419.332031 C 560.808594 418.585938 530.808594 388.121094 530.808594 350.648438 L 530.808594 286.859375 C 530.808594 286.828125 530.824219 286.800781 530.847656 286.78125 L 550.398438 275.496094 C 550.425781 275.480469 550.445312 275.453125 550.445312 275.417969 L 550.445312 245.742188 C 550.445312 245.707031 550.460938 245.679688 550.488281 245.664062 L 570.078125 234.355469 C 570.105469 234.339844 570.121094 234.308594 570.121094 234.277344 L 570.082031 204.628906 C 570.082031 204.597656 570.101562 204.570312 570.128906 204.554688 L 599.457031 187.640625 C 599.480469 187.625 599.515625 187.625 599.542969 187.640625 L 628.871094 204.554688 C 628.898438 204.570312 628.917969 204.597656 628.917969 204.632812 L 628.878906 234.28125 C 628.878906 234.308594 628.894531 234.339844 628.921875 234.355469 L 648.511719 245.664062 C 648.539062 245.679688 648.554688 245.710938 648.554688 245.742188 L 648.554688 275.421875 C 648.554688 275.453125 648.570312 275.480469 648.601562 275.496094 L 668.148438 286.78125 C 668.175781 286.800781 668.191406 286.828125 668.191406 286.859375 Z M 648.511719 298.066406 L 628.960938 286.78125 C 628.933594 286.765625 628.917969 286.734375 628.917969 286.703125 L 628.917969 257.023438 C 628.917969 256.992188 628.902344 256.964844 628.871094 256.949219 L 609.351562 245.675781 C 609.320312 245.660156 609.304688 245.632812 609.304688 245.601562 L 609.304688 215.898438 C 609.304688 215.867188 609.289062 215.839844 609.261719 215.820312 L 599.542969 210.1875 C 599.515625 210.171875 599.480469 210.171875 599.457031 210.1875 L 589.738281 215.820312 C 589.710938 215.835938 589.695312 215.867188 589.695312 215.898438 L 589.695312 245.597656 C 589.695312 245.632812 589.675781 245.660156 589.648438 245.675781 L 570.128906 256.949219 C 570.101562 256.964844 570.082031 256.992188 570.082031 257.023438 L 570.082031 286.703125 C 570.082031 286.734375 570.066406 286.761719 570.039062 286.78125 L 550.488281 298.066406 C 550.460938 298.082031 550.445312 298.113281 550.445312 298.144531 L 550.445312 350.648438 C 550.445312 378.175781 573.109375 400.402344 600.792969 399.691406 C 627.5625 399 648.554688 376.324219 648.554688 349.546875 L 648.554688 298.144531 C 648.554688 298.113281 648.539062 298.082031 648.511719 298.066406 "/></g></svg><b>ISB</b><i class="dv"></i><span id="dep"></span></a><nav id="nv"></nav><span style="display:flex;gap:8px;align-items:center"><button class="lb glass" data-a="lang" id="lb"></button><button class="mb" data-a="menu" aria-label="menu">☰</button></span><i id="pg"></i></header>
 <div id="drawer"></div>
 <main>
 <section class="sec hero" id="hero" data-p="0"></section>
@@ -137,7 +140,7 @@ let L='fa',cat='all',strat='envelope',sid=1,svt='services';
 const t=()=>D.translations[L],g=o=>o?o[L]??o:'',img=p=>IM[p]||p,N=(a,b)=>L==='fa'?a:b;
 const bd=s=>`<div class="bdg"><span>${s.sectionNum}</span><span>/</span><span>${s.title}</span></div>`;
 const hd=s=>`<div class="hd">${bd(s)}<h2>${s.headline}</h2><p>${s.subtitle||''}</p></div>`;
-const MS=`<svg viewBox="0 0 100 135" fill="none" stroke="#fff" stroke-width="7" stroke-linejoin="round"><path d="${MK}"/><path d="M50 32L50 92"/></svg>`;
+const MS=`<svg viewBox="529 186 141 261" fill="currentColor" aria-hidden="true"><g><path d="M 589.679688 444.589844 L 589.679688 385.757812 L 609.316406 374.417969 L 609.316406 433.253906 Z M 589.679688 444.589844 "/><path d="M 668.191406 324.359375 L 668.191406 349.390625 C 668.191406 388.074219 636.78125 420.101562 598.101562 419.332031 C 560.808594 418.585938 530.808594 388.121094 530.808594 350.648438 L 530.808594 286.859375 C 530.808594 286.828125 530.824219 286.800781 530.847656 286.78125 L 550.398438 275.496094 C 550.425781 275.480469 550.445312 275.453125 550.445312 275.417969 L 550.445312 245.742188 C 550.445312 245.707031 550.460938 245.679688 550.488281 245.664062 L 570.078125 234.355469 C 570.105469 234.339844 570.121094 234.308594 570.121094 234.277344 L 570.082031 204.628906 C 570.082031 204.597656 570.101562 204.570312 570.128906 204.554688 L 599.457031 187.640625 C 599.480469 187.625 599.515625 187.625 599.542969 187.640625 L 628.871094 204.554688 C 628.898438 204.570312 628.917969 204.597656 628.917969 204.632812 L 628.878906 234.28125 C 628.878906 234.308594 628.894531 234.339844 628.921875 234.355469 L 648.511719 245.664062 C 648.539062 245.679688 648.554688 245.710938 648.554688 245.742188 L 648.554688 275.421875 C 648.554688 275.453125 648.570312 275.480469 648.601562 275.496094 L 668.148438 286.78125 C 668.175781 286.800781 668.191406 286.828125 668.191406 286.859375 Z M 648.511719 298.066406 L 628.960938 286.78125 C 628.933594 286.765625 628.917969 286.734375 628.917969 286.703125 L 628.917969 257.023438 C 628.917969 256.992188 628.902344 256.964844 628.871094 256.949219 L 609.351562 245.675781 C 609.320312 245.660156 609.304688 245.632812 609.304688 245.601562 L 609.304688 215.898438 C 609.304688 215.867188 609.289062 215.839844 609.261719 215.820312 L 599.542969 210.1875 C 599.515625 210.171875 599.480469 210.171875 599.457031 210.1875 L 589.738281 215.820312 C 589.710938 215.835938 589.695312 215.867188 589.695312 215.898438 L 589.695312 245.597656 C 589.695312 245.632812 589.675781 245.660156 589.648438 245.675781 L 570.128906 256.949219 C 570.101562 256.964844 570.082031 256.992188 570.082031 257.023438 L 570.082031 286.703125 C 570.082031 286.734375 570.066406 286.761719 570.039062 286.78125 L 550.488281 298.066406 C 550.460938 298.082031 550.445312 298.113281 550.445312 298.144531 L 550.445312 350.648438 C 550.445312 378.175781 573.109375 400.402344 600.792969 399.691406 C 627.5625 399 648.554688 376.324219 648.554688 349.546875 L 648.554688 298.144531 C 648.554688 298.113281 648.539062 298.082031 648.511719 298.066406 "/></g></svg>`;
 const H={
 hero(){const T=t();return `<div class="pill sub">✦ ${T.brand.taglineEn}</div><div class="hc"><div class="tile glass">${MS}</div><h1>${T.hero.headline}</h1><p class="lead">${T.hero.subheadline}</p><div class="btns"><button class="btn p" data-a="go" data-v="about">${T.hero.ctaExplore}</button><button class="btn" data-a="go" data-v="projects">${T.hero.ctaProjects}</button></div></div><div class="ft"><span>${T.hero.founded}</span><button data-a="go" data-v="about">${T.hero.scrollHint}<br>⌄</button></div>`},
 about(){const T=t(),A=T.about;return `<div class="in">${hd({...A,subtitle:''})}<div class="g12"><div style="display:grid;gap:18px"><p class="glass pad lead2">${A.lead}</p><p>${A.p1}</p><p>${A.p2}</p><p>${A.p3}</p><div class="vis"><b>◈ ${A.visionTitle}</b><p style="color:#fff;margin-top:6px">${A.visionText}</p></div></div>
@@ -191,6 +194,61 @@ if('IntersectionObserver' in window){
 }
 })();
 
+(()=>{
+/* ---------- lightweight 3D road (loads three.js on demand) ---------- */
+const $=s=>document.querySelector(s);
+const start=()=>{
+let R;try{R=new THREE.WebGLRenderer({canvas:$('#gl'),antialias:false,alpha:false,stencil:false,powerPreference:'default'})}catch(e){return}
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,mob=innerWidth<760;
+R.setPixelRatio(1);
+const sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(60,1,.1,900);cam.add(new THREE.Object3D());sc.add(cam);
+const C=h=>new THREE.Color(h),LEN=600,K=.031416,A=16;
+const U={uS:{value:0},uT:{value:0},uFog:{value:.0085},uFogC:{value:C('#050c26')},uAcc:{value:C('#3f74ff')},uGlow:{value:C('#2F5FD0')}};
+const pal=[['#050c26','#3f74ff','#2F5FD0'],['#071336','#8FA3D6','#2F5FD0'],['#061a33','#58b6ff','#1E3A8A'],['#04251f','#5FD6A0','#1f9d73'],['#081640','#6f93ff','#2F5FD0'],['#0a1c4a','#DCE4F5','#5c86ee']].map(r=>r.map(C));
+const common=`uniform float uS,uT,uFog;uniform vec3 uFogC,uAcc,uGlow;const float LEN=600.,K=.031416,A=16.;float h2(vec2 q){return fract(sin(dot(q,vec2(127.1,311.7)))*43758.5);}`;
+/* towers: GPU-recycled, endless */
+const bx=new THREE.BoxGeometry(1,1,1),g=new THREE.InstancedBufferGeometry();g.index=bx.index;['position','normal','uv'].forEach(k=>g.setAttribute(k,bx.attributes[k]));
+const N=mob?150:420,arr=[];for(let i=0;i<N;i++){const t0=Math.random()*LEN,sd=Math.random()<.5?-1:1,x=sd*(10+Math.pow(Math.random(),1.6)*80),h=8+Math.pow(Math.random(),2.2)*85,w=3+Math.random()*5,tr=1+Math.floor(Math.random()*3);for(let k=0;k<tr;k++)arr.push(x,t0,h*(.45+.28*k)*(k?1:.9),w*(1-.24*k))}
+g.setAttribute('aO',new THREE.InstancedBufferAttribute(new Float32Array(arr),4));g.instanceCount=arr.length/4;
+const tm=new THREE.Mesh(g,new THREE.ShaderMaterial({uniforms:U,transparent:true,vertexShader:common+`attribute vec4 aO;varying vec3 vL,vN;varying vec2 vUv;varying float vD,vH,vId;
+void main(){float d=mod(aO.y-uS,LEN);vec3 loc=vec3(position.x*aO.w,position.y*aO.z,position.z*aO.w);vL=loc;vUv=uv;vN=normal;vId=fract(sin(aO.x*12.9+aO.y*78.2)*43758.5);vH=position.y+.5;
+vec3 w=loc+vec3(aO.x+sin((uS+d)*K)*A,aO.z*.5-5.,-d);vec4 mv=viewMatrix*vec4(w,1.);vD=-mv.z;gl_Position=projectionMatrix*mv;}`,
+fragmentShader:common+`varying vec3 vL,vN;varying vec2 vUv;varying float vD,vH,vId;
+void main(){vec3 N=normalize(vN);float side=1.-step(.5,abs(N.y)),top=step(.5,N.y);vec2 e=min(vUv,1.-vUv);float edge=1.-smoothstep(0.,.03,min(e.x,e.y));
+vec2 cell=vec2((vL.x+vL.z)/1.7,vL.y/2.4),f=fract(cell),id=floor(cell);float win=step(.18,f.x)*step(f.x,.82)*step(.2,f.y)*step(f.y,.75)*side;float lit=step(.76,h2(id+vId*40.));
+vec3 col=mix(uFogC*.5,uGlow*.6,vH)+win*(.12*uGlow+lit*uAcc*.9);
+float pulse=smoothstep(.96,1.,sin(vH*6.-uT*.7+vId*6.28)*.5+.5);col+=uAcc*(edge*.6+pulse*(.25+edge*1.4));col=mix(col,uAcc*.55,top*.35);
+col=mix(col,uFogC,clamp(1.-exp(-vD*uFog),0.,1.));gl_FragColor=vec4(col,(.66+edge*.3)*smoothstep(2.,16.,vD));}`}));tm.frustumCulled=false;sc.add(tm);
+/* ground with lane lines */
+const fl=new THREE.Mesh(new THREE.PlaneGeometry(500,900),new THREE.ShaderMaterial({uniforms:U,vertexShader:`varying vec3 vW;void main(){vec4 w=modelMatrix*vec4(position,1.);vW=w.xyz;gl_Position=projectionMatrix*viewMatrix*w;}`,
+fragmentShader:common+`varying vec3 vW;void main(){float d=-vW.z,cx=sin((uS+d)*K)*A,a=d+uS;vec2 q=vec2((vW.x-cx)/8.,a/8.),f=abs(fract(q-.5)-.5);float gr=1.-smoothstep(0.,.03,min(f.x,f.y));
+float rd=abs(vW.x-cx),lane=(1.-smoothstep(.0,.18,abs(rd-6.)))+(1.-smoothstep(0.,.1,rd))*step(.5,fract(a/6.))*.8;float pl=smoothstep(.93,1.,sin(a*.05-uT*.5)*.5+.5);
+vec3 col=uFogC*.7+uAcc*(gr*.28+lane*(.9+pl*1.5))+uGlow*.08*smoothstep(30.,0.,rd);col=mix(col,uFogC,clamp(1.-exp(-d*uFog),0.,1.));gl_FragColor=vec4(col,1.);}`}));
+fl.rotation.x=-Math.PI/2;fl.position.set(0,-5,-450);fl.frustumCulled=false;sc.add(fl);
+/* horizon glow */
+const sun=new THREE.Mesh(new THREE.PlaneGeometry(1400,700),new THREE.ShaderMaterial({uniforms:U,transparent:true,depthWrite:false,depthTest:false,blending:THREE.AdditiveBlending,vertexShader:`varying vec2 v;void main(){v=uv;gl_Position=projectionMatrix*viewMatrix*modelMatrix*vec4(position,1.);}`,
+fragmentShader:`uniform vec3 uAcc,uGlow;varying vec2 v;void main(){vec2 p=(v-vec2(.5,.32))*vec2(1.6,2.);float r=length(p);vec3 c=uGlow*exp(-r*2.6)*.85+uAcc*exp(-r*9.)*.7;gl_FragColor=vec4(c,1.);}`}));sun.position.set(0,50,-640);sun.renderOrder=-10;sc.add(sun);
+
+const secs=[...document.querySelectorAll('.sec')];let idx=0;
+if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)idx=+e.target.dataset.p||0})},{rootMargin:'-45% 0px -45% 0px'});secs.forEach(s=>io.observe(s))}
+let W=0;function fit(){W=innerWidth;const h=innerHeight;R.setSize(W,h,false);cam.aspect=W/h;cam.updateProjectionMatrix()}
+fit();addEventListener('resize',()=>{if(innerWidth!==W)fit()});
+let Ss=0,dr=0,lastR=performance.now(),cc=pal[0].map(c=>c.clone()),stop=false,shown=false;
+$('#gl').addEventListener('webglcontextlost',e=>{e.preventDefault();stop=true;document.body.classList.remove('gl')});
+function tick(now){if(stop)return;requestAnimationFrame(tick);if(document.hidden)return;
+if(now-lastR<30)return;const dt=Math.min(.06,(now-lastR)/1e3);lastR=now;if(!reduce)dr+=dt*7;
+const tgt=scrollY*.6+dr;const prev=Ss;Ss+=(tgt-Ss)*(1-Math.exp(-dt*3.2));const v=(Ss-prev)/Math.max(dt,.001);
+U.uS.value=Ss;U.uT.value+=dt;
+const tp=pal[idx],k=1-Math.exp(-dt*1.8);cc.forEach((c,i)=>c.lerp(tp[i],k));U.uFogC.value.copy(cc[0]);U.uAcc.value.copy(cc[1]);U.uGlow.value.copy(cc[2]);R.setClearColor(cc[0]);
+cam.fov=60+Math.min(14,Math.abs(v)*.05);cam.updateProjectionMatrix();
+const cx=Math.sin(Ss*K)*A;cam.position.set(cx,7+Math.sin(U.uT.value*.5)*.4,0);cam.lookAt(Math.sin((Ss+34)*K)*A,3.5,-40);cam.rotateZ(-Math.cos(Ss*K)*.05);
+fl.position.x=cx;sun.position.x=cx;
+R.render(sc,cam);if(!shown){shown=true;document.body.classList.add('gl')}}
+requestAnimationFrame(tick)
+};
+const sc_=document.createElement('script');sc_.src='https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js';sc_.async=true;
+sc_.onload=()=>{try{start()}catch(e){console.warn('3D disabled',e)}};document.head.appendChild(sc_);
+})();
 </script>
 </body>
 </html>
