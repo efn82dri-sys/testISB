@@ -73,7 +73,7 @@ main{display:grid;gap:48px}
 .ct{display:grid;grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}
 form{display:grid;grid-template-columns:1fr 1fr;gap:14px}form label{display:grid;gap:4px;font-size:.8rem;color:var(--ice)}form .w{grid-column:1/-1}
 input,select,textarea{font:inherit;background:rgba(5,12,38,.55);border:1px solid rgba(143,163,214,.25);border-radius:12px;padding:8px 14px;color:#fff;width:100%}
-textarea{min-height:110px;resize:vertical}.hp{position:absolute;left:-9999px}#fm{grid-column:1/-1;font-size:.84rem;color:#f0c75e}
+textarea{min-height:110px;resize:vertical}.hp{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);opacity:0;pointer-events:none;white-space:nowrap}#fm{grid-column:1/-1;font-size:.84rem;color:#f0c75e}
 footer{padding:36px clamp(14px,4vw,32px) calc(36px + env(safe-area-inset-bottom,0px));border-top:1px solid rgba(143,163,214,.12);background:rgba(5,12,38,.6);backdrop-filter:blur(12px);display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--ice);margin-top:48px}
 #modal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:max(14px,env(safe-area-inset-top,0px)) 14px;background:rgba(3,8,28,.78);backdrop-filter:blur(10px)}body.mo #modal{display:flex}
 .md{width:min(60rem,100%);max-height:92vh;overflow:auto;border-radius:26px;padding:clamp(18px,3vw,32px);display:grid;gap:18px;background:rgba(10,20,56,.82)}

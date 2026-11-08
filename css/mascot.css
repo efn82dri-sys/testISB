@@ -57,7 +57,7 @@ html[dir=rtl] #isb-panel .msg{border-radius:14px 14px 4px 14px}
 #isb-panel .ok p{margin:6px 0;color:#c9dbf8}
 #isb-panel .ok .sec{margin-top:12px;background:rgba(111,171,255,.12);border:1px solid rgba(158,201,255,.3);color:#dbe8ff;padding:9px 14px;border-radius:10px;font:600 12px/1 Kalameh,system-ui,sans-serif;cursor:pointer;text-decoration:none;display:inline-block}
 #isb-panel [hidden]{display:none!important}
-#isb-panel .hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+#isb-panel .hp{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);opacity:0;pointer-events:none}
 @media(max-width:900px){#isb-panel{left:12px;bottom:58px;max-height:calc(100vh - 80px)}}
 @media(max-width:640px){
   #isb-mascot{bottom:46px}
