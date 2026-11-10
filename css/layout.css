@@ -40,7 +40,9 @@ body{background:#071d45}
 #isb-hud .meter i{display:block;width:0;height:100%;background:linear-gradient(90deg,#64d8ef,#f4c65e);box-shadow:0 0 12px rgba(126,220,255,.45);transition:width .12s linear}
 #isb-hud .foot{display:flex;justify-content:space-between;align-items:center;margin-top:8px;color:#9fb5d8;font:9px/1.6 ui-monospace,monospace;direction:ltr}
 #isb-hud .foot b{font-weight:600;color:#f4c65e}
-#isb-progress{position:fixed;z-index:8;top:0;left:0;right:0;height:2px;display:flex;gap:3px;padding:0 2px;pointer-events:none}
+
+/* نوار پیشرفت بالای صفحه — z-index بالاتر از هدر (۴۵) تا دیده شود */
+#isb-progress{position:fixed;z-index:45;top:0;left:0;right:0;height:2px;display:flex;gap:3px;padding:0 2px;pointer-events:none}
 #isb-progress span{height:100%;flex:1;background:rgba(163,198,245,.16);overflow:hidden}
 #isb-progress span i{display:block;height:100%;width:0;background:linear-gradient(90deg,#5bd2ec,#f4c65e);box-shadow:0 0 9px rgba(126,220,255,.45)}
 #isb-compass{position:fixed;z-index:6;right:clamp(20px,4vw,58px);bottom:clamp(90px,10vh,118px);width:56px;height:56px;border:1px solid rgba(160,205,255,.28);border-radius:50%;display:grid;place-items:center;background:rgba(5,23,57,.55);backdrop-filter:blur(12px);pointer-events:none;opacity:.8}
@@ -67,3 +69,39 @@ body{background:#071d45}
  .tg{display:none}
 }
 @media(prefers-reduced-motion:reduce){#isb-hud .meter i{transition:none}#isb-compass .needle{transition:none}}
+
+/* ============ WebGL Fallback ============
+   اگر WebGL در دسترس نباشد، scene.js کلاس no3d را روی body می‌گذارد.
+   در این حالت عناصر وابسته به ۳بعدی پنهان می‌شوند و فقط هیرو + پیام راهنما می‌ماند. */
+body.no3d #gl,
+body.no3d #track,
+body.no3d #views,
+body.no3d #lbs,
+body.no3d #ll,
+body.no3d #idx,
+body.no3d #scr,
+body.no3d .tg,
+body.no3d .cmp,
+body.no3d #isb-progress,
+body.no3d #isb-compass,
+body.no3d #isb-hud,
+body.no3d #isb-mascot,
+body.no3d #isb-mascot-btn,
+body.no3d #isb-bubble{display:none!important}
+
+body.no3d #hv{opacity:1!important;visibility:visible!important;pointer-events:auto!important;transform:none!important}
+body.no3d #hv::before{background:linear-gradient(90deg,rgba(5,19,49,.94),rgba(5,19,49,.72) 58%,rgba(5,19,49,.9))}
+body.no3d::after{
+  content:"برای تجربهٔ سه‌بعدی، از مرورگری با WebGL استفاده کنید. تلفن مشاوره: ۰۹۳۳۹۰۳۹۵۶۳";
+  position:fixed;bottom:18px;left:50%;transform:translateX(-50%);
+  background:rgba(5,23,57,.94);color:#f4c65e;
+  padding:10px 20px;border-radius:12px;
+  font:13px/1.6 Kalameh,Tahoma,sans-serif;
+  z-index:50;direction:rtl;text-align:center;max-width:90vw;
+  border:1px solid rgba(244,198,94,.35);
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+html[lang="en"] body.no3d::after{
+  content:"Please use a WebGL-enabled browser for the 3D experience. Consulting: +98 933 903 9563";
+  direction:ltr;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+}

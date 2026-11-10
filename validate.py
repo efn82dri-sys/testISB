@@ -85,7 +85,11 @@ def image_exists(rel, where):
 # ---------- بارگذاری ----------
 fa = load('fa.json'); en = load('en.json')
 projects = load('projects.json'); services = load('services.json'); team = load('team.json')
-chapters = load('chapters.json'); town = load('town.json'); guide = load('guide.json'); images = load('images.json')
+chapters = load('chapters.json'); town = load('town.json'); guide = load('guide.json'); images = load('images.json'); clips = load('clips.json'); creds = load('credentials.json'); schemas = None
+try:
+    schemas = json.load(open(os.path.join(ROOT, 'admin', 'schemas.json'), encoding='utf-8'))
+except Exception as e:
+    err(f'admin/schemas.json: {e}')
 
 # ---------- fa / en ----------
 if fa is not None and en is not None:
@@ -129,6 +133,18 @@ if services is not None:
             err(f'{w}: id تکراری است → {s.get("id")}')
         ids.add(s.get('id'))
         need_pair(s.get('title'), f'{w}.title'); need_pair(s.get('description'), f'{w}.description')
+    ST = {x.get('id') for x in services.get('stages', [])}; GR = {x.get('id') for x in services.get('groups', [])}
+    for x in services.get('stages', []) + services.get('groups', []):
+        need_pair(x.get('name'), f'services.json stage/group {x.get("id")}.name')
+    ICONS = {'Leaf', 'Activity', 'BarChart3', 'Sun', 'Layers', 'Search', 'Zap', 'Wind', 'Cpu', 'Thermometer', 'Droplets', 'Award', 'Volume2'}
+    for i, s in enumerate(services.get('services', [])):
+        w = f'services.json services[{i}]'
+        if s.get('group') not in GR:
+            err(f'{w}: گروه «{s.get("group")}» در groups تعریف نشده')
+        if not s.get('stages') or any(x not in ST for x in s.get('stages', [])):
+            err(f'{w}.stages: باید فهرستی غیرخالی از مرحله‌های تعریف‌شده باشد')
+        if s.get('icon') not in ICONS:
+            warn(f'{w}.icon: آیکن «{s.get("icon")}» ناشناخته است (آیکن پیش‌فرض نمایش داده می‌شود)')
     if len(ids) != 13:
         warn(f'services.json: تعداد خدمات {len(ids)} است (متن سایت «۱۳ محور» می‌گوید)')
     for i, e in enumerate(services.get('educationalPrograms', [])):
@@ -143,6 +159,14 @@ if team is not None:
         image_exists(m.get('photo'), f'{w}.photo')
         if not m.get('photo') and not m.get('initials'):
             err(f'{w}: نه photo دارد نه initials')
+    dep_ids = {d.get('id') for d in team.get('departments', [])}
+    for d in team.get('departments', []):
+        need_pair(d.get('name'), f'team.json departments[{d.get("id")}].name')
+    for i, m in enumerate(team.get('teamMembers', [])):
+        if m.get('department') and m['department'] not in dep_ids:
+            err(f'team.json teamMembers[{i}]: دپارتمان «{m["department"]}» در departments تعریف نشده')
+        if m.get('level') not in (None, 'leader', 'member'):
+            err(f'team.json teamMembers[{i}].level: باید leader یا member باشد')
     for i, o in enumerate(team.get('partnerOffices', [])):
         need_pair(o, f'team.json partnerOffices[{i}]')
 
@@ -229,8 +253,50 @@ if images is not None:
     for rel in sorted(disk - set(images)):
         warn(f'assets/images{rel} روی دیسک هست ولی در images.json نیست (سایت آن را نمی‌بیند)')
 
+# ---------- کلیپ‌های همایش (پنل ادمین) ----------
+if clips is not None:
+    if not isinstance(clips, list):
+        err('clips.json: باید یک فهرست باشد')
+    else:
+        cids = set()
+        for i, c in enumerate(clips):
+            w = f'clips.json[{i}]'
+            need_pair(c.get('title'), f'{w}.title')
+            if 'aparat.com' not in str(c.get('aparatUrl', '')):
+                err(f'{w}.aparatUrl: لینک باید از aparat.com باشد')
+            if c.get('orientation') not in ('landscape', 'portrait'):
+                err(f'{w}.orientation: باید landscape یا portrait باشد')
+            if c.get('id') in cids:
+                err(f'{w}: id تکراری است → {c.get("id")}')
+            cids.add(c.get('id'))
+            image_exists(c.get('poster'), f'{w}.poster')
+
+# ---------- گواهینامه‌ها و نظرها ----------
+if creds is not None:
+    for i, c in enumerate(creds.get('certificates', [])):
+        w = f'credentials.json certificates[{i}]'
+        need_pair(c.get('title'), f'{w}.title'); need_pair(c.get('issuer'), f'{w}.issuer')
+        if not c.get('image'):
+            err(f'{w}: تصویر گواهی ندارد')
+        image_exists(c.get('image'), f'{w}.image')
+    for i, t in enumerate(creds.get('testimonials', [])):
+        w = f'credentials.json testimonials[{i}]'
+        need_pair(t.get('name'), f'{w}.name'); need_pair(t.get('text'), f'{w}.text')
+        if t.get('rating') not in (1, 2, 3, 4, 5):
+            err(f'{w}.rating: باید عدد ۱ تا ۵ باشد')
+
+# ---------- تنظیمات پنل ادمین ----------
+if schemas is not None:
+    for col in schemas.get('collections', []):
+        if not os.path.isfile(os.path.join(ROOT, 'data', col['file'] + '.json')):
+            err(f'admin/schemas.json: فایل data/{col["file"]}.json برای «{col["id"]}» وجود ندارد')
+        for f in col.get('fields', []):
+            if f.get('type') not in ('id', 'text', 'url', 'number', 'textarea', 'bilingual', 'tags', 'checks', 'select', 'image', 'checkbox'):
+                err(f'admin/schemas.json: نوع فیلد نامعتبر «{f.get("type")}» در {col["id"]}')
+
 # ---------- فایل‌های اصلی ----------
-for rel in ['index.html', 'css/fonts.css', 'css/tokens.css', 'css/base.css', 'css/layout.css', 'css/mascot.css',
+for rel in ['index.html', 'css/fonts.css', 'css/tokens.css', 'css/base.css', 'css/layout.css', 'css/team.css', 'css/services.css', 'css/mascot.css',
+            'admin/index.html', 'admin/admin.js', 'admin/admin.css', 'admin/api.php', 'admin/setup.php', 'admin/schemas.json', 'tools/dev_server.py',
             'js/main.js', 'js/i18n.js', 'js/ui.js', 'js/scene.js', 'js/camera.js', 'js/mascot.js', 'js/guide.js',
             'assets/fonts/kalameh-300.woff', 'assets/fonts/kalameh-400.woff', 'assets/fonts/kalameh-700.woff', 'assets/fonts/kalameh-900.woff',
             'assets/images/mascot-body.webp', 'assets/images/mascot-head.webp']:

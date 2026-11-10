@@ -1,0 +1,469 @@
+{
+  "collections": [
+    {
+      "id": "clips",
+      "label": "کلیپ‌های همایش",
+      "file": "clips",
+      "itemTitle": "title.fa",
+      "itemSubtitle": "event.fa",
+      "thumb": "poster",
+      "addLabel": "افزودن کلیپ",
+      "help": "کلیپ را اول در آپارات آپلود کنید، بعد فقط لینک آن را اینجا بگذارید. فقط کلیپ‌های «نمایش در سایت» دیده می‌شوند.",
+      "fields": [
+        {
+          "key": "id",
+          "type": "id",
+          "from": "title.en"
+        },
+        {
+          "key": "title",
+          "type": "bilingual",
+          "label": "عنوان کلیپ",
+          "required": true
+        },
+        {
+          "key": "event",
+          "type": "bilingual",
+          "label": "نام همایش"
+        },
+        {
+          "key": "year",
+          "type": "number",
+          "label": "سال (مثلاً ۱۴۰۴)"
+        },
+        {
+          "key": "aparatUrl",
+          "type": "url",
+          "label": "لینک آپارات",
+          "required": true,
+          "hint": "مثال: https://www.aparat.com/v/xxxxx",
+          "mustContain": "aparat.com"
+        },
+        {
+          "key": "orientation",
+          "type": "select",
+          "label": "قالب نمایش",
+          "options": [
+            [
+              "landscape",
+              "افقی (عادی)"
+            ],
+            [
+              "portrait",
+              "عمودی (ریلز)"
+            ]
+          ],
+          "default": "landscape"
+        },
+        {
+          "key": "poster",
+          "type": "image",
+          "label": "تصویر پوستر کلیپ"
+        },
+        {
+          "key": "active",
+          "type": "checkbox",
+          "label": "نمایش در سایت",
+          "default": true
+        }
+      ]
+    },
+    {
+      "id": "team",
+      "label": "اعضای تیم",
+      "file": "team",
+      "path": "teamMembers",
+      "itemTitle": "name.fa",
+      "itemSubtitle": "role.fa",
+      "thumb": "photo",
+      "addLabel": "افزودن نفر",
+      "help": "ترتیب کارت‌ها همان ترتیب این فهرست است. «مدیریت» ها بالای صفحه بزرگ نمایش داده می‌شوند. دپارتمان‌ها را از تب «دپارتمان‌ها» می‌سازید.",
+      "fields": [
+        {
+          "key": "id",
+          "type": "id",
+          "from": "name.en"
+        },
+        {
+          "key": "name",
+          "type": "bilingual",
+          "label": "نام و نام خانوادگی",
+          "required": true
+        },
+        {
+          "key": "role",
+          "type": "bilingual",
+          "label": "سمت",
+          "required": true
+        },
+        {
+          "key": "level",
+          "type": "select",
+          "label": "جایگاه در سایت",
+          "options": [
+            [
+              "leader",
+              "مدیریت (کارت بزرگ بالای صفحه)"
+            ],
+            [
+              "member",
+              "عضو تیم"
+            ]
+          ],
+          "default": "member"
+        },
+        {
+          "key": "department",
+          "type": "select",
+          "label": "دپارتمان",
+          "optionsFrom": "departments",
+          "default": ""
+        },
+        {
+          "key": "title",
+          "type": "bilingual",
+          "label": "عنوان تخصصی (یک خط)"
+        },
+        {
+          "key": "bio",
+          "type": "bilingual",
+          "label": "معرفی و رزومهٔ کوتاه",
+          "multiline": true
+        },
+        {
+          "key": "expertise",
+          "type": "tags",
+          "label": "حوزه‌های تخصص",
+          "hint": "با ویرگول جدا کنید؛ مثلاً: شبیه‌سازی انرژی، نور روز"
+        },
+        {
+          "key": "education",
+          "type": "bilingual",
+          "label": "تحصیلات"
+        },
+        {
+          "key": "photo",
+          "type": "image",
+          "label": "عکس پرتره",
+          "hint": "پرتره عمودی (نسبت ۴ به ۵)، حداقل ۸۰۰ پیکسل عرض، پس‌زمینهٔ ساده. عکس کوچک‌تر از ۴۸۰ پیکسل داخل دایره نمایش داده می‌شود."
+        },
+        {
+          "key": "initials",
+          "type": "text",
+          "label": "حروف اختصاری (وقتی عکس نیست)"
+        },
+        {
+          "key": "linkedin",
+          "type": "url",
+          "label": "لینک لینکدین"
+        },
+        {
+          "key": "instagram",
+          "type": "url",
+          "label": "لینک اینستاگرام"
+        },
+        {
+          "key": "email",
+          "type": "text",
+          "label": "ایمیل"
+        },
+        {
+          "key": "isConsultant",
+          "type": "checkbox",
+          "label": "مشاور بیرونی است",
+          "default": false
+        }
+      ]
+    },
+    {
+      "id": "departments",
+      "label": "دپارتمان‌ها",
+      "file": "team",
+      "path": "departments",
+      "itemTitle": "name.fa",
+      "itemSubtitle": "name.en",
+      "addLabel": "افزودن دپارتمان",
+      "help": "دپارتمان‌ها به‌صورت فیلتر در صفحهٔ تیم دیده می‌شوند. دپارتمانی که عضو ندارد نمایش داده نمی‌شود.",
+      "fields": [
+        {
+          "key": "id",
+          "type": "id",
+          "from": "name.en"
+        },
+        {
+          "key": "name",
+          "type": "bilingual",
+          "label": "نام دپارتمان",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "certificates",
+      "label": "گواهینامه‌ها",
+      "file": "credentials",
+      "path": "certificates",
+      "itemTitle": "title.fa",
+      "itemSubtitle": "issuer.fa",
+      "thumb": "image",
+      "addLabel": "افزودن گواهینامه",
+      "help": "فقط مدارک واقعی و قابل ارائه را اضافه کنید. اسکن گواهی را با کیفیت خوانا آپلود کنید.",
+      "fields": [
+        {
+          "key": "id",
+          "type": "id",
+          "from": "title.en"
+        },
+        {
+          "key": "title",
+          "type": "bilingual",
+          "label": "عنوان گواهی",
+          "required": true
+        },
+        {
+          "key": "issuer",
+          "type": "bilingual",
+          "label": "صادرکننده",
+          "required": true
+        },
+        {
+          "key": "date",
+          "type": "bilingual",
+          "label": "تاریخ صدور (متن آزاد)"
+        },
+        {
+          "key": "note",
+          "type": "bilingual",
+          "label": "توضیح یا محدودیت گواهی",
+          "multiline": true
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": "تصویر گواهی",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "testimonials",
+      "label": "نظر کارفرمایان",
+      "file": "credentials",
+      "path": "testimonials",
+      "itemTitle": "name.fa",
+      "itemSubtitle": "role.fa",
+      "addLabel": "افزودن نظر",
+      "help": "فقط نظرهای واقعی و با اجازهٔ صاحب نظر را ثبت کنید. فقط نظرهای «نمایش در سایت» دیده می‌شوند و میانگین امتیاز از همین‌ها حساب می‌شود.",
+      "fields": [
+        {
+          "key": "id",
+          "type": "id",
+          "from": "name.en"
+        },
+        {
+          "key": "name",
+          "type": "bilingual",
+          "label": "نام (فرد یا شرکت)",
+          "required": true
+        },
+        {
+          "key": "role",
+          "type": "bilingual",
+          "label": "سمت یا پروژه"
+        },
+        {
+          "key": "text",
+          "type": "bilingual",
+          "label": "متن نظر",
+          "required": true,
+          "multiline": true
+        },
+        {
+          "key": "rating",
+          "type": "select",
+          "numeric": true,
+          "label": "امتیاز",
+          "options": [
+            [
+              "5",
+              "۵ ستاره"
+            ],
+            [
+              "4",
+              "۴ ستاره"
+            ],
+            [
+              "3",
+              "۳ ستاره"
+            ],
+            [
+              "2",
+              "۲ ستاره"
+            ],
+            [
+              "1",
+              "۱ ستاره"
+            ]
+          ],
+          "default": 5
+        },
+        {
+          "key": "approved",
+          "type": "checkbox",
+          "label": "نمایش در سایت",
+          "default": true
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "label": "خدمات",
+      "file": "services",
+      "path": "services",
+      "itemTitle": "title.fa",
+      "itemSubtitle": "title.en",
+      "addLabel": "افزودن خدمت",
+      "help": "هر خدمت یک گروه دارد و در «مرحله‌های پروژه» که انتخاب می‌کنید روشن می‌شود. شمارهٔ خدمت خودکار است.",
+      "fields": [
+        {
+          "key": "id",
+          "type": "id",
+          "numeric": true
+        },
+        {
+          "key": "title",
+          "type": "bilingual",
+          "label": "عنوان خدمت",
+          "required": true
+        },
+        {
+          "key": "description",
+          "type": "bilingual",
+          "label": "توضیح خدمت",
+          "required": true,
+          "multiline": true
+        },
+        {
+          "key": "group",
+          "type": "select",
+          "label": "گروه",
+          "optionsFrom": "groups",
+          "required": true,
+          "noEmpty": true
+        },
+        {
+          "key": "stages",
+          "type": "checks",
+          "label": "مناسب کدام مرحله‌های پروژه است؟",
+          "optionsFrom": "stages",
+          "required": true
+        },
+        {
+          "key": "icon",
+          "type": "select",
+          "label": "آیکن",
+          "options": [
+            [
+              "Leaf",
+              "برگ (ساختمان سبز)"
+            ],
+            [
+              "Activity",
+              "نبض (شبیه‌سازی)"
+            ],
+            [
+              "BarChart3",
+              "نمودار (تحلیل)"
+            ],
+            [
+              "Sun",
+              "خورشید (نور)"
+            ],
+            [
+              "Layers",
+              "لایه‌ها (پوسته)"
+            ],
+            [
+              "Search",
+              "ذره‌بین (ممیزی)"
+            ],
+            [
+              "Zap",
+              "برق (انرژی)"
+            ],
+            [
+              "Wind",
+              "باد (تهویه)"
+            ],
+            [
+              "Cpu",
+              "پردازنده (هوشمند)"
+            ],
+            [
+              "Thermometer",
+              "دماسنج (آسایش)"
+            ],
+            [
+              "Droplets",
+              "قطره (آب)"
+            ],
+            [
+              "Award",
+              "مدال (گواهی)"
+            ],
+            [
+              "Volume2",
+              "بلندگو (آکوستیک)"
+            ]
+          ],
+          "default": "Leaf"
+        },
+        {
+          "key": "category",
+          "type": "select",
+          "label": "دسته (قدیمی)",
+          "options": [
+            [
+              "core",
+              "هسته معماری و انرژی"
+            ],
+            [
+              "specialist",
+              "تخصصی"
+            ]
+          ],
+          "default": "core"
+        }
+      ]
+    },
+    {
+      "id": "servicegroups",
+      "label": "گروه‌های خدمات",
+      "file": "services",
+      "path": "groups",
+      "itemTitle": "name.fa",
+      "itemSubtitle": "name.en",
+      "addLabel": "افزودن گروه",
+      "help": "گروه‌ها عنوان بخش‌های صفحهٔ خدمات هستند. گروهی که خدمتی ندارد نمایش داده نمی‌شود.",
+      "fields": [
+        {
+          "key": "id",
+          "type": "id",
+          "from": "name.en"
+        },
+        {
+          "key": "name",
+          "type": "bilingual",
+          "label": "نام گروه",
+          "required": true
+        },
+        {
+          "key": "description",
+          "type": "bilingual",
+          "label": "توضیح کوتاه",
+          "multiline": true
+        }
+      ]
+    }
+  ]
+}

@@ -20,7 +20,20 @@
       },
       "photo": "/team/dr-sara-atashi.jpg",
       "initials": "SA",
-      "isConsultant": false
+      "isConsultant": false,
+      "level": "leader",
+      "department": "architecture-energy",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
     },
     {
       "id": "elham-mehrdoust",
@@ -41,7 +54,20 @@
         "en": "Expert in Iranian architectural heritage, climate-responsive indigenous patterns, and lead architect of certified industrial and sustainable projects."
       },
       "initials": "EM",
-      "isConsultant": false
+      "isConsultant": false,
+      "level": "member",
+      "department": "architecture-energy",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
     },
     {
       "id": "hamid-erfanian",
@@ -62,7 +88,20 @@
         "en": "Distinguished senior architect specializing in advanced construction technologies, facade engineering, and green building standards across domestic and global practices."
       },
       "initials": "HE",
-      "isConsultant": false
+      "isConsultant": false,
+      "level": "member",
+      "department": "architecture-energy",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
     },
     {
       "id": "hamed-mosleh",
@@ -83,7 +122,20 @@
         "en": "Specialist in mechanical system engineering, dynamic HVAC modeling, building energy audits, and certified instructor for DesignBuilder and Part 19 compliance."
       },
       "initials": "HM",
-      "isConsultant": false
+      "isConsultant": false,
+      "level": "member",
+      "department": "architecture-energy",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
     },
     {
       "id": "zahra-ramezani",
@@ -104,7 +156,20 @@
         "en": "MSc in Building Science specializing in computational daylight modeling (DIALux/sDA), envelope thermodynamic analysis, and parametric performance optimization."
       },
       "initials": "ZR",
-      "isConsultant": false
+      "isConsultant": false,
+      "level": "member",
+      "department": "architecture-energy",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
     },
     {
       "id": "zahra-rasouli",
@@ -125,7 +190,20 @@
         "en": "Architect focused on detailed facade construction documents, 3D architectural modeling, and cross-disciplinary coordination with energy engineers."
       },
       "initials": "ZS",
-      "isConsultant": false
+      "isConsultant": false,
+      "level": "member",
+      "department": "architecture-energy",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
     },
     {
       "id": "arefeh-barki",
@@ -146,7 +224,20 @@
         "en": "Specialist in corporate strategic communication, institutional partnerships, architectural branding, and market positioning for sustainable building technologies."
       },
       "initials": "AB",
-      "isConsultant": false
+      "isConsultant": false,
+      "level": "member",
+      "department": "business-development",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
     },
     {
       "id": "behrouz-kari",
@@ -167,7 +258,20 @@
         "en": "Distinguished faculty member and Head of the Energy and Lighting Department at BHRC (Ministry of Roads & Urban Development); national authority on building envelope physics and thermal standards."
       },
       "initials": "BK",
-      "isConsultant": true
+      "isConsultant": true,
+      "level": "member",
+      "department": "scientific-advisors",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
     },
     {
       "id": "somayeh-aminineshab",
@@ -188,7 +292,20 @@
         "en": "Senior acoustics researcher at the Road, Housing & Urban Development Research Center; leading expert in airborne and impact noise mitigation, reverberation, and Part 18 acoustic requirements."
       },
       "initials": "SA",
-      "isConsultant": true
+      "isConsultant": true,
+      "level": "member",
+      "department": "scientific-advisors",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
     }
   ],
   "partnerOffices": [
@@ -231,6 +348,29 @@
     {
       "fa": "گروه مشاور زیستاوین",
       "en": "Zistavin Consulting Group"
+    }
+  ],
+  "departments": [
+    {
+      "id": "architecture-energy",
+      "name": {
+        "fa": "معماری و انرژی",
+        "en": "Architecture & Energy"
+      }
+    },
+    {
+      "id": "business-development",
+      "name": {
+        "fa": "روابط عمومی و توسعه بازار",
+        "en": "PR & Business Development"
+      }
+    },
+    {
+      "id": "scientific-advisors",
+      "name": {
+        "fa": "مشاوران علمی و تخصصی",
+        "en": "Scientific & Specialist Consultants"
+      }
     }
   ]
 }

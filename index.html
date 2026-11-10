@@ -3,21 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script>
-/* انتخاب نسخه: موبایل -> mobile.html ، دسکتاپ -> index.html
-   برای تست دستی: آدرس را با ?view=mobile یا ?view=desktop باز کنید */
-(function(){
-  try{
-    var p=/[?&]view=(mobile|desktop)/.exec(location.search), v=null;
-    if(p){v=p[1];sessionStorage.setItem('isbView',v)}else{v=sessionStorage.getItem('isbView')}
-    var m=window.matchMedia("(max-width: 768px), (pointer: coarse) and (max-width: 1024px)").matches;
-    if(v==='mobile'||(m && v!=='desktop')){
-      var q=location.search.replace(/([?&])view=(mobile|desktop)&?/,'$1').replace(/[?&]$/,'');
-      location.replace("mobile.html"+q+location.hash);
-    }
-  }catch(e){}
-})();
-</script>
 <title>ISB | گروه ساختمانی بنای پایدار ایران زمین</title>
 <link rel="preload" href="assets/fonts/kalameh-400.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="assets/fonts/kalameh-700.woff" as="font" type="font/woff" crossorigin>
@@ -27,6 +12,8 @@
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/team.css">
+<link rel="stylesheet" href="css/services.css">
 <link rel="stylesheet" href="css/mascot.css">
 </head>
 <body>
@@ -93,7 +80,19 @@
 <!-- همهٔ کد سایت از اینجا شروع می‌شود (js/main.js بقیهٔ فایل‌ها را لود می‌کند) -->
 <script src="js/main.js"></script>
 
-<!-- GoatCounter analytics: YOUR_CODE را با کد سایت خودت در goatcounter.com عوض کن -->
-<script data-goatcounter="https://YOUR_CODE.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<!-- GoatCounter analytics
+     کد سایت خودتان از goatcounter.com را در متغیر code بگذارید.
+     تا وقتی 'YOUR_CODE' باشد، اسکریپت اصلاً لود نمی‌شود (بدون خطای کنسول). -->
+<script>
+(function(){
+  var code = 'YOUR_CODE';                       /* ← اینجا کد GoatCounter */
+  if (!code || code === 'YOUR_CODE') return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://gc.zgo.at/count.js';
+  s.dataset.goatcounter = 'https://' + code + '.goatcounter.com/count';
+  document.head.appendChild(s);
+})();
+</script>
 </body>
 </html>

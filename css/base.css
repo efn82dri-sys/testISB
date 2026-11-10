@@ -73,14 +73,21 @@ main{display:grid;gap:48px}
 .ct{display:grid;grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}
 form{display:grid;grid-template-columns:1fr 1fr;gap:14px}form label{display:grid;gap:4px;font-size:.8rem;color:var(--ice)}form .w{grid-column:1/-1}
 input,select,textarea{font:inherit;background:rgba(5,12,38,.55);border:1px solid rgba(143,163,214,.25);border-radius:12px;padding:8px 14px;color:#fff;width:100%}
-textarea{min-height:110px;resize:vertical}.hp{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);opacity:0;pointer-events:none;white-space:nowrap}#fm{grid-column:1/-1;font-size:.84rem;color:#f0c75e}
+textarea{min-height:110px;resize:vertical}.hp{position:absolute;left:-9999px}#fm{grid-column:1/-1;font-size:.84rem;color:#f0c75e}
 footer{padding:36px clamp(14px,4vw,32px) calc(36px + env(safe-area-inset-bottom,0px));border-top:1px solid rgba(143,163,214,.12);background:rgba(5,12,38,.6);backdrop-filter:blur(12px);display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--ice);margin-top:48px}
 #modal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:max(14px,env(safe-area-inset-top,0px)) 14px;background:rgba(3,8,28,.78);backdrop-filter:blur(10px)}body.mo #modal{display:flex}
 .md{width:min(60rem,100%);max-height:92vh;overflow:auto;border-radius:26px;padding:clamp(18px,3vw,32px);display:grid;gap:18px;background:rgba(10,20,56,.82)}
 .md .x{position:sticky;top:0;justify-self:end;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(5,12,38,.8);color:#fff}
 .md img{width:100%;border-radius:14px;display:block}.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.gal figure{margin:0;font-size:.76rem;color:var(--ice)}
 .mx{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}.mx div{padding:12px 14px;border-radius:16px;background:rgba(255,255,255,.06);font-size:.8rem;color:var(--ice)}.mx b{display:block;color:#fff;font-size:1.3rem}
-.br{display:grid;grid-template-columns:8rem 1fr;gap:4px 12px;align-items:center;font-size:.76rem}.br i{height:10px;border-radius:6px;background:linear-gradient(90deg,var(--bright),var(--sage));display:block}
+
+/* نمودار میله‌ای پروژه‌ها — چیدمان ستونی اصلاح‌شده */
+.br{display:grid;grid-template-columns:8rem 1fr;gap:6px 12px;align-items:center;font-size:.76rem}
+.br .brow-wrap{display:grid;gap:3px;align-content:center}
+.br .brow{display:flex;align-items:center;gap:6px}
+.br .brow i{height:8px;border-radius:4px;background:linear-gradient(90deg,var(--bright),var(--sage));flex:0 1 auto;min-width:2px}
+.br .brow small{font-size:.7rem;color:var(--ice);flex:0 0 auto;min-width:3.5em;text-align:end}
+
 @media(max-width:900px){nav{display:none}.mb{display:block}.g12,.sx,.sv,.ct{grid-template-columns:1fr}.card.f{grid-column:auto}form{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 .ch{min-height:125vh}.ch.a{align-items:flex-start}.ch.b{align-items:flex-end}

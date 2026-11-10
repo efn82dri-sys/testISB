@@ -1,6 +1,13 @@
 /* صحنهٔ سه‌بعدی (three.js): رندرر، نور، متریال‌ها، شش مدل مسیر پایداری، شهرک (جاده، درخت، برج، ماشین، دوچرخه، خط افق). حرکت دوربین در camera.js است. */
 (()=>{
-let R;try{R=new THREE.WebGLRenderer({canvas:$('#gl'),antialias:true,powerPreference:'high-performance'})}catch(e){return}
+let R;
+try{
+  R=new THREE.WebGLRenderer({canvas:$('#gl'),antialias:true,powerPreference:'high-performance'});
+}catch(e){
+  document.body.classList.add('no3d');
+  console.warn('ISB: WebGL unavailable — static fallback enabled.');
+  return;
+}
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,mob=innerWidth<760,gl=$('#gl');
 R.setPixelRatio(Math.min(devicePixelRatio,mob?1.35:1.75));
 R.setClearColor(0x0c2a75);R.toneMapping=THREE.ACESFilmicToneMapping;R.toneMappingExposure=1.12;

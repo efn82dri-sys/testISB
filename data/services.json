@@ -11,7 +11,12 @@
         "en": "Bioclimatic analysis, sustainable architectural design strategies, environmental footprint reduction, and whole-life building performance optimization."
       },
       "category": "core",
-      "icon": "Leaf"
+      "icon": "Leaf",
+      "group": "strategy",
+      "stages": [
+        "concept",
+        "design"
+      ]
     },
     {
       "id": 2,
@@ -24,7 +29,12 @@
         "en": "Dynamic energy modeling, seasonal thermal and visual comfort, natural ventilation airflow, and multi-domain building performance metrics."
       },
       "category": "core",
-      "icon": "Activity"
+      "icon": "Activity",
+      "group": "analysis",
+      "stages": [
+        "concept",
+        "design"
+      ]
     },
     {
       "id": 3,
@@ -37,7 +47,12 @@
         "en": "Detailed heating and cooling load profiling, life-cycle scenario comparison, and data-backed economic and thermal optimization."
       },
       "category": "core",
-      "icon": "BarChart3"
+      "icon": "BarChart3",
+      "group": "analysis",
+      "stages": [
+        "design",
+        "existing"
+      ]
     },
     {
       "id": 4,
@@ -50,7 +65,12 @@
         "en": "Advanced natural daylight simulation, glare control (sDA/ASE), visual ergonomics, and smart daylight-harvesting artificial lighting."
       },
       "category": "core",
-      "icon": "Sun"
+      "icon": "Sun",
+      "group": "analysis",
+      "stages": [
+        "concept",
+        "design"
+      ]
     },
     {
       "id": 5,
@@ -63,7 +83,12 @@
         "en": "Optimization of opaque and fenestration assemblies, continuous thermal insulation, high-performance glazing, dynamic shading, and advanced facade tech."
       },
       "category": "core",
-      "icon": "Layers"
+      "icon": "Layers",
+      "group": "systems",
+      "stages": [
+        "concept",
+        "design"
+      ]
     },
     {
       "id": 6,
@@ -76,7 +101,11 @@
         "en": "On-site condition assessment, energy-conservation measure (ECM) identification, calibrated energy baselining, and practical deep retrofits."
       },
       "category": "core",
-      "icon": "Search"
+      "icon": "Search",
+      "group": "strategy",
+      "stages": [
+        "existing"
+      ]
     },
     {
       "id": 7,
@@ -89,7 +118,12 @@
         "en": "Techno-economic feasibility, architectural placement, and performance calculation for rooftop solar PV, thermal collectors, and renewables."
       },
       "category": "core",
-      "icon": "Zap"
+      "icon": "Zap",
+      "group": "systems",
+      "stages": [
+        "design",
+        "existing"
+      ]
     },
     {
       "id": 8,
@@ -102,7 +136,12 @@
         "en": "Optimal sizing and selection of heating, cooling, and mechanical ventilation systems engineered for specific regional microclimates."
       },
       "category": "core",
-      "icon": "Wind"
+      "icon": "Wind",
+      "group": "systems",
+      "stages": [
+        "design",
+        "construction"
+      ]
     },
     {
       "id": 9,
@@ -115,7 +154,13 @@
         "en": "Design and architectural integration of smart Building Management Systems (BMS) for centralized load monitoring and demand reduction."
       },
       "category": "core",
-      "icon": "Cpu"
+      "icon": "Cpu",
+      "group": "systems",
+      "stages": [
+        "design",
+        "construction",
+        "existing"
+      ]
     },
     {
       "id": 10,
@@ -128,7 +173,12 @@
         "en": "Computational analysis of temperature stratification, humidity, indoor air quality (IAQ), air changes, and occupant comfort metrics (PMV/PPD)."
       },
       "category": "core",
-      "icon": "Thermometer"
+      "icon": "Thermometer",
+      "group": "analysis",
+      "stages": [
+        "design",
+        "existing"
+      ]
     },
     {
       "id": 11,
@@ -141,7 +191,12 @@
         "en": "Water demand reduction strategies, on-site greywater treatment and reclamation, rainwater harvesting cisterns, and water-efficient landscaping."
       },
       "category": "core",
-      "icon": "Droplets"
+      "icon": "Droplets",
+      "group": "systems",
+      "stages": [
+        "design",
+        "existing"
+      ]
     },
     {
       "id": 12,
@@ -154,7 +209,12 @@
         "en": "Technical documentation and rigorous compliance assessment support for Iranian Code Part 19, Sarv-e-Sabz rating, LEED, BREEAM, EDGE, and WELL."
       },
       "category": "specialist",
-      "icon": "Award"
+      "icon": "Award",
+      "group": "strategy",
+      "stages": [
+        "design",
+        "construction"
+      ]
     },
     {
       "id": 13,
@@ -167,7 +227,12 @@
         "en": "Sound transmission class (STC) evaluation, airborne/impact acoustic insulation detailing, and acoustic compliance under lead specialist Eng. Somayeh Aminineshab."
       },
       "category": "specialist",
-      "icon": "Volume2"
+      "icon": "Volume2",
+      "group": "analysis",
+      "stages": [
+        "design",
+        "existing"
+      ]
     }
   ],
   "educationalPrograms": [
@@ -316,6 +381,87 @@
           "en": "Procedure for securing Sarv green certification in design & execution"
         }
       ]
+    }
+  ],
+  "stages": [
+    {
+      "id": "concept",
+      "name": {
+        "fa": "ایده و طراحی اولیه",
+        "en": "Concept & early design"
+      },
+      "hint": {
+        "fa": "فرم و جانمایی هنوز قطعی نشده",
+        "en": "Form and layout are still open"
+      }
+    },
+    {
+      "id": "design",
+      "name": {
+        "fa": "طراحی تفصیلی و مدارک",
+        "en": "Detailed design & documents"
+      },
+      "hint": {
+        "fa": "نقشه‌ها و مدارک در حال تکمیل است",
+        "en": "Drawings and documents are being finalised"
+      }
+    },
+    {
+      "id": "construction",
+      "name": {
+        "fa": "ساخت و اجرا",
+        "en": "Construction"
+      },
+      "hint": {
+        "fa": "پروژه در حال ساخت است",
+        "en": "The project is under construction"
+      }
+    },
+    {
+      "id": "existing",
+      "name": {
+        "fa": "ساختمان موجود",
+        "en": "Existing building"
+      },
+      "hint": {
+        "fa": "ساخته شده و می‌خواهید بهینه شود",
+        "en": "Built and ready to be optimised"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "strategy",
+      "name": {
+        "fa": "مطالعه، راهبرد و انطباق",
+        "en": "Strategy & compliance"
+      },
+      "description": {
+        "fa": "مسیر پایداری پروژه را مشخص می‌کنیم و انطباق آن با ضوابط را مستند می‌کنیم.",
+        "en": "We define the sustainability path of the project and document its compliance."
+      }
+    },
+    {
+      "id": "analysis",
+      "name": {
+        "fa": "شبیه‌سازی و تحلیل عملکرد",
+        "en": "Simulation & performance analysis"
+      },
+      "description": {
+        "fa": "عملکرد ساختمان را با مدل‌سازی دقیق می‌سنجیم؛ پیش از ساخت یا در وضع موجود.",
+        "en": "We measure building performance with detailed modelling, before construction or as built."
+      }
+    },
+    {
+      "id": "systems",
+      "name": {
+        "fa": "پوسته و سیستم‌های ساختمان",
+        "en": "Envelope & building systems"
+      },
+      "description": {
+        "fa": "برای پوسته، تأسیسات، انرژی و آب بهترین راهکار فنی را طراحی و انتخاب می‌کنیم.",
+        "en": "We design and select the best technical solution for envelope, MEP, energy and water."
+      }
     }
   ]
 }

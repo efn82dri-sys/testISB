@@ -31,7 +31,11 @@
     "ctaExplore": "Explore Our World",
     "ctaProjects": "Selected Projects",
     "scrollHint": "Scroll to navigate",
-    "founded": "Est. 2020 • Mashhad"
+    "founded": "Est. 2020 • Mashhad",
+    "teamTitle": "The team building a sustainable future",
+    "ctaTeam": "Meet the team",
+    "ctaEnter": "Enter the sustainable district",
+    "peopleLabel": "specialists working together"
   },
   "about": {
     "sectionNum": "02",
@@ -123,7 +127,7 @@
     "sectionNum": "05",
     "title": "Our Services",
     "headline": "Integrated Building Science & Advisory",
-    "subtitle": "16 specialist domains spanning computational simulation, national code compliance, and professional education.",
+    "subtitle": "13 specialist domains in consulting, simulation and building-systems design; education and events in a separate tab",
     "categories": {
       "core": "Core Architecture & Energy",
       "specialist": "Specialist & Acoustics Advisory",
@@ -133,7 +137,25 @@
     "educationDesc": "Executive courses for practicing engineers, architects, and postgraduates led by certified national code instructors and senior energy specialists.",
     "expolabTitle": "EXPOLAB 404 Workshop",
     "expolabDesc": "Showcasing advanced acoustic and energy materials with certified manufacturers and interactive laboratory sessions.",
-    "consultantNote": "Affiliated specialist consultants in building physics, thermal envelopes, daylighting, and architectural acoustics."
+    "consultantNote": "Affiliated specialist consultants in building physics, thermal envelopes, daylighting, and architectural acoustics.",
+    "finderTitle": "Which stage is your project at?",
+    "finderHint": "Pick a stage to highlight the services that fit",
+    "all": "All services",
+    "relevant": "relevant services",
+    "of": "of",
+    "suitableFor": "Fits these stages",
+    "close": "Close",
+    "domain": "Domain",
+    "ctaTitle": "Where should we start?",
+    "ctaText": "Describe your project and we will suggest the most suitable services.",
+    "ctaButton": "Request a consultation",
+    "tabServices": "Engineering services",
+    "tabEducation": "Education & events",
+    "hours": "Duration",
+    "audience": "Audience",
+    "instructors": "Instructors",
+    "syllabus": "Syllabus",
+    "acousticNote": "Partner acoustics consultant: Eng. Somayeh Aminineshab, BHRC acoustics researcher"
   },
   "team": {
     "sectionNum": "06",
@@ -145,7 +167,23 @@
     "credentialsTitle": "Verifiable Credentials",
     "certificateMehregan": "Golden Cedar (Sarv-e-Tala'i) Certificate — Mehregan Complex",
     "certificateDisclaimer": "This official certificate pertains strictly to the design phase and does not constitute verification of post-construction execution (Awarded June 1404 by the Road, Housing & Urban Development Research Center).",
-    "viewFullCert": "View Full Resolution Certificate"
+    "viewFullCert": "View Full Resolution Certificate",
+    "leadership": "Leadership",
+    "allDepartments": "All",
+    "profile": "View profile",
+    "expertise": "Areas of expertise",
+    "education": "Education",
+    "reach": "Get in touch",
+    "close": "Close",
+    "issuer": "Issued by",
+    "testimonialsTitle": "Client testimonials",
+    "ratingAvg": "Average rating",
+    "statPeople": "Team members",
+    "statCerts": "Verified credentials",
+    "statProjects": "Projects",
+    "statOffices": "Partner offices",
+    "teamTitle": "Our team",
+    "emptyDept": "No members listed in this section yet."
   },
   "contact": {
     "sectionNum": "07",

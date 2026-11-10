@@ -4,19 +4,20 @@
   'use strict';
   var BASE_IMG='assets/images';
   function get(u){
-    return fetch(u).then(function(r){ if(!r.ok) throw new Error(u+' → '+r.status); return r.json(); });
+    return fetch(u,{cache:'no-cache'}).then(function(r){ if(!r.ok) throw new Error(u+' → '+r.status); return r.json(); });
   }
   function pair(o){ return [o.fa,o.en]; }
 
   Promise.all([
     get('data/fa.json'),get('data/en.json'),get('data/projects.json'),get('data/services.json'),
-    get('data/team.json'),get('data/chapters.json'),get('data/guide.json'),get('data/town.json'),get('data/images.json')
+    get('data/team.json'),get('data/chapters.json'),get('data/guide.json'),get('data/town.json'),get('data/images.json'),get('data/credentials.json')
   ]).then(function(a){
-    var fa=a[0],en=a[1],projects=a[2],services=a[3],team=a[4],chapters=a[5],guide=a[6],town=a[7],images=a[8];
+    var fa=a[0],en=a[1],projects=a[2],services=a[3],team=a[4],chapters=a[5],guide=a[6],town=a[7],images=a[8],credentials=a[9];
 
     /* --- داده‌های اصلی (D) --- */
-    window.D={projects:projects,services:services.services,educationalPrograms:services.educationalPrograms,
-              teamMembers:team.teamMembers,translations:{fa:fa,en:en}};
+    window.D={projects:projects,services:services.services,serviceGroups:services.groups,serviceStages:services.stages,educationalPrograms:services.educationalPrograms,
+              teamMembers:team.teamMembers,departments:team.departments,translations:{fa:fa,en:en}};
+    window.CRED=credentials;
     window.OFF=team.partnerOffices.map(pair);
 
     /* --- تصاویر: کلید = مسیر داخل پروژه، مقدار = آدرس فایل --- */
