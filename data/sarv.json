@@ -1,0 +1,160 @@
+{
+  "categories": [
+    {
+      "id": "water",
+      "name": {
+        "fa": "بهره‌وری آب",
+        "en": "Water Efficiency"
+      },
+      "weight": 24,
+      "services": [
+        11
+      ]
+    },
+    {
+      "id": "energy",
+      "name": {
+        "fa": "انرژی",
+        "en": "Energy Performance"
+      },
+      "weight": 23,
+      "services": [
+        3,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "indoor",
+      "name": {
+        "fa": "کیفیت محیط داخل",
+        "en": "Indoor Environmental Quality"
+      },
+      "weight": 18,
+      "services": [
+        10,
+        4,
+        13
+      ]
+    },
+    {
+      "id": "materials",
+      "name": {
+        "fa": "مصالح و منابع",
+        "en": "Materials & Resources"
+      },
+      "weight": 13,
+      "services": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "management",
+      "name": {
+        "fa": "مدیریت",
+        "en": "Project Management"
+      },
+      "weight": 8,
+      "services": [
+        1,
+        12
+      ]
+    },
+    {
+      "id": "waste",
+      "name": {
+        "fa": "پسماند",
+        "en": "Waste Management"
+      },
+      "weight": 8,
+      "services": [
+        1,
+        6
+      ]
+    },
+    {
+      "id": "site",
+      "name": {
+        "fa": "سایت",
+        "en": "Site Ecology"
+      },
+      "weight": 6,
+      "services": [
+        1,
+        12
+      ]
+    },
+    {
+      "id": "outdoor",
+      "name": {
+        "fa": "کیفیت محیط خارج",
+        "en": "Outdoor Environmental Quality"
+      },
+      "weight": 6,
+      "services": [
+        10,
+        1
+      ]
+    }
+  ],
+  "strategies": [
+    {
+      "id": "envelope",
+      "services": [
+        5,
+        3,
+        6
+      ]
+    },
+    {
+      "id": "daylight",
+      "services": [
+        4,
+        2,
+        10
+      ]
+    },
+    {
+      "id": "ventilation",
+      "services": [
+        8,
+        10,
+        2
+      ]
+    },
+    {
+      "id": "renewable",
+      "services": [
+        7,
+        3
+      ]
+    },
+    {
+      "id": "water",
+      "services": [
+        11
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "id": "green",
+      "min": 80,
+      "strict": true
+    },
+    {
+      "id": "gold",
+      "min": 60
+    },
+    {
+      "id": "silver",
+      "min": 50
+    },
+    {
+      "id": "turquoise",
+      "min": 40
+    }
+  ]
+}

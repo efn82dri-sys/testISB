@@ -1,0 +1,78 @@
+/* دستیار سه‌بعدی ISB و پنجرهٔ مشاورهٔ آنلاین (حباب گفتار، دکمه، فرم تیکت). */
+#isb-hud{display:none!important}
+#isb-mascot{position:fixed;z-index:9;left:var(--ml,28px);bottom:48px;width:var(--mw,110px);height:var(--mh,200px);pointer-events:none;direction:ltr}
+:root{--ml:clamp(14px,3vw,52px);--mw:110px;--mh:200px}
+#isb-mascot .mc-stage{position:absolute;left:0;top:0;width:256px;height:464px;transform-origin:0 0;perspective:900px;pointer-events:none}
+#isb-mascot .mc-glow{position:absolute;left:-30px;top:40px;width:316px;height:380px;border-radius:50%;background:radial-gradient(closest-side,rgba(170,215,255,.34),rgba(110,190,255,.12) 55%,transparent 75%);opacity:.55;transition:opacity .4s}
+#isb-mascot.hit .mc-glow{opacity:1}
+#isb-mascot .mc-shadow{position:absolute;left:14px;top:440px;width:228px;height:30px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.5),rgba(0,0,0,0));transform-origin:50% 50%}
+#isb-mascot .mc-fig{position:absolute;inset:0;transform-origin:50% 100%;filter:drop-shadow(0 0 1.2px rgba(255,255,255,.7)) drop-shadow(0 12px 14px rgba(0,0,0,.32));will-change:transform}
+#isb-mascot img{display:block;position:absolute;pointer-events:none;user-select:none;-webkit-user-drag:none}
+#isb-mascot .mc-head{position:absolute;transform-origin:81px 174px;will-change:transform}
+#isb-mascot .mc-head svg{position:absolute;inset:0;overflow:visible}
+#isb-mascot .spk{position:absolute;font-size:17px;line-height:1;color:#ffd46b;text-shadow:0 0 8px rgba(255,212,107,.9);opacity:0;pointer-events:none}
+#isb-mascot .spk:nth-child(odd){color:#8ee6ff;text-shadow:0 0 8px rgba(142,230,255,.9)}
+#isb-mascot.hit{cursor:pointer}
+#isb-mascot-btn{position:fixed;z-index:10;left:calc(var(--ml) + var(--mw)/2);transform:translateX(-50%);bottom:14px;white-space:nowrap;display:flex;align-items:center;gap:9px;padding:9px 16px 9px 13px;border-radius:999px;border:1px solid rgba(158,201,255,.35);background:linear-gradient(145deg,rgba(5,23,57,.9),rgba(12,50,104,.78));backdrop-filter:blur(14px);color:#eaf3ff;font:700 12.5px/1.6 Kalameh,system-ui,sans-serif;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.28);transition:transform .25s,border-color .25s,box-shadow .25s;direction:rtl}
+html[lang=en] #isb-mascot-btn{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;direction:ltr}
+#isb-mascot-btn:hover,#isb-mascot-btn:focus-visible{transform:translateX(-50%) translateY(-2px);border-color:#f4c65e;box-shadow:0 12px 34px rgba(244,198,94,.22);outline:none}
+#isb-mascot-btn i{position:relative;width:9px;height:9px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 0 rgba(61,220,132,.6);animation:isbPulse 2s infinite}
+@keyframes isbPulse{0%{box-shadow:0 0 0 0 rgba(61,220,132,.55)}70%{box-shadow:0 0 0 9px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+#isb-bubble{position:fixed;z-index:11;left:calc(var(--ml) + var(--mw) + 6px);bottom:calc(48px + var(--mh)*.58);max-width:min(270px,64vw);padding:13px 15px 12px;border-radius:16px 16px 16px 4px;background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(228,238,255,.94));color:#0b2250;font:600 13px/1.9 Kalameh,system-ui,sans-serif;box-shadow:0 18px 50px rgba(0,0,0,.28);opacity:0;transform:translateY(10px) scale(.94);transform-origin:bottom left;pointer-events:none;transition:opacity .35s,transform .45s cubic-bezier(.2,1.4,.4,1);direction:rtl;text-align:right}
+html[lang=en] #isb-bubble{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;direction:ltr;text-align:left}
+#isb-bubble.on{opacity:1;transform:none;pointer-events:auto}
+#isb-bubble b{display:block;color:#1f8a4c;font-size:11px;letter-spacing:.04em;margin-bottom:2px}
+#isb-bubble .acts{display:flex;gap:7px;margin-top:9px;flex-wrap:wrap}
+#isb-bubble button{font:700 11.5px/1 Kalameh,system-ui,sans-serif;padding:8px 13px;border-radius:999px;border:0;cursor:pointer}
+#isb-bubble .go{background:linear-gradient(110deg,#e9b84e,#ffda7d);color:#08234c}
+#isb-bubble .no{background:rgba(11,34,80,.08);color:#27427c}
+#isb-bubble .x{position:absolute;top:5px;inset-inline-end:8px;background:none;color:#7c8fb5;font-size:15px;padding:2px 4px}
+#isb-panel{position:fixed;z-index:12;left:calc(var(--ml) + var(--mw) + 18px);bottom:22px;width:min(370px,calc(100vw - 28px));max-height:min(640px,calc(100vh - 44px));overflow:auto;border-radius:20px;border:1px solid rgba(158,201,255,.28);background:linear-gradient(160deg,rgba(6,25,62,.97),rgba(10,45,98,.95));backdrop-filter:blur(20px);box-shadow:0 30px 80px rgba(0,0,0,.45);color:#eaf3ff;opacity:0;visibility:hidden;transform:translateY(18px) scale(.97);transform-origin:bottom left;transition:opacity .3s,transform .4s cubic-bezier(.2,1.2,.4,1),visibility .3s;direction:rtl;font:400 13px/1.8 Kalameh,system-ui,sans-serif}
+html[lang=en] #isb-panel{direction:ltr;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+#isb-panel.on{opacity:1;visibility:visible;transform:none}
+#isb-panel header{display:flex;align-items:center;gap:11px;padding:16px 18px 13px;border-bottom:1px solid rgba(158,201,255,.14);position:sticky;top:0;background:rgba(6,25,62,.96);z-index:2}
+#isb-panel header .av{width:40px;height:40px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#fff,#dbe6f7);display:grid;place-items:center;border:2px solid #223981}
+#isb-panel header .av svg{width:20px;height:24px}
+#isb-panel header h4{margin:0;font-size:14px;font-weight:700;line-height:1.5}
+#isb-panel header small{display:flex;align-items:center;gap:6px;color:#9fe3b8;font-size:11px}
+#isb-panel header small i{width:7px;height:7px;border-radius:50%;background:#3ddc84}
+#isb-panel header .cl{margin-inline-start:auto;background:none;border:0;color:#9fb5d8;font-size:22px;cursor:pointer;line-height:1;padding:4px 6px}
+#isb-panel .bd{padding:15px 18px 18px}
+#isb-panel .msg{background:rgba(255,255,255,.08);border-radius:14px 14px 14px 4px;padding:10px 13px;font-size:12.5px;color:#dbe8ff}
+html[dir=rtl] #isb-panel .msg{border-radius:14px 14px 4px 14px}
+#isb-panel .chips{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 4px}
+#isb-panel .chips button{font:600 11.5px/1 Kalameh,system-ui,sans-serif;padding:8px 12px;border-radius:999px;border:1px solid rgba(158,201,255,.3);background:rgba(111,171,255,.07);color:#cfe0ff;cursor:pointer;transition:.2s}
+#isb-panel .chips button.on,#isb-panel .chips button:hover{border-color:#f4c65e;background:rgba(244,198,94,.14);color:#ffe3a1}
+#isb-panel label{display:block;text-align:start;width:100%;margin-top:11px;font-size:11px;color:#9fb5d8;font-weight:700}
+#isb-panel input,#isb-panel textarea{width:100%;margin-top:4px;padding:10px 12px;border-radius:11px;border:1px solid rgba(158,201,255,.25);background:rgba(3,15,40,.55);color:#fff;font:400 13px/1.7 Kalameh,system-ui,sans-serif;outline:none;transition:border-color .2s;box-sizing:border-box;direction:inherit}
+#isb-panel input:focus,#isb-panel textarea:focus{border-color:#f4c65e}
+#isb-panel textarea{min-height:84px;resize:vertical}
+#isb-panel .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#isb-panel .send{width:100%;margin-top:15px;padding:12px;border:0;border-radius:12px;background:linear-gradient(110deg,#e9b84e,#ffda7d);color:#08234c;font:800 13.5px/1 Kalameh,system-ui,sans-serif;cursor:pointer;box-shadow:0 8px 26px rgba(237,185,71,.22);transition:transform .2s}
+#isb-panel .send:hover{transform:translateY(-1px)}
+#isb-panel .send[disabled]{opacity:.6;cursor:wait}
+#isb-panel .err{color:#ffb4a8;font-size:11.5px;margin-top:8px;min-height:1px}
+#isb-panel .ok{text-align:center;padding:10px 4px 4px}
+#isb-panel .ok .tk{display:inline-block;margin:10px 0 6px;padding:9px 18px;border-radius:12px;border:1px dashed #f4c65e;color:#ffe3a1;font:700 15px/1 ui-monospace,monospace;letter-spacing:.1em;direction:ltr}
+#isb-panel .ok p{margin:6px 0;color:#c9dbf8}
+#isb-panel .ok .sec{margin-top:12px;background:rgba(111,171,255,.12);border:1px solid rgba(158,201,255,.3);color:#dbe8ff;padding:9px 14px;border-radius:10px;font:600 12px/1 Kalameh,system-ui,sans-serif;cursor:pointer;text-decoration:none;display:inline-block}
+#isb-panel [hidden]{display:none!important}
+#isb-panel .hp{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:900px){#isb-panel{left:12px;bottom:58px;max-height:calc(100vh - 80px)}}
+@media(max-width:640px){
+  #isb-mascot{bottom:46px}
+ #isb-mascot-btn{padding:8px 13px 8px 11px;font-size:11.5px}
+ #isb-bubble{left:calc(var(--ml) + var(--mw) - 6px);bottom:calc(46px + var(--mh)*.55);max-width:calc(100vw - 120px);font-size:12px}
+ #isb-panel{left:10px;right:10px;width:auto}
+ #isb-panel .row{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){#isb-mascot-btn i{animation:none}}
+/* ===== راهنمای کاراکتر (Guide) ===== */
+#isb-bubble::after{content:"";position:absolute;left:-6px;bottom:26px;width:14px;height:14px;background:#eaf2ff;transform:rotate(45deg);border-radius:0 0 0 4px}
+#isb-bubble .gw{opacity:0;transition:opacity .34s ease}
+#isb-bubble .gw.gv{opacity:1}
+#isb-bubble.gs b{color:#2f5fd0}
+#isb-bubble .acts[hidden]{display:none}
+@media(min-width:641px){#isb-bubble{max-width:min(292px,64vw)}}
+@media(prefers-reduced-motion:reduce){#isb-bubble .gw{transition:none}}
+@media(max-width:640px){#isb-bubble{bottom:calc(46px + var(--mh)*.4)}}

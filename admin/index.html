@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>پنل مدیریت ISB</title>
+<link rel="stylesheet" href="../css/fonts.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div id="app" class="app" hidden>
+  <header class="top">
+    <b class="brand">پنل مدیریت ISB</b>
+    <nav id="tabs" class="tabs"></nav>
+    <div class="top-actions">
+      <button id="btnBackups" class="btn ghost" type="button">نسخه‌های قبلی</button>
+      <button id="btnSave" class="btn primary" type="button" disabled>ذخیره و انتشار</button>
+      <button id="btnLogout" class="btn ghost" type="button">خروج</button>
+    </div>
+  </header>
+  <main class="main">
+    <p id="help" class="help"></p>
+    <div class="bar"><button id="btnAdd" class="btn primary" type="button"></button><span id="count" class="muted"></span></div>
+    <div id="list" class="list"></div>
+  </main>
+</div>
+
+<section id="login" class="login" hidden>
+  <form id="loginForm" class="card" autocomplete="off">
+    <h1>ورود به پنل مدیریت</h1>
+    <label for="pw">رمز عبور</label>
+    <input id="pw" type="password" autocomplete="current-password" required>
+    <p id="loginErr" class="err" role="alert"></p>
+    <button class="btn primary wide" type="submit">ورود</button>
+  </form>
+</section>
+
+<section id="needSetup" class="login" hidden>
+  <div class="card">
+    <h1>رمز هنوز تنظیم نشده</h1>
+    <p>برای اولین بار باید رمز ادمین را تعیین کنید.</p>
+    <a class="btn primary wide" href="setup.php">تنظیم رمز</a>
+  </div>
+</section>
+
+<div id="modal" class="modal" hidden>
+  <div class="sheet" role="dialog" aria-modal="true">
+    <div class="sheet-head"><b id="modalTitle"></b><button id="modalClose" class="btn ghost" type="button" aria-label="بستن">✕</button></div>
+    <div id="modalBody" class="sheet-body"></div>
+    <div class="sheet-foot"><button id="modalOk" class="btn primary" type="button">تأیید</button><button id="modalCancel" class="btn ghost" type="button">انصراف</button></div>
+  </div>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="admin.js"></script>
+</body>
+</html>

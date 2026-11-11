@@ -1,0 +1,418 @@
+[
+  {
+    "name": {
+      "fa": "ساختمان سبز",
+      "en": "Green Building"
+    },
+    "headline": {
+      "fa": "از اقلیم تا طرح؛ ساختمانی که از ابتدا پایدار فکر می‌کند",
+      "en": "From climate to design: a building that thinks sustainably from day one"
+    },
+    "description": {
+      "fa": "تحلیل اقلیمی، راهکارهای طراحی پایدار و کاهش اثرات زیست‌محیطی؛ هر تصمیم روی شبیه‌سازی و داده بنا می‌شود.",
+      "en": "Climate analysis, sustainable design strategies and lower environmental impact; every decision rests on simulation and data."
+    },
+    "chips": {
+      "fa": [
+        "تحلیل اقلیمی",
+        "مبحث ۱۹",
+        "سرو سبز",
+        "بام سبز"
+      ],
+      "en": [
+        "Climate analysis",
+        "Part 19",
+        "Sarv Sabz",
+        "Green roof"
+      ]
+    },
+    "metric": {
+      "value": 8,
+      "decimals": 0,
+      "suffix": "",
+      "label": {
+        "fa": "حوزهٔ ارزیابی سرو سبز",
+        "en": "Sarv Sabz domains"
+      }
+    },
+    "specs": [
+      {
+        "label": {
+          "fa": "گواهی",
+          "en": "Certificate"
+        },
+        "value": {
+          "fa": "سرو طلایی (طراحی، مهرگان)",
+          "en": "Sarv Tala (design, Mehregan)"
+        }
+      },
+      {
+        "label": {
+          "fa": "رده انرژی",
+          "en": "Energy class"
+        },
+        "value": {
+          "fa": "EC++",
+          "en": "EC++"
+        }
+      },
+      {
+        "label": {
+          "fa": "پنجره",
+          "en": "Window U-value"
+        },
+        "value": {
+          "fa": "۱٫۸ W/m²K",
+          "en": "1.8 W/m²K"
+        }
+      }
+    ]
+  },
+  {
+    "name": {
+      "fa": "انرژی",
+      "en": "Energy"
+    },
+    "headline": {
+      "fa": "از مشاورهٔ انرژی تا انرژی‌های تجدیدپذیر",
+      "en": "From energy consulting to renewables"
+    },
+    "description": {
+      "fa": "شبیه‌سازی، تحلیل پوسته و تعیین رده انرژی، در کنار امکان‌سنجی و جانمایی سامانه‌های خورشیدی و بادی.",
+      "en": "Simulation, envelope analysis and energy-class rating, plus feasibility and siting of solar and wind systems."
+    },
+    "chips": {
+      "fa": [
+        "شبیه‌سازی انرژی",
+        "رده EC تا ECZn",
+        "فتوولتائیک",
+        "آبگرمکن خورشیدی"
+      ],
+      "en": [
+        "Energy simulation",
+        "EC to ECZn class",
+        "Photovoltaics",
+        "Solar water heating"
+      ]
+    },
+    "metric": {
+      "value": 29.76,
+      "decimals": 2,
+      "suffix": "%",
+      "label": {
+        "fa": "پوشش آبگرمکن خورشیدی (مهرگان)",
+        "en": "Solar water heating coverage (Mehregan)"
+      }
+    },
+    "specs": [
+      {
+        "label": {
+          "fa": "فتوولتائیک",
+          "en": "Photovoltaics"
+        },
+        "value": {
+          "fa": "۱۱٬۰۷۶ kWh در سال",
+          "en": "11,076 kWh/yr"
+        }
+      },
+      {
+        "label": {
+          "fa": "آبگرمکن خورشیدی",
+          "en": "Solar water heater"
+        },
+        "value": {
+          "fa": "۱۳٬۹۶۵ kWh",
+          "en": "13,965 kWh"
+        }
+      },
+      {
+        "label": {
+          "fa": "کاهش نیاز سرمایش / گرمایش",
+          "en": "Cooling / heating demand"
+        },
+        "value": {
+          "fa": "تا ۲۰٪ / تا ۴۰٪",
+          "en": "up to 20% / 40%"
+        }
+      }
+    ]
+  },
+  {
+    "name": {
+      "fa": "بهره‌وری آب",
+      "en": "Water Efficiency"
+    },
+    "headline": {
+      "fa": "از مصرف کمتر تا چرخهٔ بستهٔ آب",
+      "en": "From lower demand to a closed water loop"
+    },
+    "description": {
+      "fa": "کاهش مصرف در داخل ساختمان، استفادهٔ مجدد آب خاکستری و جمع‌آوری آب باران برای منظر بیرونی.",
+      "en": "Lower indoor demand, greywater reuse and rainwater harvesting for the outdoor landscape."
+    },
+    "chips": {
+      "fa": [
+        "وسایل کم‌مصرف",
+        "آب خاکستری",
+        "آب باران",
+        "آبیاری منظر"
+      ],
+      "en": [
+        "Efficient fixtures",
+        "Greywater",
+        "Rainwater",
+        "Landscape irrigation"
+      ]
+    },
+    "metric": {
+      "value": 24,
+      "decimals": 0,
+      "suffix": "%",
+      "label": {
+        "fa": "بیشترین وزن در سرو سبز",
+        "en": "Heaviest Sarv Sabz weight"
+      }
+    },
+    "specs": [
+      {
+        "label": {
+          "fa": "وزن در سرو سبز",
+          "en": "Sarv Sabz weight"
+        },
+        "value": {
+          "fa": "۲۴٪",
+          "en": "24%"
+        }
+      },
+      {
+        "label": {
+          "fa": "داخل ساختمان",
+          "en": "Indoors"
+        },
+        "value": {
+          "fa": "وسایل کم‌مصرف · آب خاکستری",
+          "en": "Efficient fixtures · greywater"
+        }
+      },
+      {
+        "label": {
+          "fa": "فضای بیرون",
+          "en": "Outdoors"
+        },
+        "value": {
+          "fa": "آب باران · آبیاری منظر",
+          "en": "Rainwater · irrigation"
+        }
+      }
+    ]
+  },
+  {
+    "name": {
+      "fa": "مصالح و منابع",
+      "en": "Materials & Resources"
+    },
+    "headline": {
+      "fa": "عایق مناسب، در جای درست",
+      "en": "The right insulation in the right place"
+    },
+    "description": {
+      "fa": "انتخاب و ارزیابی عایق‌ها: پلی‌استایرن منبسط و اکسترود، پشم سنگ، پلی‌یورتان و ملات حرارتی.",
+      "en": "Selecting and assessing insulation: EPS, XPS, rock wool, polyurethane and thermal mortar."
+    },
+    "chips": {
+      "fa": [
+        "EPS",
+        "XPS",
+        "پشم سنگ",
+        "پلی‌یورتان",
+        "ملات حرارتی"
+      ],
+      "en": [
+        "EPS",
+        "XPS",
+        "Rock wool",
+        "Polyurethane",
+        "Thermal mortar"
+      ]
+    },
+    "metric": {
+      "value": 18.2,
+      "decimals": 1,
+      "suffix": "%",
+      "label": {
+        "fa": "کاهش بار کل با ملات ۳ سانتی‌متر (فرهنگ)",
+        "en": "Total load cut, 3 cm mortar (Farhang)"
+      }
+    },
+    "specs": [
+      {
+        "label": {
+          "fa": "ملات عایق ۲ سانتی‌متر",
+          "en": "2 cm insulating mortar"
+        },
+        "value": {
+          "fa": "۱۵٫۸٪ کاهش بار کل",
+          "en": "15.8% lower total load"
+        }
+      },
+      {
+        "label": {
+          "fa": "ملات عایق ۳ سانتی‌متر",
+          "en": "3 cm insulating mortar"
+        },
+        "value": {
+          "fa": "۱۸٫۲٪ کاهش بار کل",
+          "en": "18.2% lower total load"
+        }
+      },
+      {
+        "label": {
+          "fa": "مقاومت حرارتی بام (مهرگان)",
+          "en": "Roof R-value (Mehregan)"
+        },
+        "value": {
+          "fa": "۳٫۶۷۷ m²·K/W",
+          "en": "3.677 m²·K/W"
+        }
+      }
+    ]
+  },
+  {
+    "name": {
+      "fa": "مدیریت ساخت و BIM",
+      "en": "Construction Management & BIM"
+    },
+    "headline": {
+      "fa": "یک مدل، یک طراحی یکپارچه",
+      "en": "One model, one integrated design"
+    },
+    "description": {
+      "fa": "پشتیبانی از مدیریت ساخت و BIM تا معماری، انرژی و تأسیسات روی یک مدل هماهنگ شوند و تصمیم‌ها از طراحی تا اجرا قابل‌پیگیری بماند.",
+      "en": "Support for construction management and BIM so architecture, energy and MEP stay coordinated in one model, traceable from design to site."
+    },
+    "chips": {
+      "fa": [
+        "مدل یکپارچه",
+        "هماهنگی تأسیسات",
+        "کنترل تداخل",
+        "پیگیری اجرا"
+      ],
+      "en": [
+        "Unified model",
+        "MEP coordination",
+        "Clash control",
+        "Site tracking"
+      ]
+    },
+    "metric": {
+      "value": 1,
+      "decimals": 0,
+      "suffix": "",
+      "label": {
+        "fa": "مدل یکپارچه برای همهٔ رشته‌ها",
+        "en": "One model for every discipline"
+      }
+    },
+    "specs": [
+      {
+        "label": {
+          "fa": "مدل",
+          "en": "Model"
+        },
+        "value": {
+          "fa": "معماری · انرژی · تأسیسات",
+          "en": "Architecture · energy · MEP"
+        }
+      },
+      {
+        "label": {
+          "fa": "خروجی",
+          "en": "Output"
+        },
+        "value": {
+          "fa": "هماهنگی و پیگیری اجرا",
+          "en": "Coordination & site tracking"
+        }
+      },
+      {
+        "label": {
+          "fa": "خدمت ISB",
+          "en": "ISB service"
+        },
+        "value": {
+          "fa": "پشتیبانی تا طراحی یکپارچه",
+          "en": "Support to integrated design"
+        }
+      }
+    ]
+  },
+  {
+    "name": {
+      "fa": "پسماند",
+      "en": "Waste"
+    },
+    "headline": {
+      "fa": "از ضایعات تا چرخهٔ بازیافت",
+      "en": "From waste to a recycling loop"
+    },
+    "description": {
+      "fa": "مدیریت پسماند ساخت و بهره‌برداری: کاهش ضایعات، تفکیک در مبدأ و بازیافت.",
+      "en": "Construction and operation waste management: less waste, sorting at source and recycling."
+    },
+    "chips": {
+      "fa": [
+        "کاهش ضایعات",
+        "تفکیک در مبدأ",
+        "بازیافت",
+        "پسماند ساخت"
+      ],
+      "en": [
+        "Less waste",
+        "Sorting at source",
+        "Recycling",
+        "Construction waste"
+      ]
+    },
+    "metric": {
+      "value": 8,
+      "decimals": 0,
+      "suffix": "%",
+      "label": {
+        "fa": "وزن پسماند در سرو سبز",
+        "en": "Waste weight in Sarv Sabz"
+      }
+    },
+    "specs": [
+      {
+        "label": {
+          "fa": "وزن در سرو سبز",
+          "en": "Sarv Sabz weight"
+        },
+        "value": {
+          "fa": "۸٪",
+          "en": "8%"
+        }
+      },
+      {
+        "label": {
+          "fa": "محورها",
+          "en": "Focus"
+        },
+        "value": {
+          "fa": "کاهش · تفکیک · بازیافت",
+          "en": "Reduce · sort · recycle"
+        }
+      },
+      {
+        "label": {
+          "fa": "دامنه",
+          "en": "Scope"
+        },
+        "value": {
+          "fa": "ساخت و بهره‌برداری",
+          "en": "Construction & operation"
+        }
+      }
+    ]
+  }
+]

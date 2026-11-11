@@ -1,0 +1,376 @@
+{
+  "teamMembers": [
+    {
+      "id": "sara-atashi",
+      "name": {
+        "fa": "دکتر سارا آتشی گلستان",
+        "en": "Dr. Sara Atashi Golestan"
+      },
+      "role": {
+        "fa": "مدیرعامل و رئیس دپارتمان معماری و انرژی",
+        "en": "CEO & Head of Architecture & Energy Department"
+      },
+      "title": {
+        "fa": "پژوهشگر و مدرس معماری پایدار و مقررات ملی",
+        "en": "Researcher & Lecturer in Sustainable Architecture and Building Codes"
+      },
+      "bio": {
+        "fa": "پژوهشگر و مدرس معماری پایدار، مقررات ملی و بهینه‌سازی انرژی ساختمان؛ عضو شورای سیاست‌گذاری توسعه ساختمان سبز و پایدار مرکز تحقیقات راه، مسکن و شهرسازی.",
+        "en": "Senior researcher and national lecturer in sustainable architecture and building energy optimization; member of the Green & Sustainable Building Policy Council at the Road, Housing & Urban Development Research Center (BHRC)."
+      },
+      "photo": "/team/dr-sara-atashi.jpg",
+      "initials": "SA",
+      "isConsultant": false,
+      "level": "leader",
+      "department": "architecture-energy",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
+    },
+    {
+      "id": "elham-mehrdoust",
+      "name": {
+        "fa": "دکتر الهام مهردوست",
+        "en": "Dr. Elham Mehrdoust"
+      },
+      "role": {
+        "fa": "معمار و پژوهشگر ارشد",
+        "en": "Architect & Senior Researcher"
+      },
+      "title": {
+        "fa": "متخصص الگوهای معماری ایران و هویت اقلیمی",
+        "en": "Specialist in Iranian Architectural Identity & Typology"
+      },
+      "bio": {
+        "fa": "متخصص حوزه پژوهش‌های معماری، هویت و الگوهای معماری ایران و طراح پروژه‌های شاخص پایدار و صنعتی.",
+        "en": "Expert in Iranian architectural heritage, climate-responsive indigenous patterns, and lead architect of certified industrial and sustainable projects."
+      },
+      "initials": "EM",
+      "isConsultant": false,
+      "level": "member",
+      "department": "architecture-energy",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
+    },
+    {
+      "id": "hamid-erfanian",
+      "name": {
+        "fa": "مهندس حمید عرفانیان",
+        "en": "Eng. Hamid Erfanian"
+      },
+      "role": {
+        "fa": "معمار ارشد و متخصص ساختمان سبز",
+        "en": "Senior Architect & Green Building Specialist"
+      },
+      "title": {
+        "fa": "طراحی، تکنولوژی ساخت و ساختمان‌های پایدار",
+        "en": "Design, Construction Technology & Green Buildings"
+      },
+      "bio": {
+        "fa": "معمار ارشد و متخصص طراحی، تکنولوژی ساخت و ساختمان‌های سبز با سابقه حرفه‌ای برجسته در پروژه‌های داخلی و بین‌المللی.",
+        "en": "Distinguished senior architect specializing in advanced construction technologies, facade engineering, and green building standards across domestic and global practices."
+      },
+      "initials": "HE",
+      "isConsultant": false,
+      "level": "member",
+      "department": "architecture-energy",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
+    },
+    {
+      "id": "hamed-mosleh",
+      "name": {
+        "fa": "مهندس حامد مصلحی",
+        "en": "Eng. Hamed Mosleh"
+      },
+      "role": {
+        "fa": "مهندس ارشد تأسیسات و انرژی (MEP)",
+        "en": "Lead Mechanical & MEP Energy Engineer"
+      },
+      "title": {
+        "fa": "طراحی و بهینه‌سازی سیستم‌های مکانیکی و ممیزی انرژی",
+        "en": "HVAC Optimization & Whole-Building Energy Auditing"
+      },
+      "bio": {
+        "fa": "متخصص طراحی و بهینه‌سازی سیستم‌های مکانیکی و تأسیساتی ساختمان، ممیزی، شبیه‌سازی دیزاین‌بیلدر و مدرس دوره‌های تخصصی مبحث ۱۹.",
+        "en": "Specialist in mechanical system engineering, dynamic HVAC modeling, building energy audits, and certified instructor for DesignBuilder and Part 19 compliance."
+      },
+      "initials": "HM",
+      "isConsultant": false,
+      "level": "member",
+      "department": "architecture-energy",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
+    },
+    {
+      "id": "zahra-ramezani",
+      "name": {
+        "fa": "مهندس زهرا رمضانی",
+        "en": "Eng. Zahra Ramezani"
+      },
+      "role": {
+        "fa": "کارشناس ارشد علوم ساختمان",
+        "en": "MSc in Building Science & Energy Specialist"
+      },
+      "title": {
+        "fa": "شبیه‌سازی انرژی، نور روز و بهینه‌سازی پارامتریک",
+        "en": "Energy & Daylight Modeling, Parametric Environmental Optimization"
+      },
+      "bio": {
+        "fa": "متخصص شبیه‌سازی انرژی و نور روز، تحلیل عملکرد پوسته و نما، ارزیابی آسایش بصری و بهینه‌سازی پارامتریک عملکرد محیطی ساختمان.",
+        "en": "MSc in Building Science specializing in computational daylight modeling (DIALux/sDA), envelope thermodynamic analysis, and parametric performance optimization."
+      },
+      "initials": "ZR",
+      "isConsultant": false,
+      "level": "member",
+      "department": "architecture-energy",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
+    },
+    {
+      "id": "zahra-rasouli",
+      "name": {
+        "fa": "مهندس زهرا رسولی",
+        "en": "Eng. Zahra Rasouli"
+      },
+      "role": {
+        "fa": "معمار و کارشناس طراحی فنی",
+        "en": "Architect & Technical Detailer"
+      },
+      "title": {
+        "fa": "کارشناس معماری و مستندسازی فنی",
+        "en": "Architectural Design & Technical Documentation"
+      },
+      "bio": {
+        "fa": "کارشناس معماری با تمرکز بر جزئیات فنی نما، مدلسازی سه‌بعدی و هماهنگی نقشه‌های فاز دو در تعامل با تیم انرژی.",
+        "en": "Architect focused on detailed facade construction documents, 3D architectural modeling, and cross-disciplinary coordination with energy engineers."
+      },
+      "initials": "ZS",
+      "isConsultant": false,
+      "level": "member",
+      "department": "architecture-energy",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
+    },
+    {
+      "id": "arefeh-barki",
+      "name": {
+        "fa": "مهندس عارفه برکی",
+        "en": "Eng. Arefeh Barki"
+      },
+      "role": {
+        "fa": "مدیر روابط عمومی و توسعه بازار",
+        "en": "PR & Business Development Director"
+      },
+      "title": {
+        "fa": "روابط سازمانی، توسعه بازار و برندینگ پایدار",
+        "en": "Organizational Communication & Strategic Market Development"
+      },
+      "bio": {
+        "fa": "متخصص توسعه ارتباطات سازمانی، مدیریت روابط با کارفرمایان و شرکای تجاری، با تمرکز بر برندینگ، توسعه بازار و تعاملات حرفه‌ای در حوزه ساختمان.",
+        "en": "Specialist in corporate strategic communication, institutional partnerships, architectural branding, and market positioning for sustainable building technologies."
+      },
+      "initials": "AB",
+      "isConsultant": false,
+      "level": "member",
+      "department": "business-development",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
+    },
+    {
+      "id": "behrouz-kari",
+      "name": {
+        "fa": "دکتر بهروز کاری",
+        "en": "Dr. Behrouz Kari"
+      },
+      "role": {
+        "fa": "مشاور علمی انرژی ساختمان",
+        "en": "Scientific Advisor in Building Energy"
+      },
+      "title": {
+        "fa": "عضو هیئت علمی و رئیس بخش انرژی و نور مرکز تحقیقات راه، مسکن و شهرسازی",
+        "en": "Faculty Member & Head of Energy & Lighting Department at BHRC"
+      },
+      "bio": {
+        "fa": "عضو هیئت علمی و رئیس بخش انرژی و نور مرکز تحقیقات راه، مسکن و شهرسازی؛ متخصص برجسته بهینه‌سازی مصرف انرژی، عملکرد حرارتی پوسته و پنجره‌های ساختمانی.",
+        "en": "Distinguished faculty member and Head of the Energy and Lighting Department at BHRC (Ministry of Roads & Urban Development); national authority on building envelope physics and thermal standards."
+      },
+      "initials": "BK",
+      "isConsultant": true,
+      "level": "member",
+      "department": "scientific-advisors",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
+    },
+    {
+      "id": "somayeh-aminineshab",
+      "name": {
+        "fa": "مهندس سمیه امینی‌نسب",
+        "en": "Eng. Somayeh Aminineshab"
+      },
+      "role": {
+        "fa": "مشاور آکوستیک ساختمان",
+        "en": "Architectural Acoustics Consultant"
+      },
+      "title": {
+        "fa": "پژوهشگر گروه آکوستیک مرکز تحقیقات راه، مسکن و شهرسازی",
+        "en": "Acoustics Researcher at BHRC"
+      },
+      "bio": {
+        "fa": "پژوهشگر گروه آکوستیک مرکز تحقیقات راه، مسکن و شهرسازی؛ متخصص ارزیابی صدا، عایق‌بندی صوتی و الزامات آکوستیکی ساختمان.",
+        "en": "Senior acoustics researcher at the Road, Housing & Urban Development Research Center; leading expert in airborne and impact noise mitigation, reverberation, and Part 18 acoustic requirements."
+      },
+      "initials": "SA",
+      "isConsultant": true,
+      "level": "member",
+      "department": "scientific-advisors",
+      "expertise": {
+        "fa": [],
+        "en": []
+      },
+      "education": {
+        "fa": "",
+        "en": ""
+      },
+      "linkedin": "",
+      "instagram": "",
+      "email": ""
+    }
+  ],
+  "partnerOffices": [
+    {
+      "fa": "دفتر معماری نوتاش نقش",
+      "en": "Notash Naghsh Architecture Office"
+    },
+    {
+      "fa": "دکتر الهام مهردوست",
+      "en": "Dr. Elham Mehrdoust"
+    },
+    {
+      "fa": "مهسا صداقت و همکاران",
+      "en": "Mahsa Sedaghat & Colleagues"
+    },
+    {
+      "fa": "گروه مشاور سروستان",
+      "en": "Sarvestan Consulting Group"
+    },
+    {
+      "fa": "زهرا رمضانی و همکاران",
+      "en": "Zahra Ramezani & Colleagues"
+    },
+    {
+      "fa": "گروه معماری چارسو",
+      "en": "Charsoo Architecture Group"
+    },
+    {
+      "fa": "مؤسسه مدیریت پایش ساختمان پایدار",
+      "en": "Sustainable Building Monitoring Institute"
+    },
+    {
+      "fa": "مؤسسه عمارت هشتم",
+      "en": "Hashtom Emarat Institute"
+    },
+    {
+      "fa": "مسکن شمال شرق",
+      "en": "Maskan Shomal-e-Sharq"
+    },
+    {
+      "fa": "گروه مشاور زیستاوین",
+      "en": "Zistavin Consulting Group"
+    }
+  ],
+  "departments": [
+    {
+      "id": "architecture-energy",
+      "name": {
+        "fa": "معماری و انرژی",
+        "en": "Architecture & Energy"
+      }
+    },
+    {
+      "id": "business-development",
+      "name": {
+        "fa": "روابط عمومی و توسعه بازار",
+        "en": "PR & Business Development"
+      }
+    },
+    {
+      "id": "scientific-advisors",
+      "name": {
+        "fa": "مشاوران علمی و تخصصی",
+        "en": "Scientific & Specialist Consultants"
+      }
+    }
+  ]
+}

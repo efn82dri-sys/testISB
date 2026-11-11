@@ -1,0 +1,467 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": {
+        "fa": "ساختمان سبز",
+        "en": "Green Building Consulting"
+      },
+      "description": {
+        "fa": "تحلیل اقلیمی، ارائه راهکارهای طراحی پایدار، کاهش اثرات زیست‌محیطی و ارتقای کیفیت عملکرد ساختمان از مرحله کانسپت تا بهره‌برداری.",
+        "en": "Bioclimatic analysis, sustainable architectural design strategies, environmental footprint reduction, and whole-life building performance optimization."
+      },
+      "category": "core",
+      "icon": "Leaf",
+      "group": "strategy",
+      "stages": [
+        "concept",
+        "design"
+      ]
+    },
+    {
+      "id": 2,
+      "title": {
+        "fa": "شبیه‌سازی عملکرد ساختمان",
+        "en": "Building Performance Simulation"
+      },
+      "description": {
+        "fa": "شبیه‌سازی دینامیک انرژی، آسایش حرارتی و بصری، تهویه طبیعی، جریان هوا و سایر شاخص‌های عملکردی با نرم‌افزارهای استاندارد جهانی.",
+        "en": "Dynamic energy modeling, seasonal thermal and visual comfort, natural ventilation airflow, and multi-domain building performance metrics."
+      },
+      "category": "core",
+      "icon": "Activity",
+      "group": "analysis",
+      "stages": [
+        "concept",
+        "design"
+      ]
+    },
+    {
+      "id": 3,
+      "title": {
+        "fa": "تحلیل انرژی ساختمان",
+        "en": "Building Energy Analysis"
+      },
+      "description": {
+        "fa": "بررسی دقیق مصرف انرژی و بارهای حرارتی و برودتی، مقایسه سناریوهای طراحی و ارائه گزینه بهینه فنی و اقتصادی.",
+        "en": "Detailed heating and cooling load profiling, life-cycle scenario comparison, and data-backed economic and thermal optimization."
+      },
+      "category": "core",
+      "icon": "BarChart3",
+      "group": "analysis",
+      "stages": [
+        "design",
+        "existing"
+      ]
+    },
+    {
+      "id": 4,
+      "title": {
+        "fa": "نور روز و روشنایی مصنوعی",
+        "en": "Daylight & Lighting Design"
+      },
+      "description": {
+        "fa": "ارزیابی تخصصی نور طبیعی، تحلیل خیرگی، شاخص‌های sDA و ASE، ارتقای آسایش بصری و طراحی سیستم‌های روشنایی مصنوعی با دیمرینگ هوشمند.",
+        "en": "Advanced natural daylight simulation, glare control (sDA/ASE), visual ergonomics, and smart daylight-harvesting artificial lighting."
+      },
+      "category": "core",
+      "icon": "Sun",
+      "group": "analysis",
+      "stages": [
+        "concept",
+        "design"
+      ]
+    },
+    {
+      "id": 5,
+      "title": {
+        "fa": "بهینه‌سازی نما و پوسته ساختمان",
+        "en": "Façade & Envelope Optimization"
+      },
+      "description": {
+        "fa": "طراحی و ارزیابی جداره‌های شفاف و کدر، عایق حرارتی، انتخاب پنجره‌های کارا، سایبان‌های زاویه‌دار و بهره‌گیری از فناوری‌های نوین نما.",
+        "en": "Optimization of opaque and fenestration assemblies, continuous thermal insulation, high-performance glazing, dynamic shading, and advanced facade tech."
+      },
+      "category": "core",
+      "icon": "Layers",
+      "group": "systems",
+      "stages": [
+        "concept",
+        "design"
+      ]
+    },
+    {
+      "id": 6,
+      "title": {
+        "fa": "ممیزی و بهینه‌سازی ساختمان",
+        "en": "Building Audit & Retrofit"
+      },
+      "description": {
+        "fa": "ارزیابی وضع موجود، شناسایی فرصت‌های صرفه‌جویی، مدلسازی کالیبره و ارائه راهکارهای اجرایی برای کاهش مصرف انرژی و کربن.",
+        "en": "On-site condition assessment, energy-conservation measure (ECM) identification, calibrated energy baselining, and practical deep retrofits."
+      },
+      "category": "core",
+      "icon": "Search",
+      "group": "strategy",
+      "stages": [
+        "existing"
+      ]
+    },
+    {
+      "id": 7,
+      "title": {
+        "fa": "انرژی‌های تجدیدپذیر",
+        "en": "Renewable Energy Systems"
+      },
+      "description": {
+        "fa": "امکان‌سنجی فنی و اقتصادی، جانمایی و ارزیابی عملکرد سامانه‌های فتوولتائیک خورشیدی، آبگرمکن خورشیدی و سایر منابع پاک.",
+        "en": "Techno-economic feasibility, architectural placement, and performance calculation for rooftop solar PV, thermal collectors, and renewables."
+      },
+      "category": "core",
+      "icon": "Zap",
+      "group": "systems",
+      "stages": [
+        "design",
+        "existing"
+      ]
+    },
+    {
+      "id": 8,
+      "title": {
+        "fa": "سیستم تأسیساتی و تهویه مطبوع",
+        "en": "HVAC & Mechanical Engineering"
+      },
+      "description": {
+        "fa": "طراحی و انتخاب سیستم‌های بهینه گرمایش، سرمایش و تهویه متناسب با کاربری، شرایط اقلیمی، مقیاس پروژه و استانداردهای مصرف انرژی.",
+        "en": "Optimal sizing and selection of heating, cooling, and mechanical ventilation systems engineered for specific regional microclimates."
+      },
+      "category": "core",
+      "icon": "Wind",
+      "group": "systems",
+      "stages": [
+        "design",
+        "construction"
+      ]
+    },
+    {
+      "id": 9,
+      "title": {
+        "fa": "هوشمندسازی ساختمان",
+        "en": "Building Automation & Controls"
+      },
+      "description": {
+        "fa": "طراحی و یکپارچه‌سازی سامانه‌های کنترل هوشمند (BMS) برای مدیریت بارهای انرژی، روشنایی، دما و تجهیزات مکانیکی.",
+        "en": "Design and architectural integration of smart Building Management Systems (BMS) for centralized load monitoring and demand reduction."
+      },
+      "category": "core",
+      "icon": "Cpu",
+      "group": "systems",
+      "stages": [
+        "design",
+        "construction",
+        "existing"
+      ]
+    },
+    {
+      "id": 10,
+      "title": {
+        "fa": "آسایش حرارتی و کیفیت محیط داخلی",
+        "en": "Thermal Comfort & IEQ"
+      },
+      "description": {
+        "fa": "تحلیل توزیع دما، رطوبت نسبی، کیفیت هوای تازه، نرخ تهویه و شرایط آسایش حرارتی کاربران در فضاهای داخلی بر پایه شاخص PMV/PPD.",
+        "en": "Computational analysis of temperature stratification, humidity, indoor air quality (IAQ), air changes, and occupant comfort metrics (PMV/PPD)."
+      },
+      "category": "core",
+      "icon": "Thermometer",
+      "group": "analysis",
+      "stages": [
+        "design",
+        "existing"
+      ]
+    },
+    {
+      "id": 11,
+      "title": {
+        "fa": "مدیریت پایدار آب",
+        "en": "Sustainable Water Management"
+      },
+      "description": {
+        "fa": "راهکارهای کاهش مصرف آب، تصفیه و استفاده مجدد از آب خاکستری، سیستم‌های جمع‌آوری آب باران و آبیاری هوشمند فضای سبز.",
+        "en": "Water demand reduction strategies, on-site greywater treatment and reclamation, rainwater harvesting cisterns, and water-efficient landscaping."
+      },
+      "category": "core",
+      "icon": "Droplets",
+      "group": "systems",
+      "stages": [
+        "design",
+        "existing"
+      ]
+    },
+    {
+      "id": 12,
+      "title": {
+        "fa": "گواهینامه‌ها و ضوابط ملی و بین‌المللی",
+        "en": "National & International Certification Support"
+      },
+      "description": {
+        "fa": "تهیه مستندات فنی و ارزیابی انطباق کامل با مبحث ۱۹ مقررات ملی ساختمان و استانداردهای پایداری سرو سبز، LEED، BREEAM، EDGE و WELL.",
+        "en": "Technical documentation and rigorous compliance assessment support for Iranian Code Part 19, Sarv-e-Sabz rating, LEED, BREEAM, EDGE, and WELL."
+      },
+      "category": "specialist",
+      "icon": "Award",
+      "group": "strategy",
+      "stages": [
+        "design",
+        "construction"
+      ]
+    },
+    {
+      "id": 13,
+      "title": {
+        "fa": "مشاوره آکوستیک ساختمان",
+        "en": "Architectural Acoustics Consulting"
+      },
+      "description": {
+        "fa": "ارزیابی تراز صدا، عایق‌بندی صوتی جداره‌ها، همجواری‌های صوتی و الزامات مبحث ۱۸ مقررات ملی توسط مشاور متخصص مرکز تحقیقات راه، مسکن و شهرسازی.",
+        "en": "Sound transmission class (STC) evaluation, airborne/impact acoustic insulation detailing, and acoustic compliance under lead specialist Eng. Somayeh Aminineshab."
+      },
+      "category": "specialist",
+      "icon": "Volume2",
+      "group": "analysis",
+      "stages": [
+        "design",
+        "existing"
+      ]
+    }
+  ],
+  "educationalPrograms": [
+    {
+      "id": "designbuilder",
+      "title": {
+        "fa": "دوره آموزشی دیزاین بیلدر با رویکرد مبحث ۱۹",
+        "en": "DesignBuilder Course with Part 19 Approach"
+      },
+      "hours": "25 ساعت آموزشی",
+      "audience": {
+        "fa": "مناسب مهندسین، کارشناسان انرژی و دانشجویان کارشناسی و کارشناسی ارشد",
+        "en": "For practicing engineers, energy consultants, and undergraduate/postgraduate students"
+      },
+      "instructors": {
+        "fa": "مدرسین: مهندس حامد مصلحی (مشاور و مدرس انرژی) و دکتر سارا آتشی گلستان (مدیرعامل و مدرس مبحث ۱۹)",
+        "en": "Instructors: Eng. Hamed Mosleh (Energy Consultant) & Dr. Sara Atashi Golestan (CEO & Part 19 Instructor)"
+      },
+      "syllabus": [
+        {
+          "fa": "آشنایی با شبیه‌سازی انرژی و محاسبات انرژی طبق مبحث ۱۹",
+          "en": "Building energy simulation principles and Part 19 formulas"
+        },
+        {
+          "fa": "استخراج الزامات مبحث نوزدهم برای پوسته حرارتی",
+          "en": "Thermal envelope code requirements and baseline extractions"
+        },
+        {
+          "fa": "محاسبه و کنترل U-Value در اجزای ساختمان",
+          "en": "Calculation and compliance verification of envelope U-values"
+        },
+        {
+          "fa": "ارزیابی انطباق طرح با ضوابط عایق‌کاری، بازشوها، سایبان‌ها و تهویه",
+          "en": "Compliance audit of insulation, fenestration, shading and airflow"
+        },
+        {
+          "fa": "تحلیل شاخص‌های کارایی انرژی مدل‌سازی هندسی و زون‌بندی حرارتی",
+          "en": "Energy efficiency indicators, geometrical modeling and thermal zoning"
+        },
+        {
+          "fa": "بارهای داخلی، الگوهای بهره‌برداری و روشنایی",
+          "en": "Internal load schedules, occupancy profiles, and lighting power density"
+        },
+        {
+          "fa": "تعریف و مدل‌سازی سیستم‌های HVAC",
+          "en": "Definition and detailed component modeling of HVAC systems"
+        },
+        {
+          "fa": "اجرای شبیه‌سازی و تحلیل نتایج انرژی",
+          "en": "Dynamic simulation execution and granular output parsing"
+        },
+        {
+          "fa": "انطباق مدل با مبحث ۱۹ و مقایسه حالت مبنا / پیشنهادی",
+          "en": "Part 19 baseline vs design model comparative validation"
+        },
+        {
+          "fa": "تهیه گزارش‌های حرفه‌ای انرژی",
+          "en": "Generation of certified professional energy reports"
+        }
+      ],
+      "image": "/education/designbuilder-course.jpg"
+    },
+    {
+      "id": "expolab",
+      "title": {
+        "fa": "رویداد و نمایشگاه تخصصی EXPOLAB 404",
+        "en": "EXPOLAB 404 Specialist Materials Showcase"
+      },
+      "hours": "رویداد و کارگاه تخصصی",
+      "audience": {
+        "fa": "معرفی مصالح نوین، کارا و پایدار در زمینه آکوستیک و انرژی",
+        "en": "Introduction of cutting-edge, high-efficiency sustainable materials for acoustics and energy"
+      },
+      "instructors": {
+        "fa": "با حضور شرکت‌های دارای گواهینامه فنی و اساتید مجرب",
+        "en": "Featuring certified technical-datasheet manufacturers and industry leaders"
+      },
+      "syllabus": [
+        {
+          "fa": "کارگاه آموزشی به همراه معرفی محصول و تست‌های کاربردی",
+          "en": "Hands-on practical workshop with physical product demonstration"
+        },
+        {
+          "fa": "بررسی مصالح عایق حرارتی نوین و ملات‌های سبک",
+          "en": "Next-generation thermal insulation materials and lightweight mortars"
+        },
+        {
+          "fa": "فناوری‌های مدرن کنترل صوت و عایق‌بندی آکوستیکی",
+          "en": "Contemporary architectural acoustic panels and barrier assemblies"
+        },
+        {
+          "fa": "بررسی گواهینامه‌های فنی مرکز تحقیقات راه، مسکن و شهرسازی",
+          "en": "Verification of BHRC technical certificates and laboratory compliance"
+        }
+      ],
+      "image": "/education/expolab404.jpg"
+    },
+    {
+      "id": "part19-general",
+      "title": {
+        "fa": "دوره تخصصی الزامات مبحث نوزدهم مقررات ملی ساختمان",
+        "en": "Specialist Course on Part 19 National Code Requirements"
+      },
+      "hours": "کارگاه فشرده",
+      "audience": {
+        "fa": "مهندسان طراح، ناظر و مجریان ساختمانی",
+        "en": "Design, supervisory, and structural construction engineers"
+      },
+      "syllabus": [
+        {
+          "fa": "تغییرات و به‌روزرسانی‌های ویرایش جدید مبحث ۱۹",
+          "en": "Latest updates in the revision of Iranian National Code Part 19"
+        },
+        {
+          "fa": "روش تجویزی، عملکردی و نیاز انرژی در طراحی پوسته",
+          "en": "Prescriptive vs performance-based envelope compliance pathways"
+        },
+        {
+          "fa": "رده‌بندی انرژی ساختمان‌ها (EC, EC+, EC++, ECzn)",
+          "en": "Building energy grading methodology (EC through ECzn)"
+        }
+      ]
+    },
+    {
+      "id": "green-building-workshop",
+      "title": {
+        "fa": "کارگاه تخصصی توسعه ساختمان سبز و سیستم رتبه‌بندی سرو سبز",
+        "en": "Green Building Development & Sarv-e-Sabz Rating Workshop"
+      },
+      "hours": "کارگاه تخصصی",
+      "audience": {
+        "fa": "معماران، سازندگان و سرمایه‌گذاران صنعت ساختمان",
+        "en": "Architects, real-estate developers, and project owners"
+      },
+      "syllabus": [
+        {
+          "fa": "آشنایی با ۸ حوزه ارزیابی استاندارد سرو سبز",
+          "en": "Comprehensive guide to the 8 domains of Sarv-e-Sabz"
+        },
+        {
+          "fa": "نقش جداره‌های سبز و بام پایدار در کاهش کربن",
+          "en": "Role of living facades and sedum roofs in carbon reduction"
+        },
+        {
+          "fa": "مراحل اخذ گواهی سرو در فاز طراحی و ساخت",
+          "en": "Procedure for securing Sarv green certification in design & execution"
+        }
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "id": "concept",
+      "name": {
+        "fa": "ایده و طراحی اولیه",
+        "en": "Concept & early design"
+      },
+      "hint": {
+        "fa": "فرم و جانمایی هنوز قطعی نشده",
+        "en": "Form and layout are still open"
+      }
+    },
+    {
+      "id": "design",
+      "name": {
+        "fa": "طراحی تفصیلی و مدارک",
+        "en": "Detailed design & documents"
+      },
+      "hint": {
+        "fa": "نقشه‌ها و مدارک در حال تکمیل است",
+        "en": "Drawings and documents are being finalised"
+      }
+    },
+    {
+      "id": "construction",
+      "name": {
+        "fa": "ساخت و اجرا",
+        "en": "Construction"
+      },
+      "hint": {
+        "fa": "پروژه در حال ساخت است",
+        "en": "The project is under construction"
+      }
+    },
+    {
+      "id": "existing",
+      "name": {
+        "fa": "ساختمان موجود",
+        "en": "Existing building"
+      },
+      "hint": {
+        "fa": "ساخته شده و می‌خواهید بهینه شود",
+        "en": "Built and ready to be optimised"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "strategy",
+      "name": {
+        "fa": "مطالعه، راهبرد و انطباق",
+        "en": "Strategy & compliance"
+      },
+      "description": {
+        "fa": "مسیر پایداری پروژه را مشخص می‌کنیم و انطباق آن با ضوابط را مستند می‌کنیم.",
+        "en": "We define the sustainability path of the project and document its compliance."
+      }
+    },
+    {
+      "id": "analysis",
+      "name": {
+        "fa": "شبیه‌سازی و تحلیل عملکرد",
+        "en": "Simulation & performance analysis"
+      },
+      "description": {
+        "fa": "عملکرد ساختمان را با مدل‌سازی دقیق می‌سنجیم؛ پیش از ساخت یا در وضع موجود.",
+        "en": "We measure building performance with detailed modelling, before construction or as built."
+      }
+    },
+    {
+      "id": "systems",
+      "name": {
+        "fa": "پوسته و سیستم‌های ساختمان",
+        "en": "Envelope & building systems"
+      },
+      "description": {
+        "fa": "برای پوسته، تأسیسات، انرژی و آب بهترین راهکار فنی را طراحی و انتخاب می‌کنیم.",
+        "en": "We design and select the best technical solution for envelope, MEP, energy and water."
+      }
+    }
+  ]
+}

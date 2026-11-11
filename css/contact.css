@@ -1,0 +1,35 @@
+/* صفحهٔ تماس: راه‌های ارتباط (اینستاگرام، واتساپ، تماس)، کارت پیج‌ها با آخرین پست‌ها، ارتباط مستقیم با مسئولان و فرم. */
+.ctp{gap:var(--t-s7)}
+.ctp>*{min-width:0}
+.ctp h3{margin:0 0 var(--t-s3)}
+.ctp .muted{color:var(--t-ice-300);margin:0 0 var(--t-s4)}
+.chn-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:var(--t-s4)}
+.chn{display:grid;grid-template-columns:auto 1fr;gap:var(--t-s4);align-items:center;padding:var(--t-s5);border:1px solid var(--t-line);border-radius:var(--t-r-lg);background:linear-gradient(135deg,rgba(34,57,129,.45),rgba(14,26,64,.55));text-decoration:none;color:#fff;transition:transform var(--t-dur) var(--t-ease),border-color var(--t-dur),box-shadow var(--t-dur);min-height:var(--t-tap)}
+.chn:hover{transform:translateY(-3px);border-color:var(--t-gold-400);box-shadow:0 16px 36px -18px rgba(244,198,94,.5)}
+.chn:focus-visible{outline:2px solid var(--t-gold-400);outline-offset:3px}
+.chn-i{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;color:var(--t-cyan-300);background:rgba(126,220,255,.1);border:1px solid rgba(126,220,255,.25);flex:none}
+.chn-i svg{width:26px;height:26px}
+.chn span:last-child{display:grid;gap:2px}
+.chn b{font-size:var(--t-fs-md)}
+.chn small{color:var(--t-ice-300);font-size:var(--t-fs-xs)}
+.chn em{font-style:normal;color:var(--t-gold-400);font-size:var(--t-fs-sm);text-align:start}
+.ph-l{display:flex;gap:var(--t-s3);flex-wrap:wrap;margin-top:var(--t-s3)}
+.ph-l a{display:grid;padding:var(--t-s2) var(--t-s4);border:1px solid var(--t-line);border-radius:var(--t-r-pill);color:#fff;text-decoration:none;min-height:var(--t-tap);align-content:center}
+.ph-l small{color:var(--t-ice-300);font-size:var(--t-fs-xs)}
+.ppl{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:var(--t-s3)}
+.ppl-c{display:grid;gap:var(--t-s3);padding:var(--t-s4) var(--t-s5);border-radius:var(--t-r-md)}
+.ppl-c small{display:block;color:var(--t-ice-300)}
+.ppl-a{display:flex;gap:var(--t-s2);flex-wrap:wrap}
+.acc-w{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:var(--t-s4)}
+.acc{padding:var(--t-s5);border-radius:var(--t-r-lg);display:grid;gap:var(--t-s4);align-content:start}
+.acc header{display:flex;align-items:center;gap:var(--t-s3);flex-wrap:wrap}
+.acc header>div{flex:1;min-width:0;display:grid}
+.acc header small{color:var(--t-ice-300)}
+.acc-g{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--t-s2)}
+.acc-p{display:grid;gap:4px;text-decoration:none;color:var(--t-mist-100)}
+.acc-p span{display:block;aspect-ratio:1;border-radius:var(--t-r-sm);background:#06163a center/cover no-repeat;border:1px solid var(--t-line);transition:transform var(--t-dur) var(--t-ease)}
+.acc-p:hover span{transform:scale(1.03)}
+.acc-p:focus-visible{outline:2px solid var(--t-gold-400);outline-offset:2px}
+.acc-p small{font-size:var(--t-fs-xs);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:720px){.chn{padding:var(--t-s4)}.acc{padding:var(--t-s4)}.acc-g{grid-template-columns:repeat(3,1fr)}}
+@media (prefers-reduced-motion:reduce){.chn,.acc-p span{transition:none}}

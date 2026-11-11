@@ -1,0 +1,1450 @@
+[
+  {
+    "id": "mehregan",
+    "slug": "mehregan",
+    "title": {
+      "fa": "مجتمع مسکونی مهرگان",
+      "en": "Mehregan Residential Complex"
+    },
+    "location": {
+      "fa": "بلوار دندانپزشکان، مشهد، ایران",
+      "en": "Dandanpezeshkan Blvd, Mashhad, Iran"
+    },
+    "year": "1403",
+    "typology": {
+      "fa": "مجتمع مسکونی با رویکرد پایدار",
+      "en": "Sustainable Residential Complex"
+    },
+    "categories": [
+      "residential"
+    ],
+    "status": "completed",
+    "architect": {
+      "fa": "دفتر معماری نوتاش نقش",
+      "en": "Notash Naghsh Architecture Office"
+    },
+    "isbRole": {
+      "fa": [
+        "شبیه‌سازی انرژی و ارزیابی رده ++EC",
+        "بهینه‌سازی پوسته، شیشه‌ها و سایبان‌ها",
+        "ارزیابی الزامات سرو سبز و تدوین مستندات",
+        "طراحی بام سبز، انرژی خورشیدی و مدیریت پایدار آب"
+      ],
+      "en": [
+        "Energy simulation & EC++ energy-class assessment",
+        "Optimization of envelope, glazing and shading assemblies",
+        "Sarv-e-Sabz green building compliance & technical documentation",
+        "Integrated green roof, solar energy systems & sustainable water management"
+      ]
+    },
+    "description": {
+      "fa": "پروژه شاخص مسکونی مهرگان نخستین پروژه حائز گواهی سرو طلایی (طراحی) در مشهد است که در آن مجموعه‌ای جامع از راهکارهای کاهش بارهای سرمایشی و گرمایشی، انرژی‌های تجدیدپذیر خورشیدی و طراحی زیست‌محیطی محقق شده است.",
+      "en": "Mehregan Residential Complex is a flagship sustainable project awarded the Golden Cedar (Design Phase) certificate in Mashhad, featuring comprehensive thermal envelope upgrades, rooftop PV and solar thermal systems, and deep energy reduction."
+    },
+    "energyClass": "EC++",
+    "certification": {
+      "name": {
+        "fa": "گواهینامه سرو طلایی (طراحی)",
+        "en": "Golden Cedar Certificate (Design Phase)"
+      },
+      "date": "خرداد ۱۴۰۴ / June 2025",
+      "disclaimer": {
+        "fa": "این گواهی صرفاً مرتبط با طراحی است و به منزله تأیید اجرای ساختمان بر مبنای الگوی سرو سبز نمی‌باشد.",
+        "en": "This certificate relates strictly to the design phase and does not constitute verification of construction compliance with the Sarv-e-Sabz model."
+      },
+      "image": "/credentials/mehregan-sarv-tala.jpg"
+    },
+    "metrics": [
+      {
+        "label": {
+          "fa": "کاهش نیاز گرمایش نسبت به مرجع",
+          "en": "Heating Demand Reduction vs Reference"
+        },
+        "value": "۴۰٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "شبیه‌سازی انرژی",
+          "en": "Energy Simulation"
+        }
+      },
+      {
+        "label": {
+          "fa": "کاهش نیاز سرمایش نسبت به مرجع",
+          "en": "Cooling Demand Reduction vs Reference"
+        },
+        "value": "۲۰٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "شبیه‌سازی انرژی",
+          "en": "Energy Simulation"
+        }
+      },
+      {
+        "label": {
+          "fa": "تولید آبگرمکن خورشیدی",
+          "en": "Solar Water Heater Yield"
+        },
+        "value": "۱۳,۹۶۵",
+        "unit": "kWh/yr (6.28 kWh/m²)",
+        "sourceNote": {
+          "fa": "۲۹.۷۶٪ پوشش نیاز آبگرم",
+          "en": "29.76% DHW Coverage"
+        }
+      },
+      {
+        "label": {
+          "fa": "تولید فتوولتائیک خورشیدی",
+          "en": "Photovoltaic Solar Yield"
+        },
+        "value": "۱۱,۰۷۶",
+        "unit": "kWh/yr (4.98 kWh/m²)",
+        "sourceNote": {
+          "fa": "۴.۷ تا ۵.۲٪ تأمین برق کل",
+          "en": "4.7–5.2% Electric Coverage"
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "fa": "عایق‌کاری پیشرفته بام (R = 3.677 m²·K/W)",
+        "en": "Advanced Roof Insulation (R = 3.677 m²·K/W)"
+      },
+      {
+        "fa": "پوسته دیوار خارجی با مقاومت بالا (R = 1.802 m²·K/W)",
+        "en": "High-Resistance External Wall (R = 1.802 m²·K/W)"
+      },
+      {
+        "fa": "پنجره دوجداره کم‌گسیل Low-E با ضریب انتقال U = 1.8 W/m²·K",
+        "en": "Low-E Double Glazing (U = 1.8 W/m²·K)"
+      },
+      {
+        "fa": "هوابندی درزها و تقلیل تلفات نشتی هوا",
+        "en": "Envelope Airtightness & Infiltration Control"
+      },
+      {
+        "fa": "کنترل تابش خورشیدی با سایبان و لوورهای زاویه‌دار",
+        "en": "Solar Radiation Control via Optimized Louvers"
+      },
+      {
+        "fa": "تحلیل المان محدود پل‌های حرارتی و عایق پیوسته",
+        "en": "Finite Element Thermal Bridge Continuity"
+      },
+      {
+        "fa": "روشنایی پربازده LED و سنسورهای دیمرینگ هوشمند",
+        "en": "High-Efficiency LED & Daylight Harvesting Sensors"
+      },
+      {
+        "fa": "مدیریت پایدار آب و بازچرخانی آب خاکستری",
+        "en": "Sustainable Water Harvesting & Greywater Reuse"
+      }
+    ],
+    "coverImage": "/projects/mehregan/cover.jpg",
+    "images": [
+      {
+        "src": "/projects/mehregan/cover.jpg",
+        "alt": {
+          "fa": "نمای مجتمع مسکونی مهرگان مشهد",
+          "en": "Mehregan Residential Complex Facade"
+        },
+        "caption": {
+          "fa": "نمای پروژه مهرگان در بلوار دندانپزشکان مشهد",
+          "en": "Mehregan Complex Facade Rendering"
+        }
+      },
+      {
+        "src": "/projects/mehregan/01-analysis.jpg",
+        "alt": {
+          "fa": "تحلیل مقاومت‌های حرارتی و انرژی تجدیدپذیر مهرگان",
+          "en": "Mehregan Thermal R-Values and Solar Yield"
+        },
+        "caption": {
+          "fa": "نمودار سناریوهای انرژی و ضرایب حرارتی بام و دیوار",
+          "en": "Energy Scenario Chart and Envelope Values"
+        }
+      },
+      {
+        "src": "/credentials/mehregan-sarv-tala.jpg",
+        "alt": {
+          "fa": "گواهی سرو طلایی مجتمع مهرگان",
+          "en": "Sarv-e-Tala'i Certificate"
+        },
+        "caption": {
+          "fa": "گواهی رسمی سرو طلایی صادره از مرکز تحقیقات راه و مسکن",
+          "en": "Official Sarv-e-Tala'i Certificate (BHRC)"
+        }
+      }
+    ],
+    "chartData": {
+      "type": "comparison",
+      "title": {
+        "fa": "مقایسه نیاز انرژی سناریوهای منتخب (kWh/m²·year)",
+        "en": "Comparative Energy Demand Across Scenarios (kWh/m²·yr)"
+      },
+      "items": [
+        {
+          "name": "مرجع",
+          "cooling": 48.67,
+          "heating": 13.46,
+          "total": 62.13
+        },
+        {
+          "name": "طرح ۵",
+          "cooling": 38.98,
+          "heating": 8.68,
+          "total": 47.66
+        },
+        {
+          "name": "طرح ۶",
+          "cooling": 43.7,
+          "heating": 7.33,
+          "total": 51.03
+        },
+        {
+          "name": "طرح ۸",
+          "cooling": 38.94,
+          "heating": 10.3,
+          "total": 49.24
+        },
+        {
+          "name": "طرح ۹",
+          "cooling": 47.41,
+          "heating": 12.57,
+          "total": 59.98
+        }
+      ],
+      "note": {
+        "fa": "مقادیر بر اساس نمودار سناریوهای مندرج در بروشور رسمی ISB",
+        "en": "Values as presented in ISB's official technical brochure"
+      }
+    }
+  },
+  {
+    "id": "bekhineh-sazan",
+    "slug": "bekhineh-sazan",
+    "title": {
+      "fa": "کارخانه سنجش انرژی بهینه‌سازان توس",
+      "en": "Bekhineh Sazan Toos Energy Measurement Factory"
+    },
+    "location": {
+      "fa": "شهرک صنعتی، مشهد، ایران",
+      "en": "Industrial Town, Mashhad, Iran"
+    },
+    "year": "1404",
+    "typology": {
+      "fa": "ساختمان صنعتی، اداری و آزمایشگاهی",
+      "en": "Industrial & Laboratory Facility"
+    },
+    "categories": [
+      "industrial"
+    ],
+    "status": "completed",
+    "architect": {
+      "fa": "دکتر الهام مهردوست",
+      "en": "Dr. Elham Mehrdoust"
+    },
+    "isbRole": {
+      "fa": [
+        "شبیه‌سازی انرژی و مقایسه ساختمان طرح با ساختمان مرجع",
+        "ارزیابی رده انرژی پروژه بر اساس الزامات مبحث ۱۹",
+        "تحلیل عملکرد حرارتی پوسته، پنجره‌ها و نفوذ هوا",
+        "ارزیابی نور روز با شاخص‌های sDA و ASE",
+        "ارائه راهکارهای بهینه‌سازی انرژی، تابش و آسایش حرارتی"
+      ],
+      "en": [
+        "Energy simulation & baseline comparison with reference building",
+        "Energy class verification according to National Building Code Part 19",
+        "Thermal performance review of envelope, glazing assemblies & air infiltration",
+        "Daylight assessment using sDA and ASE metrics",
+        "Optimization strategies for thermal comfort, solar radiation and energy efficiency"
+      ]
+    },
+    "description": {
+      "fa": "ساختمان صنعتی و تحقیقاتی بهینه‌سازان توس با دستیابی به رتبه انرژی +EC، از پوسته کامپوزیت با عایق‌بندی یکپارچه، شیشه‌های نانو کم‌گسیل و توزیع یکنواخت نور طبیعی ۶۲٪ بهره می‌برد.",
+      "en": "Industrial and test facility achieving EC+ energy rating, featuring continuous exterior rockwool insulation, high-performance Low-E glazing, and balanced sDA 62% daylighting distribution."
+    },
+    "energyClass": "EC+",
+    "metrics": [
+      {
+        "label": {
+          "fa": "شاخص روشنایی روز فضایی (sDA)",
+          "en": "Spatial Daylight Autonomy (sDA)"
+        },
+        "value": "۶۲٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "ارزیابی نور طبیعی",
+          "en": "Daylight Simulation"
+        }
+      },
+      {
+        "label": {
+          "fa": "مقاومت حرارتی بام",
+          "en": "Roof Thermal Resistance"
+        },
+        "value": "۲.۲",
+        "unit": "m²·K/W (U=0.46)",
+        "sourceNote": {
+          "fa": "عایق پلی‌استایرن اکسترود شده",
+          "en": "Extruded Polystyrene XPS"
+        }
+      },
+      {
+        "label": {
+          "fa": "مقاومت حرارتی دیوار خارجی",
+          "en": "Wall Thermal Resistance"
+        },
+        "value": "۱.۶",
+        "unit": "m²·K/W (U=0.62)",
+        "sourceNote": {
+          "fa": "عایق پشم سنگ",
+          "en": "Rockwool Insulation"
+        }
+      },
+      {
+        "label": {
+          "fa": "مشخصات پنجره کم‌گسیل",
+          "en": "Low-E Window Performance"
+        },
+        "value": "SHGC 0.40",
+        "unit": "TV 0.60",
+        "sourceNote": {
+          "fa": "کنترل تابش و نور طبیعی",
+          "en": "Solar Heat Gain & Transmittance"
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "fa": "عایق حرارتی پلی‌استایرن بام و پوشش بازتابنده خورشیدی",
+        "en": "Roof XPS insulation & high-albedo reflective coating"
+      },
+      {
+        "fa": "شیشه‌های کم‌گسیل Low-E با SHGC 0.40 و گذر نور ۶۰٪",
+        "en": "Low-E glazing with SHGC 0.40 and 60% visual transmittance"
+      },
+      {
+        "fa": "دیوار خارجی با عایق پشم سنگ و نمای ترکیبی",
+        "en": "Exterior composite envelope with mineral wool insulation"
+      },
+      {
+        "fa": "عایق‌کاری کف مجاور خاک (R = 1.43 m²·K/W)",
+        "en": "Slab-on-grade insulation (R = 1.43 m²·K/W)"
+      },
+      {
+        "fa": "روشنایی کم‌مصرف هوشمند با سنجش حضور و نور محیط",
+        "en": "Smart presence-sensing LED lighting arrays"
+      },
+      {
+        "fa": "امکان‌سنجی فتوولتائیک برای مدیریت بارهای پیک",
+        "en": "Rooftop PV feasibility for peak shaving"
+      }
+    ],
+    "coverImage": "/projects/bekhineh-sazan/cover.jpg",
+    "images": [
+      {
+        "src": "/projects/bekhineh-sazan/cover.jpg",
+        "alt": {
+          "fa": "کارخانه بهینه‌سازان توس",
+          "en": "Bekhineh Sazan Toos Factory"
+        },
+        "caption": {
+          "fa": "نمای خارجی ساختمان صنعتی و اداری بهینه‌سازان توس",
+          "en": "Exterior view of Bekhineh Sazan Toos"
+        }
+      },
+      {
+        "src": "/projects/bekhineh-sazan/01-daylight.jpg",
+        "alt": {
+          "fa": "تحلیل نور روز sDA و دیاگرام مقطع پوسته",
+          "en": "Daylight Simulation and Envelope Cutaway"
+        },
+        "caption": {
+          "fa": "نقشه حرارتی نور طبیعی sDA 62% و لایه‌های عایق‌کاری",
+          "en": "Daylight heatmap (sDA 62%) and thermal insulation layers"
+        }
+      }
+    ]
+  },
+  {
+    "id": "farapanel",
+    "slug": "farapanel",
+    "title": {
+      "fa": "کارخانه تولیدی فراپانل",
+      "en": "Farapanel Production Factory"
+    },
+    "location": {
+      "fa": "شهرک صنعتی رضوی، مشهد، ایران",
+      "en": "Razavi Industrial Town, Mashhad, Iran"
+    },
+    "year": "1403",
+    "typology": {
+      "fa": "کارخانه تولیدی و ساختمان اداری",
+      "en": "Manufacturing & Administration Plant"
+    },
+    "categories": [
+      "industrial"
+    ],
+    "status": "completed",
+    "architect": {
+      "fa": "مهسا صداقت و همکاران",
+      "en": "Mahsa Sedaghat & Colleagues"
+    },
+    "isbRole": {
+      "fa": [
+        "تحلیل و شبیه‌سازی مصرف انرژی با نرم‌افزار DesignBuilder",
+        "ارزیابی نور روز و شاخص‌های sDA و ASE",
+        "بررسی عملکرد آتریوم مرکزی، نورگیرهای سقفی و سایبان‌ها",
+        "بهینه‌سازی حرارتی پوسته و جداره‌های نورگذر",
+        "مقایسه سناریوهای طراحی از نظر بارهای حرارتی و برودتی",
+        "ارزیابی انطباق کامل با مبحث ۱۹"
+      ],
+      "en": [
+        "Energy simulation using DesignBuilder engine",
+        "Daylight modeling through sDA and ASE metrics",
+        "Performance analysis of central atrium, clerestories & louvers",
+        "Thermal envelope & fenestration optimization",
+        "Scenario comparison for heating, cooling and overall seasonal loads",
+        "Part 19 compliance verification"
+      ]
+    },
+    "description": {
+      "fa": "کارخانه تولیدی فراپانل مجهز به آتریوم مرکزی سبز و نورگیرهای هدایت‌شده است که نور طبیعی ۷۷٪ را بدون خیرگی (ASE 15%) فراهم کرده و بارهای حرارتی سالانه را تا ۲۲٪ نسبت به مرجع کاهش داده است.",
+      "en": "Farapanel manufacturing facility integrating a central bio-atrium and calibrated north-facing monitors, achieving sDA 77% with controlled ASE (15%) and a 22% overall energy load reduction."
+    },
+    "energyClass": "EC+",
+    "metrics": [
+      {
+        "label": {
+          "fa": "کاهش بار کل سالانه نسبت به مرجع",
+          "en": "Total Annual Load Reduction"
+        },
+        "value": "۲۲٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "شبیه‌سازی DesignBuilder",
+          "en": "DesignBuilder simulation"
+        }
+      },
+      {
+        "label": {
+          "fa": "کاهش بار گرمایش",
+          "en": "Heating Load Reduction"
+        },
+        "value": "۲۹٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "نسبت به مدل مرجع EC",
+          "en": "vs EC baseline"
+        }
+      },
+      {
+        "label": {
+          "fa": "کاهش بار سرمایش",
+          "en": "Cooling Load Reduction"
+        },
+        "value": "۲۶٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "نسبت به مدل مرجع EC",
+          "en": "vs EC baseline"
+        }
+      },
+      {
+        "label": {
+          "fa": "شاخص‌های روشنایی روز sDA / ASE",
+          "en": "Daylight sDA / ASE Metrics"
+        },
+        "value": "sDA ۷۷٪",
+        "unit": "ASE ۱۵٪",
+        "sourceNote": {
+          "fa": "توازن نور طبیعی و کنترل خیرگی",
+          "en": "Daylight/glare equilibrium"
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "fa": "کنترل تابش نمای غربی با سایبان‌های عمودی زاویه‌دار",
+        "en": "Vertical shading louvers on the western exposure"
+      },
+      {
+        "fa": "سقف‌های نورگیر کنترل‌شده با زاویه بهینه برای نور یکنواخت",
+        "en": "Engineered clerestory skylights for diffuse lighting"
+      },
+      {
+        "fa": "آتریوم مرکزی سبز به منظور ارتقای آسایش بصری و تهویه طبیعی",
+        "en": "Central landscaped atrium enhancing stack ventilation"
+      },
+      {
+        "fa": "عایق‌کاری دیوارهای ساندویچ‌پانل فراپانل و سقف ۵ سانتیمتر",
+        "en": "Farapanel insulated assemblies + 5cm roof insulation"
+      },
+      {
+        "fa": "استفاده از مصالح با ضریب بازتابش بالا جهت کنترل جذب خورشید",
+        "en": "High-albedo reflective materials minimizing solar gain"
+      }
+    ],
+    "coverImage": "/projects/farapanel/cover.jpg",
+    "images": [
+      {
+        "src": "/projects/farapanel/cover.jpg",
+        "alt": {
+          "fa": "محوطه و ساختمان کارخانه فراپانل",
+          "en": "Farapanel Factory Exterior"
+        },
+        "caption": {
+          "fa": "دید کلی کارخانه و مدل‌سازی انرژی DesignBuilder",
+          "en": "Farapanel exterior & DesignBuilder model"
+        }
+      },
+      {
+        "src": "/projects/farapanel/01-atrium.jpg",
+        "alt": {
+          "fa": "آتریوم مرکزی سبز کارخانه فراپانل",
+          "en": "Farapanel Central Atrium"
+        },
+        "caption": {
+          "fa": "دید داخلی آتریوم و نورگیرهای سقفی کنترل‌شده",
+          "en": "Interior bio-atrium with controlled skylights"
+        }
+      },
+      {
+        "src": "/projects/farapanel/02-charts.jpg",
+        "alt": {
+          "fa": "نمودارهای مقایسه بارهای سالانه و نقشه‌های sDA",
+          "en": "Annual Energy Load Scenarios & Daylight Maps"
+        },
+        "caption": {
+          "fa": "تحلیل مقایسه‌ای سناریوهای عایق و شبیه‌سازی نور روز",
+          "en": "Scenario load comparison (kWh) & daylight distribution"
+        }
+      }
+    ],
+    "chartData": {
+      "type": "comparison",
+      "title": {
+        "fa": "مقایسه سناریوهای طراحی (بار سالانه انرژی - kWh)",
+        "en": "Annual Energy Load Scenarios Comparison (kWh)"
+      },
+      "items": [
+        {
+          "name": "مدل مرجع (EC)",
+          "cooling": 235150,
+          "heating": 67182,
+          "total": 302333
+        },
+        {
+          "name": "مدل مرجع (+EC)",
+          "cooling": 232553,
+          "heating": 49608,
+          "total": 282160
+        },
+        {
+          "name": "فراپانل + ۵cm عایق سقف",
+          "cooling": 163116,
+          "heating": 86956,
+          "total": 250072
+        },
+        {
+          "name": "فراپانل + ۲cm عایق + ملات",
+          "cooling": 165509,
+          "heating": 71714,
+          "total": 237222
+        }
+      ],
+      "note": {
+        "fa": "کاهش بار کل تا ۲۲٪ نسبت به مدل مرجع",
+        "en": "Up to 22% overall load reduction compared to standard reference"
+      }
+    }
+  },
+  {
+    "id": "crisis-management",
+    "slug": "crisis-management",
+    "title": {
+      "fa": "ساختمان مدیریت بحران استانداری مشهد",
+      "en": "Mashhad Crisis Management Building (Governorate)"
+    },
+    "location": {
+      "fa": "بلوار آبادگران، مشهد، ایران",
+      "en": "Abadgaran Blvd, Mashhad, Iran"
+    },
+    "year": "1405",
+    "typology": {
+      "fa": "ساختمان اداری، حاکمیتی و مدیریت بحران",
+      "en": "Civic & Emergency Operations Center"
+    },
+    "categories": [
+      "public"
+    ],
+    "status": "ongoing",
+    "architect": {
+      "fa": "گروه مشاور سروستان",
+      "en": "Sarvestan Consulting Group"
+    },
+    "isbRole": {
+      "fa": [
+        "بررسی عملکرد حرارتی پوسته و سیستم‌های اصلی ساختمان",
+        "تهیه مدل پایه و تحلیل مصرف انرژی وضع موجود",
+        "شناسایی فرصت‌های کاهش مصرف انرژی و بهسازی فنی",
+        "تعیین دقیق میزان صرفه‌جویی هر راهکار به تفکیک"
+      ],
+      "en": [
+        "Thermal audit of existing building envelope and primary mechanical equipment",
+        "Baseline calibration and operational energy modeling",
+        "Systematic identification of deep retrofit energy opportunities",
+        "Quantification of savings per engineering intervention"
+      ]
+    },
+    "description": {
+      "fa": "مطالعات شبیه‌سازی انرژی و تدوین بسته بهسازی جامع برای ساختمان مدیریت بحران استانداری، با اعمال زنجیره‌ای از راهکارهای پوسته، بازیافت حرارت و سرمایش آزاد (Free Cooling) به ۴۶.۵۲٪ صرفه‌جویی سالانه دست یافته است.",
+      "en": "Deep energy retrofit simulation for the Mashhad Governorate Crisis Management Center, demonstrating a 46.52% annual energy reduction through envelope insulation, heat recovery, and seasonal free cooling."
+    },
+    "energyClass": "EC+",
+    "metrics": [
+      {
+        "label": {
+          "fa": "صرفه‌جویی کل انرژی نسبت به وضع موجود",
+          "en": "Total Energy Savings vs Existing"
+        },
+        "value": "۴۶.۵۲٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "شبیه‌سازی دینامیک انرژی",
+          "en": "Dynamic Energy Modeling"
+        }
+      },
+      {
+        "label": {
+          "fa": "مصرف وضع موجود ساختمان",
+          "en": "Existing Baseline Consumption"
+        },
+        "value": "۳۹۷.۵۳",
+        "unit": "MWh/year",
+        "sourceNote": {
+          "fa": "مدل کالیبره‌شده وضع موجود",
+          "en": "Calibrated existing baseline"
+        }
+      },
+      {
+        "label": {
+          "fa": "مصرف نهایی پس از سرمایش آزاد",
+          "en": "Optimized Final Consumption"
+        },
+        "value": "۲۱۲.۶۱",
+        "unit": "MWh/year",
+        "sourceNote": {
+          "fa": "کاهش ۱۸۴.۹۲ مگاوات‌ساعت",
+          "en": "184.92 MWh/yr reduction"
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "fa": "اصلاح موضعی پل‌های حرارتی در اتصالات دال و ستون‌ها",
+        "en": "Thermal bridge mitigation at slab and column joints"
+      },
+      {
+        "fa": "عایق پیوسته دیوارهای خارجی ساختمان",
+        "en": "Continuous exterior insulation of perimeter walls"
+      },
+      {
+        "fa": "پوشش بازتابنده با آلبیدوی بالا بر روی بام",
+        "en": "High-reflectance cool roof coating"
+      },
+      {
+        "fa": "سامانه کنترل دیمرینگ روشنایی با نور روز",
+        "en": "Daylight-linked photo-sensor dimming control"
+      },
+      {
+        "fa": "سامانه بازیافت حرارتی در هوارسان‌ها (Heat Recovery)",
+        "en": "Sensible/latent heat recovery on AHU ventilation air"
+      },
+      {
+        "fa": "بهره‌گیری از سرمایش آزاد (Free Cooling) در ساعات خنک شبانه",
+        "en": "Economizer free cooling cycle during cool ambient hours"
+      }
+    ],
+    "coverImage": "/projects/crisis-management/cover.jpg",
+    "images": [
+      {
+        "src": "/projects/crisis-management/cover.jpg",
+        "alt": {
+          "fa": "دید هوایی ساختمان مدیریت بحران مشهد",
+          "en": "Aerial View of Crisis Management Center"
+        },
+        "caption": {
+          "fa": "دید پرنده از ساختمان مدیریت بحران در بلوار آبادگران",
+          "en": "Aerial render of Mashhad Crisis Management facility"
+        }
+      },
+      {
+        "src": "/projects/crisis-management/01-retrofit.jpg",
+        "alt": {
+          "fa": "روند گام‌به‌گام بهسازی و نمودار کاهش مصرف",
+          "en": "Retrofit Steps & Energy Reduction Waterfall"
+        },
+        "caption": {
+          "fa": "نمودار کاهش بار سالانه از ۳۹۷ به ۲۱۲ مگاوات‌ساعت (۴۶.۵۲٪ کاهش)",
+          "en": "Energy reduction trajectory: 397 to 212 MWh/yr (-46.52%)"
+        }
+      }
+    ],
+    "chartData": {
+      "type": "waterfall",
+      "title": {
+        "fa": "روند کاهش نیاز انرژی سرمایش و گرمایش سالانه (MWh/year)",
+        "en": "Annual Heating & Cooling Load Reduction Trajectory (MWh/yr)"
+      },
+      "items": [
+        {
+          "name": "وضع موجود",
+          "value": 397.53
+        },
+        {
+          "name": "اصلاح موضعی پوسته",
+          "value": 388.01
+        },
+        {
+          "name": "تقویت پوسته",
+          "value": 382.63
+        },
+        {
+          "name": "پوشش بازتابنده بام",
+          "value": 374.25
+        },
+        {
+          "name": "کنترل روشنایی",
+          "value": 371.78
+        },
+        {
+          "name": "بازیافت حرارت",
+          "value": 360.37
+        },
+        {
+          "name": "سرمایش آزاد",
+          "value": 212.61
+        }
+      ],
+      "note": {
+        "fa": "۴۶.۵۲٪ کاهش کل مصرف نسبت به وضع موجود پایه",
+        "en": "46.52% total reduction relative to existing baseline"
+      }
+    }
+  },
+  {
+    "id": "sustainable-school",
+    "slug": "sustainable-school",
+    "title": {
+      "fa": "مدرسه با رویکرد انرژی و پایداری",
+      "en": "Energy- & Sustainability-Oriented School"
+    },
+    "location": {
+      "fa": "فلات مرکزی، کرمان، ایران",
+      "en": "Central Arid Plateau, Kerman, Iran"
+    },
+    "year": "1403",
+    "typology": {
+      "fa": "مدرسه ابتدایی پسرانه (مسابقه ساختمان آینده)",
+      "en": "Elementary School (Future Building Competition)"
+    },
+    "categories": [
+      "public",
+      "research"
+    ],
+    "status": "competition",
+    "architect": {
+      "fa": "زهرا رمضانی و همکاران",
+      "en": "Zahra Ramezani & Colleagues"
+    },
+    "isbRole": {
+      "fa": [
+        "طراحی یکپارچه معماری و انرژی برای اقلیم گرم و خشک",
+        "شبیه‌سازی مصرف انرژی و آسایش حرارتی کلاس‌ها",
+        "ارزیابی نور روز و شاخص‌های sDA و ASE با نرم‌افزار DIALux",
+        "ارزیابی و طراحی بهینه روشنایی مصنوعی",
+        "تحلیل دینامیک سیالات تهویه طبیعی و اثر دودکشی آتریوم"
+      ],
+      "en": [
+        "Integrated architecture and energy modeling for hot-arid climate",
+        "Classroom energy consumption & thermal comfort simulation",
+        "Daylight & visual comfort analysis (sDA/ASE) via DIALux",
+        "Artificial lighting optimization & glare mitigation",
+        "Computational airflow analysis & solar chimney buoyancy"
+      ]
+    },
+    "description": {
+      "fa": "طرح مسابقه ساختمان آینده در کرمان با راهبردهای اقلیمی بومی شامل حیاط مرکزی، تهویه متقاطع کلاس‌ها و تهویه دودکشی آتریوم توانست مصرف انرژی سایت را ۲۰.۷۲٪ پایین‌تر از شاخص هدف قرار داده و کیفیت دید ۹۸.۵٪ را محقق سازد.",
+      "en": "Award-contending competition project in Kerman combining courtyard microclimates, cross-ventilation, and solar-assisted atrium chimney effect, delivering 20.72% lower energy use than national benchmark with 98.5% view quality."
+    },
+    "energyClass": "EC++",
+    "metrics": [
+      {
+        "label": {
+          "fa": "روشنایی روز فضایی (sDA)",
+          "en": "Spatial Daylight Autonomy (sDA)"
+        },
+        "value": "۹۳.۰۸٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "شبیه‌سازی DIALux",
+          "en": "DIALux daylight study"
+        }
+      },
+      {
+        "label": {
+          "fa": "در معرض تابش سالانه (ASE)",
+          "en": "Annual Sunlight Exposure (ASE)"
+        },
+        "value": "۹.۴۹٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "کنترل کامل خیرگی (زیر ۱۰٪)",
+          "en": "Below 10% glare threshold"
+        }
+      },
+      {
+        "label": {
+          "fa": "شاخص کیفیت دید به منظر بیرونی",
+          "en": "Outdoor View Quality Metric"
+        },
+        "value": "۹۸.۵۳٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "فضاهای یادگیری و کلاس‌ها",
+          "en": "Educational learning spaces"
+        }
+      },
+      {
+        "label": {
+          "fa": "انرژی مصرفی سایت نسبت به هدف",
+          "en": "Site Energy vs Benchmark"
+        },
+        "value": "۶۳.۸۲",
+        "unit": "kWh/m²·yr (۲۰.۷٪ کمتر)",
+        "sourceNote": {
+          "fa": "شاخص هدف ۸۰.۵۰ بوده است",
+          "en": "Benchmark was 80.50"
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "fa": "حیاط میانی و بام سبز جهت خنک‌سازی تبخیری و کاهش دمای محیط",
+        "en": "Central courtyard & green roof for microclimatic evaporative cooling"
+      },
+      {
+        "fa": "تهویه متقاطع طبیعی در کلاس‌ها و اثر دودکشی در آتریوم مرکزی",
+        "en": "Natural cross-ventilation & buoyancy stack ventilation via atrium"
+      },
+      {
+        "fa": "سایه‌اندازی هوشمند و سایبان‌های غربی جهت حذف بار تابشی",
+        "en": "Kinetic and fixed horizontal/vertical louvers on solar facades"
+      },
+      {
+        "fa": "نورگیری غیرمستقیم کلاس‌ها بدون ایجاد خیرگی بر روی تخته و میز دانش‌آموز",
+        "en": "Balanced bilateral daylighting without chalkboard glare"
+      }
+    ],
+    "coverImage": "/projects/sustainable-school/cover.jpg",
+    "images": [
+      {
+        "src": "/projects/sustainable-school/cover.jpg",
+        "alt": {
+          "fa": "دید پرنده از حیاط و ساختمان مدرسه پایدار کرمان",
+          "en": "Aerial View of Kerman Sustainable School"
+        },
+        "caption": {
+          "fa": "دید محوطه، بام سبز و حیاط میانی خنک‌شونده",
+          "en": "School campus courtyard and landscaped green roofs"
+        }
+      },
+      {
+        "src": "/projects/sustainable-school/01-daylight-stack.jpg",
+        "alt": {
+          "fa": "تحلیل روشنایی DIALux و دیاگرام تهویه دودکشی",
+          "en": "DIALux Daylight Analysis & Stack Ventilation"
+        },
+        "caption": {
+          "fa": "نقشه sDA 93.08% و مقطع جریان هوای تهویه متقاطع",
+          "en": "DIALux sDA mapping and cross/stack airflow schematics"
+        }
+      }
+    ]
+  },
+  {
+    "id": "farhang",
+    "slug": "farhang",
+    "title": {
+      "fa": "ساختمان مسکونی فرهنگ",
+      "en": "Farhang Residential Building"
+    },
+    "location": {
+      "fa": "بلوار فرهنگ، مشهد، ایران",
+      "en": "Farhang Blvd, Mashhad, Iran"
+    },
+    "year": "1405",
+    "typology": {
+      "fa": "ساختمان مسکونی چندطبقه",
+      "en": "Multi-Family Residential Building"
+    },
+    "categories": [
+      "residential"
+    ],
+    "status": "ongoing",
+    "architect": {
+      "fa": "گروه معماری چارسو",
+      "en": "Charsoo Architecture Group"
+    },
+    "isbRole": {
+      "fa": [
+        "شبیه‌سازی انرژی ساختمان و زون‌بندی حرارتی فضاها",
+        "تحلیل روشنایی طبیعی و تابش جداره‌ها",
+        "ارزیابی بر اساس مبحث ۱۹ مقررات ملی ساختمان",
+        "مقایسه سناریوهای بهینه‌سازی پوسته با ملات‌های عایق حرارتی"
+      ],
+      "en": [
+        "Whole-building energy simulation and thermal zoning",
+        "Natural daylight and perimeter insolation analysis",
+        "Part 19 national code compliance audit",
+        "Comparative scenario modeling of thermal insulating mortars"
+      ]
+    },
+    "description": {
+      "fa": "تحلیل دقیق ضخامت‌های ملات عایق حرارتی در جداره خارجی ساختمان مسکونی فرهنگ مشهد نشان داد اعمال ۲ و ۳ سانتیمتر ملات عایق به ترتیب ۱۵.۸٪ و ۱۸.۲٪ بار کل سالانه را کاهش می‌دهد.",
+      "en": "In-depth comparative study on insulating exterior mortar thicknesses for the Farhang residential project, demonstrating 15.8% and 18.2% total annual load reductions with 2cm and 3cm applications."
+    },
+    "energyClass": "EC+",
+    "metrics": [
+      {
+        "label": {
+          "fa": "کاهش بار کل با ملات عایق ۲ سانتی‌متر",
+          "en": "Total Load Reduction (2cm Mortar)"
+        },
+        "value": "۱۵.۸٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "شبیه‌سازی دینامیک",
+          "en": "Dynamic simulation"
+        }
+      },
+      {
+        "label": {
+          "fa": "کاهش بار کل با ملات عایق ۳ سانتی‌متر",
+          "en": "Total Load Reduction (3cm Mortar)"
+        },
+        "value": "۱۸.۲٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "شبیه‌سازی دینامیک",
+          "en": "Dynamic simulation"
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "fa": "تفکیک فضاهای کنترل‌شده حرارتی از فضاهای کنترل‌نشده (پارکینگ و راه‌پله)",
+        "en": "Clear thermodynamic zoning separating conditioned and unconditioned spaces"
+      },
+      {
+        "fa": "استفاده از بلوک سبک همراه با ملات عایق حرارتی ۲ و ۳ سانتیمتر",
+        "en": "Lightweight blockwork combined with 2-3cm thermal insulating mortar"
+      },
+      {
+        "fa": "پنجره‌های ترمال‌بریک با شیشه دوجداره کم‌گسیل",
+        "en": "Thermally-broken aluminum profiles with Low-E double glazing"
+      },
+      {
+        "fa": "عایق‌بندی حرارتی یکپارچه بام و کف پیلوت",
+        "en": "Continuous roof and pilotis ceiling thermal insulation"
+      }
+    ],
+    "coverImage": "/projects/farhang/cover.jpg",
+    "images": [
+      {
+        "src": "/projects/farhang/cover.jpg",
+        "alt": {
+          "fa": "نمای ساختمان مسکونی فرهنگ",
+          "en": "Farhang Building Facade"
+        },
+        "caption": {
+          "fa": "نمای شهری ساختمان مسکونی فرهنگ در مشهد",
+          "en": "Street view of Farhang Residential Building"
+        }
+      },
+      {
+        "src": "/projects/farhang/01-facade-analysis.jpg",
+        "alt": {
+          "fa": "تحلیل لایه‌های جداره و نمودار مقایسه بار کل",
+          "en": "Wall Layers & Annual Energy Load Comparison"
+        },
+        "caption": {
+          "fa": "لایه‌بندی پوسته عایق و نمودار کاهش بار سالانه (۱۵.۸٪ تا ۱۸.۲٪)",
+          "en": "Insulated wall assembly details and load comparison chart"
+        }
+      }
+    ]
+  },
+  {
+    "id": "yas",
+    "slug": "yas",
+    "title": {
+      "fa": "ساختمان مسکونی یاس",
+      "en": "Yas Residential Building"
+    },
+    "location": {
+      "fa": "بلوار یاس، مشهد، ایران",
+      "en": "Yas Blvd, Mashhad, Iran"
+    },
+    "year": "1405",
+    "typology": {
+      "fa": "ساختمان مسکونی شهری",
+      "en": "Urban Residential Building"
+    },
+    "categories": [
+      "residential"
+    ],
+    "status": "ongoing",
+    "architect": {
+      "fa": "مؤسسه مدیریت پایش ساختمان پایدار",
+      "en": "Sustainable Building Monitoring Institute"
+    },
+    "isbRole": {
+      "fa": [
+        "شبیه‌سازی انرژی و ارزیابی مبحث ۱۹",
+        "تحلیل انتقال حرارت و پل‌های حرارتی نما با THERM",
+        "بهینه‌سازی پوسته، دیوارها و جزئیات حرارتی اتصالات",
+        "ارزیابی سایبان پنجره‌ها و کنترل تابش",
+        "بررسی و اصلاح جزئیات اتصال دیوار، بالکن و لبه دال",
+        "تدوین دفترچه فنی و مستندات انطباق با مبحث ۱۹"
+      ],
+      "en": [
+        "Whole-building energy simulation & Part 19 compliance",
+        "2D finite-element heat transfer & thermal bridge analysis via THERM",
+        "Thermal envelope, wall assemblies & connection detailing optimization",
+        "Window shading analysis & solar radiation interception",
+        "Balcony, slab edge, and parapet thermal bridge rectification",
+        "Preparation of comprehensive Part 19 technical compliance booklet"
+      ]
+    },
+    "description": {
+      "fa": "پروژه مسکونی یاس نمونه شاخص تحلیل المان محدود ۲بعدی پل‌های حرارتی در اتصالات تیر، ستون و لبه دال است که از اتلاف حرارتی ساختاری جلوگیری کرده و توزیع دمایی پایدار پوسته را تضمین می‌کند.",
+      "en": "Yas Residential project features 2D finite-element thermal bridge simulation across balconies, slab edges, and parapets, eliminating cold spots and condensation risks while ensuring envelope continuity."
+    },
+    "energyClass": "EC",
+    "metrics": [
+      {
+        "label": {
+          "fa": "کاهش اتلاف حرارتی در لبه دال و بالکن",
+          "en": "Thermal Loss Reduction at Slab Edge"
+        },
+        "value": "۳۵٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "تحلیل المان محدود THERM",
+          "en": "THERM finite element modeling"
+        }
+      },
+      {
+        "label": {
+          "fa": "حذف خطر میعان و پل سرما در زمستان",
+          "en": "Condensation & Cold Bridge Prevention"
+        },
+        "value": "۱۰۰٪",
+        "unit": "تضمین",
+        "sourceNote": {
+          "fa": "عایق‌کاری پیوسته",
+          "en": "Continuous exterior insulation"
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "fa": "اصلاح پل حرارتی لبه دال بتنی و دست‌انداز بام (Parapet)",
+        "en": "Mitigation of slab edge and roof parapet thermal bridges"
+      },
+      {
+        "fa": "عایق‌کاری پیوسته بالکن‌ها به منظور جلوگیری از نشت گرما",
+        "en": "Balcony cantilever thermal break detailing"
+      },
+      {
+        "fa": "طراحی سایبان‌های افقی کنترل تابش مستقیم در تابستان",
+        "en": "Calibrated horizontal overhangs blocking high summer sun"
+      },
+      {
+        "fa": "انتخاب بازشوهای استاندارد منطبق بر الزامات مبحث نوزدهم",
+        "en": "Specification of high-efficiency airtight window joinery"
+      }
+    ],
+    "coverImage": "/projects/yas/cover.jpg",
+    "images": [
+      {
+        "src": "/projects/yas/cover.jpg",
+        "alt": {
+          "fa": "نمای ساختمان یاس با دیاگرام پل حرارتی",
+          "en": "Yas Building Facade with Thermal Diagram"
+        },
+        "caption": {
+          "fa": "شبیه‌سازی انتقال حرارت در بالکن و دال‌های نمای ساختمان یاس",
+          "en": "Heat transfer cutaway across floor slabs and balcony connections"
+        }
+      },
+      {
+        "src": "/projects/yas/01-thermal-bridge.jpg",
+        "alt": {
+          "fa": "نقشه المان محدود دما در اتصال بالکن و دیوار",
+          "en": "Finite Element Thermal Bridge Isotherm Map"
+        },
+        "caption": {
+          "fa": "گرادیان دمایی محاسبه‌شده از منفی ۱۸ تا مثبت ۲۰ درجه سانتیگراد",
+          "en": "Temperature gradient calculation (-18.5°C to +21.1°C)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "arsh",
+    "slug": "arsh",
+    "title": {
+      "fa": "برج مسکونی عرش",
+      "en": "Arsh Residential Tower"
+    },
+    "location": {
+      "fa": "بلوار دلاوران، مشهد، ایران",
+      "en": "Delavaran Blvd, Mashhad, Iran"
+    },
+    "year": "1405",
+    "typology": {
+      "fa": "برج مسکونی بلندمرتبه",
+      "en": "High-Rise Residential Tower"
+    },
+    "categories": [
+      "residential"
+    ],
+    "status": "ongoing",
+    "architect": {
+      "fa": "مؤسسه عمارت هشتم",
+      "en": "Hashtom Emarat Institute"
+    },
+    "isbRole": {
+      "fa": [
+        "ارزیابی روشنایی طبیعی و توزیع نور روز در واحدهای مسکونی",
+        "تحلیل عملکرد حرارتی پوسته و پل‌های حرارتی اسکلت بتنی",
+        "بررسی مشخصات شیشه و سایه‌اندازی هندسه نما",
+        "مقایسه سناریوهای بهینه‌سازی مصرف انرژی"
+      ],
+      "en": [
+        "Natural daylight distribution assessment across tower apartments",
+        "Thermal envelope audit & concrete frame bridge mitigation",
+        "Glazing specification & self-shading facade geometry evaluation",
+        "Energy optimization scenario comparison"
+      ]
+    },
+    "description": {
+      "fa": "مطالعات جامع پوسته‌ای و روشنایی طبیعی در برج بلندمرتبه عرش جهت بهینه‌سازی سایه‌اندازی بالکن‌ها، کاهش پل‌های حرارتی ستون‌ها و تضمین آسایش بصری ساکنان در تمامی فصول.",
+      "en": "Envelope performance and daylighting optimization for the Arsh high-rise residential tower, fine-tuning balcony cantilever depths and concrete framing insulation."
+    },
+    "coverImage": "/projects/arsh/cover.jpg",
+    "images": [
+      {
+        "src": "/projects/arsh/cover.jpg",
+        "alt": {
+          "fa": "دید خارجی و مطالعات پوسته‌ای برج مسکونی عرش",
+          "en": "Arsh Residential Tower Facade & Studies"
+        },
+        "caption": {
+          "fa": "دید پرسپکتیو برج مسکونی عرش در بلوار دلاوران مشهد",
+          "en": "Perspective view of Arsh Residential Tower"
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "fa": "تحلیل سایه‌اندازی هندسه نما در زوایای مختلف خورشید",
+        "en": "Solar azimuth self-shading evaluation across seasons"
+      },
+      {
+        "fa": "عایق‌کاری پیوسته ستون‌های بتنی نمای ساختمان",
+        "en": "Exterior insulation covering perimeter structural columns"
+      },
+      {
+        "fa": "استفاده از شیشه‌های دوجداره کنترل‌کننده خورشیدی",
+        "en": "Solar-control double glazing reducing summertime cooling loads"
+      }
+    ],
+    "metrics": [
+      {
+        "label": {
+          "fa": "توزیع یکنواخت نور طبیعی در واحدها",
+          "en": "Uniform Daylight Factor"
+        },
+        "value": "۷۵٪",
+        "unit": "مطلوب",
+        "sourceNote": {
+          "fa": "شبیه‌سازی روشنایی",
+          "en": "Daylight simulation"
+        }
+      }
+    ]
+  },
+  {
+    "id": "alaleh",
+    "slug": "alaleh",
+    "title": {
+      "fa": "مجتمع مسکونی آلاله",
+      "en": "Alaleh Residential Complex"
+    },
+    "location": {
+      "fa": "منطقه ثامن، مشهد، ایران",
+      "en": "Samen District, Mashhad, Iran"
+    },
+    "year": "1405",
+    "typology": {
+      "fa": "مجتمع مسکونی نوسازی بافت پیرامون حرم",
+      "en": "Urban Infill Residential Complex"
+    },
+    "categories": [
+      "residential"
+    ],
+    "status": "ongoing",
+    "architect": {
+      "fa": "مسکن شمال شرق",
+      "en": "Maskan Shomal-e-Sharq"
+    },
+    "isbRole": {
+      "fa": [
+        "شناسایی پل‌های حرارتی پوسته در اتصالات نما و سازه",
+        "عایق‌کاری پل‌های حرارتی با نرم‌افزار THERM",
+        "بررسی و تضمین پیوستگی عایق حرارتی در تمام جداره‌ها",
+        "ارائه راهکارهای اجرایی برای کاهش اتلاف حرارت"
+      ],
+      "en": [
+        "Identification of structural thermal bridges across envelope junctions",
+        "Thermal bridge modeling and mitigation using THERM",
+        "Verification of insulation continuity across opaque walls and slabs",
+        "Practical detailing recommendations for construction phase"
+      ]
+    },
+    "description": {
+      "fa": "پروژه مسکونی آلاله در منطقه ثامن مشهد با تمرکز بر عایق‌کاری اصولی اتصالات تیر و ستون‌های بتنی، پیوستگی لایه‌های عایق را مطابق استاندارد ارتقا داده است.",
+      "en": "Alaleh Residential Complex in Mashhad's historic Samen district, focusing on continuous thermal envelope detailing and 2D THERM bridge simulations."
+    },
+    "coverImage": "/projects/alaleh/cover.jpg",
+    "images": [
+      {
+        "src": "/projects/alaleh/cover.jpg",
+        "alt": {
+          "fa": "راهبردهای بهینه‌سازی پوسته مجتمع آلاله",
+          "en": "Alaleh Envelope Detailing & THERM Modeling"
+        },
+        "caption": {
+          "fa": "روند شناسایی پل‌های حرارتی و عایق‌کاری پیوسته تیر و لبه دال",
+          "en": "Step-by-step thermal bridge elimination and insulation continuity"
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "fa": "تحلیل رفتار حرارتی اتصالات و نقاط محتمل اتلاف حرارت",
+        "en": "Thermal behavior analysis of high-risk structural nodes"
+      },
+      {
+        "fa": "مدل‌سازی THERM برای حذف تلفات ستون و لبه دال",
+        "en": "THERM 2D modeling eliminating slab edge loss"
+      },
+      {
+        "fa": "پیشنهاد عایق‌کاری پیوسته برای حذف نشت گرما",
+        "en": "Continuous insulation envelope detailing"
+      }
+    ],
+    "metrics": [
+      {
+        "label": {
+          "fa": "کاهش ضریب انتقال حرارت خطی پل‌ها (Psi)",
+          "en": "Linear Thermal Transmittance (Psi) Reduction"
+        },
+        "value": "۴۵٪",
+        "unit": "%",
+        "sourceNote": {
+          "fa": "شبیه‌سازی THERM",
+          "en": "THERM simulation"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vista-plaza",
+    "slug": "vista-plaza",
+    "title": {
+      "fa": "مجتمع مسکونی ویستا پلازا",
+      "en": "Vista Plaza Residential Complex"
+    },
+    "location": {
+      "fa": "بلوار نماز، مشهد، ایران",
+      "en": "Namaz Blvd, Mashhad, Iran"
+    },
+    "year": "1405",
+    "typology": {
+      "fa": "مجتمع مسکونی پلکانی با بام سبز",
+      "en": "Terraced Residential Complex with Green Roofs"
+    },
+    "categories": [
+      "residential",
+      "landscape"
+    ],
+    "status": "ongoing",
+    "architect": {
+      "fa": "گروه مشاور زیستاوین",
+      "en": "Zistavin Consulting Group"
+    },
+    "isbRole": {
+      "fa": [
+        "شبیه‌سازی انرژی و مقایسه ساختمان طرح با ساختمان مرجع",
+        "تحلیل عملکرد حرارتی پوسته پلکانی",
+        "ارائه راهبردهای توده‌گذاری (شکاف میانی، عقب‌نشینی تراس‌ها، بام سبز و PV)"
+      ],
+      "en": [
+        "Energy simulation & baseline comparison with reference building",
+        "Thermal performance modeling of stepped terraced envelope",
+        "Massing strategies: ventilation gaps, terracing for solar access, green roofs & PV"
+      ]
+    },
+    "description": {
+      "fa": "طراحی توده‌گذاری مجتمع ویستا پلازا در ارتفاعات بلوار نماز با شکاف میانی جهت تهویه طبیعی، پلکانی‌کردن طبقات برای دریافت نور مستقیم و تلفیق بام سبز با پنل‌های خورشیدی همراه است.",
+      "en": "Vista Plaza terraced residential development incorporating central wind-ventilation chasms, progressive solar setbacks, extensive living roofs, and clean energy PV generation."
+    },
+    "coverImage": "/projects/vista-plaza/cover.jpg",
+    "images": [
+      {
+        "src": "/projects/vista-plaza/cover.jpg",
+        "alt": {
+          "fa": "راهبردهای توده‌گذاری و مقطع اقلیمی ویستا پلازا",
+          "en": "Vista Plaza Massing Strategy & Bioclimatic Section"
+        },
+        "caption": {
+          "fa": "چهار گام توده‌گذاری: حجم پایه، شکاف تهویه، تراس‌بندی و بام سبز با PV",
+          "en": "Four massing steps: base volume, ventilation gap, terracing, green roofs & PV"
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "fa": "ایجاد شکاف میانی برای جریان باد و دسترسی به نور طبیعی",
+        "en": "Central building separation inducing air draft and daylight penetration"
+      },
+      {
+        "fa": "عقب‌نشینی و شکل‌دهی تراس‌ها جهت بهبود دسترسی به تابش زمستانه و منظر",
+        "en": "Stepped terraces maximizing winter solar gains and scenic views"
+      },
+      {
+        "fa": "توده‌گذاری نهایی همراه با بام‌های سبز و سامانه‌های تولید انرژی پاک",
+        "en": "Extensive sedum green roofs paired with rooftop photovoltaic arrays"
+      }
+    ],
+    "metrics": [
+      {
+        "label": {
+          "fa": "شاخص دریافت تابش خورشیدی زمستانه",
+          "en": "Winter Solar Insolation Index"
+        },
+        "value": "+۲۸٪",
+        "unit": "بهبود",
+        "sourceNote": {
+          "fa": "شبیه‌سازی توده‌گذاری",
+          "en": "Massing simulation"
+        }
+      }
+    ]
+  },
+  {
+    "id": "banafsheh-park",
+    "slug": "banafsheh-park",
+    "title": {
+      "fa": "پارک بنفشه مشهد",
+      "en": "Banafsheh Park Ecological Redesign"
+    },
+    "location": {
+      "fa": "بلوار سجاد، مشهد، ایران",
+      "en": "Sajjad Blvd, Mashhad, Iran"
+    },
+    "year": "1405",
+    "typology": {
+      "fa": "طراحی منظر و پارک اکولوژیک شهری",
+      "en": "Urban Ecological Landscape & Park"
+    },
+    "categories": [
+      "landscape"
+    ],
+    "status": "ongoing",
+    "architect": {
+      "fa": "گروه مشاور زیستاوین",
+      "en": "Zistavin Consulting Group"
+    },
+    "isbRole": {
+      "fa": [
+        "بازطراحی پارک و ساماندهی منظر با رویکرد پایداری",
+        "تحلیل‌های پایداری محیطی و جزیره حرارتی شهری",
+        "ارزیابی تابش خورشیدی و آسایش حرارتی کاربران در فصول مختلف (UTCI)",
+        "تحلیل جامع گلباد مشهد برای بهره‌برداری از نسیم خنک",
+        "ارائه راهکارهای طراحی اکولوژیک و مدیریت آب"
+      ],
+      "en": [
+        "Park redesign and ecological landscape organization",
+        "Environmental sustainability & urban heat island mitigation",
+        "Microclimate solar insolation and outdoor thermal comfort (UTCI) modeling",
+        "Wind rose analysis for prevailing summer/winter Mashhad wind vectors",
+        "Ecological water harvesting and native xeriscaping strategies"
+      ]
+    },
+    "description": {
+      "fa": "بازطراحی جامع پارک بنفشه در بلوار سجاد مشهد با تکیه بر تحلیل‌های گلباد، کاهش جزیره حرارتی، ارتقای آسایش حرارتی مراجعین و مدیریت بهینه آب با پوشش گیاهی کم‌نیاز اقلیمی.",
+      "en": "Comprehensive ecological landscape redesign for Banafsheh Park, guided by computational wind rose data, outdoor thermal comfort modeling, and drought-tolerant indigenous flora."
+    },
+    "coverImage": "/projects/banafsheh-park/cover.jpg",
+    "images": [
+      {
+        "src": "/projects/banafsheh-park/cover.jpg",
+        "alt": {
+          "fa": "طرح سه‌بعدی و تحلیل‌های تابش و گلباد پارک بنفشه",
+          "en": "Banafsheh Park 3D Design, Wind Rose & Thermal Maps"
+        },
+        "caption": {
+          "fa": "دید سه‌بعدی، تحلیل تابش و آسایش حرارتی و نمودار گلباد مشهد",
+          "en": "3D park plan, outdoor thermal comfort analysis, and wind rose simulation"
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "fa": "استفاده از باد غالب مشهد برای تهویه طبیعی محوطه پارک",
+        "en": "Harnessing prevailing wind vectors for passive park cooling"
+      },
+      {
+        "fa": "افزایش پوشش گیاهی بومی و تنوع زیستی متناسب با اقلیم خشک",
+        "en": "Indigenous xeriscape planting supporting regional biodiversity"
+      },
+      {
+        "fa": "کاهش اثر جزیره حرارتی با سنگفرش‌های نفوذپذیر و آب‌نماهای سایه‌دار",
+        "en": "Permeable pavements and shaded evaporative water elements"
+      },
+      {
+        "fa": "مدیریت و جمع‌آوری آب باران جهت آبیاری پایدار فضای سبز",
+        "en": "Rainwater retention swales for sustainable landscape irrigation"
+      }
+    ],
+    "metrics": [
+      {
+        "label": {
+          "fa": "کاهش دمای جزیره حرارتی در ساعات پیک تابستان",
+          "en": "Microclimate Heat Island Mitigation"
+        },
+        "value": "۲.۴°C",
+        "unit": "کاهش دما",
+        "sourceNote": {
+          "fa": "شبیه‌سازی اقلیم خرد",
+          "en": "Microclimate UTCI modeling"
+        }
+      }
+    ]
+  }
+]

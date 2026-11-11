@@ -1,0 +1,47 @@
+/* هیرو سینمایی: آسمان غروب، نام بزرگ لاتین پشت خانه، کانواس WebGL، متن‌های «کلمه‌های شاخص» و ستارهٔ پایان. */
+.hero{position:relative;height:540vh;background:#050b24}
+.hero-pin{position:sticky;top:0;height:100vh;height:100dvh;overflow:hidden;isolation:isolate}
+.sky{position:absolute;left:0;right:0;top:0;height:260vh;background:linear-gradient(180deg,#040920 0%,#08163f 24%,#14296a 42%,#43407f 55%,#9a5379 63%,#e0775d 70%,#f6b26b 76%,#f8c98a 100%);will-change:transform}
+.stars{position:absolute;inset:0 0 auto 0;height:100vh;opacity:.85;background-image:radial-gradient(1.2px 1.2px at 12% 18%,#fff,transparent),radial-gradient(1px 1px at 27% 42%,#cfe3ff,transparent),radial-gradient(1.4px 1.4px at 41% 12%,#fff,transparent),radial-gradient(1px 1px at 58% 33%,#fff,transparent),radial-gradient(1.2px 1.2px at 73% 8%,#ffe9c2,transparent),radial-gradient(1px 1px at 86% 27%,#fff,transparent),radial-gradient(1px 1px at 93% 52%,#cfe3ff,transparent),radial-gradient(1.3px 1.3px at 6% 61%,#fff,transparent),radial-gradient(1px 1px at 64% 63%,#fff,transparent),radial-gradient(1px 1px at 35% 70%,#ffe9c2,transparent);background-size:420px 380px;-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,#000 55%,transparent 100%)}
+.mark{position:absolute;inset:0;z-index:1;display:flex;justify-content:center;align-items:flex-start;padding-top:2vh;direction:ltr;pointer-events:none;opacity:var(--markO,1);font-family:Kalameh,'Segoe UI',Tahoma,sans-serif;font-weight:900;font-size:clamp(240px,58vw,900px);line-height:.82;letter-spacing:-.045em;user-select:none}
+.mark i{font-style:normal;display:block;background:linear-gradient(180deg,rgba(255,255,255,.26) 0%,rgba(255,255,255,.03) 82%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.18);will-change:transform}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;z-index:2;display:block}
+.poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;display:none}
+.hero.nogl .poster{display:block}.hero.nogl canvas{display:none}
+.vig{position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(120% 90% at 50% 45%,transparent 55%,rgba(3,8,25,.55) 100%),linear-gradient(180deg,rgba(3,8,25,.45) 0%,transparent 22%,transparent 62%,rgba(3,8,25,.6) 100%)}
+.glow{position:absolute;left:50%;top:30%;width:34vmin;height:34vmin;z-index:4;opacity:0;pointer-events:none;mix-blend-mode:screen;transform:translate(-50%,-50%) scale(.35);background:radial-gradient(circle,#fff 0,#fff 3%,rgba(255,246,222,.92) 7%,rgba(255,214,140,.4) 18%,rgba(244,198,94,.12) 38%,transparent 62%)}
+.glow::before,.glow::after{content:"";position:absolute;left:50%;top:50%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.95),transparent);transform:translate(-50%,-50%)}
+.glow::before{width:190%;height:2px}
+.glow::after{width:2px;height:190%;background:linear-gradient(180deg,transparent,rgba(255,255,255,.95),transparent)}
+.warp{position:absolute;left:50%;top:30%;width:9vmin;height:9vmin;z-index:6;border-radius:50%;opacity:0;pointer-events:none;transform:translate(-50%,-50%) scale(0);background:radial-gradient(circle,#fff 0%,#fff 55%,#fdf0c9 100%)}
+.st{position:absolute;z-index:5;max-width:min(31rem,88vw);color:#fff;opacity:var(--o,0);transform:translate3d(0,var(--y,0),0);will-change:transform,opacity;pointer-events:none;visibility:hidden}
+.st small{display:block;letter-spacing:.06em;color:var(--t-gold-400,#f4c65e);font-size:var(--t-fs-sm,.95rem);margin-bottom:var(--t-s3,12px)}
+.st h2{margin:0;font-weight:900;font-size:clamp(2.3rem,6.2vw,5.2rem);line-height:1.2;text-shadow:0 4px 40px rgba(3,8,25,.55)}
+.st p{margin:var(--t-s4,16px) 0 0;color:var(--t-mist-100,#dce4f5);font-size:var(--t-fs-md,1.05rem);line-height:2.05;max-width:26rem;text-shadow:0 2px 20px rgba(3,8,25,.7)}
+.s1{top:17vh;inset-inline-start:max(5vw,24px)}
+.s2{bottom:15vh;inset-inline-end:max(5vw,24px)}
+.s3{top:50%;margin-top:-9rem;inset-inline-start:max(5vw,24px)}
+.s4{bottom:13vh;inset-inline-start:max(5vw,24px)}
+.s5{top:50%;left:50%;margin:-6rem 0 0 -50vw;width:100vw;max-width:none;text-align:center}
+.s5 h2{font-size:clamp(3rem,10vw,8rem);direction:ltr;letter-spacing:.02em}
+.s5 p{margin-inline:auto;font-size:var(--t-fs-lg,1.3rem)}
+.pnl{padding:var(--t-s5,24px) var(--t-s6,32px);border-radius:28px;background:rgba(12,24,64,.34);backdrop-filter:blur(22px) saturate(1.25);-webkit-backdrop-filter:blur(22px) saturate(1.25);border:1px solid rgba(255,255,255,.2);box-shadow:0 30px 80px -30px rgba(0,0,0,.6)}
+.hero-pin::after{content:"";position:absolute;inset:0;z-index:7;background:#071d45;opacity:var(--end,0);pointer-events:none}
+.hint{position:absolute;z-index:5;bottom:5vh;left:50%;transform:translateX(-50%);color:var(--t-mist-100,#dce4f5);font-size:var(--t-fs-sm,.9rem);letter-spacing:.12em;display:grid;justify-items:center;gap:8px;pointer-events:none}
+.hint::after{content:"";width:1px;height:38px;background:linear-gradient(#fff,transparent);animation:hero-hint 1.8s ease-in-out infinite}
+@keyframes hero-hint{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.bar{position:absolute;z-index:5;inset-inline:0;bottom:0;height:3px;background:rgba(255,255,255,.08)}
+.bar i{display:block;height:100%;background:var(--t-gold-400,#f4c65e);transform-origin:inline-start;transform:scaleX(0)}
+.hero.nogl{height:auto}
+.hero.nogl .hero-pin{position:relative;height:auto;min-height:100svh;display:grid;align-content:center;gap:2rem;padding:12vh 6vw}
+.hero.nogl .st{position:relative;inset:auto;opacity:1;visibility:visible;transform:none;margin:0;max-width:34rem;top:auto;left:auto}
+.hero.nogl .s5,.hero.nogl .glow,.hero.nogl .warp,.hero.nogl .bar,.hero.nogl .hint{display:none}
+@media (max-width:760px){
+  .hero{height:440vh}
+  .s1{top:15vh}.s2{bottom:12vh}.s3{margin-top:-7rem}.s4{bottom:11vh}
+  .st h2{font-size:clamp(2rem,9.6vw,3rem)}
+  .st p{font-size:var(--t-fs-sm,.95rem);line-height:1.95}
+  .pnl{padding:var(--t-s4,16px) var(--t-s5,24px);border-radius:22px}
+  .mark{font-size:clamp(220px,86vw,420px)}
+}
+@media (prefers-reduced-motion:reduce){.hint::after{animation:none}}

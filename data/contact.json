@@ -1,0 +1,37 @@
+{
+  "accounts": [
+    {
+      "id": "isb-group",
+      "platform": "instagram",
+      "role": {
+        "fa": "پیج رسمی گروه ISB",
+        "en": "Official ISB page"
+      },
+      "handle": "isb.group",
+      "url": "https://instagram.com/isb.group",
+      "active": true
+    }
+  ],
+  "posts": [],
+  "phones": [
+    {
+      "id": "phone-1",
+      "label": {
+        "fa": "دفتر / مشاوره",
+        "en": "Office / consulting"
+      },
+      "number": "09339039563",
+      "whatsapp": true
+    },
+    {
+      "id": "phone-2",
+      "label": {
+        "fa": "خط دوم",
+        "en": "Second line"
+      },
+      "number": "09151213005",
+      "whatsapp": false
+    }
+  ],
+  "people": []
+}

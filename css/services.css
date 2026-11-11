@@ -1,0 +1,78 @@
+/* صفحهٔ خدمات: «ریل مرحلهٔ پروژه» (انتخاب مرحله خدمات مرتبط را روشن می‌کند)، گروه‌بندی سه‌گانه، کارت خدمات، برگهٔ جزئیات و دوره‌های آموزشی. */
+.sv2{gap:var(--t-s7)}
+.sv2>*{min-width:0}
+.sv2 h3{margin:0}
+.muted{color:var(--t-ice-300)}
+
+/* ---------- ریل مرحله ---------- */
+.srail-w{display:grid;gap:var(--t-s3);padding:var(--t-s5);border:1px solid var(--t-line);border-radius:var(--t-r-lg);background:linear-gradient(135deg,rgba(34,57,129,.35),rgba(14,26,64,.5))}
+.srail-w p{margin:0}
+.srail{position:relative;display:grid;grid-template-columns:repeat(4,1fr);margin-top:var(--t-s3)}
+.srail::before,.srail::after{content:"";position:absolute;top:22px;height:2px;inset-inline-start:12.5%;border-radius:2px}
+.srail::before{width:75%;background:var(--t-line)}
+.srail::after{width:calc(75% * var(--p,0) / 100);background:var(--t-gold-400);transition:width .6s var(--t-ease)}
+.srn{all:unset;box-sizing:border-box;cursor:pointer;display:grid;justify-items:center;align-content:start;gap:var(--t-s2);text-align:center;padding:0 var(--t-s2);position:relative;z-index:1}
+.srn i{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;border:2px solid var(--t-line);background:var(--t-navy-900);color:var(--t-mist-100);transition:all var(--t-dur) var(--t-ease)}
+.srn:hover i{border-color:var(--t-gold-400)}
+.srn.on i{background:var(--t-gold-400);color:#111;border-color:var(--t-gold-400);box-shadow:0 0 0 7px rgba(244,198,94,.18)}
+.srn span{display:grid;gap:2px}
+.srn b{font-size:var(--t-fs-sm);line-height:1.5;color:#fff}
+.srn small{font-size:var(--t-fs-xs);color:var(--t-ice-300);line-height:1.6;max-width:18ch;margin-inline:auto}
+.srn:focus-visible{outline:2px solid var(--t-gold-400);outline-offset:4px;border-radius:12px}
+.srail-msg{display:flex;gap:var(--t-s3);align-items:center;flex-wrap:wrap;min-height:var(--t-tap);color:var(--t-mist-100)}
+.srail-msg b{color:var(--t-gold-400);font-size:var(--t-fs-lg)}
+
+/* ---------- گروه‌ها و کارت‌ها ---------- */
+.sg{display:grid;gap:var(--t-s4)}
+.sg header{display:grid;gap:var(--t-s2);padding-bottom:var(--t-s3);border-bottom:1px solid var(--t-line)}
+.sg header p{margin:0;color:var(--t-mist-100);max-width:48rem;line-height:1.9}
+.sg-n{color:var(--t-gold-400)}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:var(--t-s4)}
+.svc{all:unset;box-sizing:border-box;cursor:pointer;display:grid;align-content:start;gap:var(--t-s3);padding:var(--t-s5);border:1px solid var(--t-line);border-radius:var(--t-r-lg);background:rgba(14,26,64,.5);position:relative;overflow:hidden;transition:transform var(--t-dur) var(--t-ease),border-color var(--t-dur),opacity var(--t-dur),box-shadow var(--t-dur),filter var(--t-dur);animation:tr-up .55s var(--t-ease) both;animation-delay:calc(var(--i,0)*40ms)}
+.svc::before{content:"";position:absolute;inset-inline:0;top:0;height:3px;background:linear-gradient(90deg,var(--t-blue-500),var(--t-cyan-300));transform:scaleX(0);transform-origin:inline-start;transition:transform var(--t-dur-slow) var(--t-ease)}
+.svc:hover{transform:translateY(-4px);border-color:var(--t-blue-500);box-shadow:0 18px 40px -16px rgba(47,95,208,.55)}
+.svc:hover::before,.svc.hit::before{transform:scaleX(1)}
+.svc:focus-visible{outline:2px solid var(--t-gold-400);outline-offset:3px}
+.svc.hit{border-color:rgba(244,198,94,.6);box-shadow:0 0 0 1px rgba(244,198,94,.25),0 16px 38px -18px rgba(244,198,94,.45)}
+.svc.hit::before{background:var(--t-gold-400)}
+.svc.dim{opacity:.38;filter:saturate(.5)}
+.svc.dim:hover{opacity:.75}
+.svc-top{display:flex;justify-content:space-between;align-items:center}
+.svc-ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;color:var(--t-cyan-300);background:rgba(126,220,255,.1);border:1px solid rgba(126,220,255,.25)}
+.svc-ic svg{width:24px;height:24px}
+.svc-ic.big{width:64px;height:64px;border-radius:20px}.svc-ic.big svg{width:32px;height:32px}
+.svc-n{font-size:var(--t-fs-sm);color:var(--t-ice-300);font-variant-numeric:tabular-nums}
+.svc b{font-size:var(--t-fs-md);line-height:1.6;color:#fff}
+.svc-d{font-size:var(--t-fs-sm);color:var(--t-mist-100);opacity:.85;line-height:1.9;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.svc-st{display:flex;gap:6px;margin-top:var(--t-s2)}
+.svc-st i{width:22px;height:5px;border-radius:3px;background:rgba(143,163,214,.22)}
+.svc-st i.y{background:var(--t-blue-500)}
+.svc.hit .svc-st i.y{background:var(--t-gold-400)}
+
+.cta{display:flex;gap:var(--t-s5);align-items:center;justify-content:space-between;flex-wrap:wrap;padding:var(--t-s6);border-radius:var(--t-r-lg)}
+.cta p{margin:var(--t-s2) 0 0;color:var(--t-mist-100)}
+
+/* برگهٔ جزئیات: از همان کشوی پروفایل (#mdr) استفاده می‌کند */
+.sd-h{display:flex;justify-content:space-between;align-items:center;padding:var(--t-s7) var(--t-s5) 0;background:linear-gradient(180deg,rgba(47,95,208,.25),transparent)}
+.mdr-b ul{margin:0;padding-inline-start:20px;line-height:1.9}
+
+/* ---------- آموزش ---------- */
+.ed{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:var(--t-s5)}
+.ed .cc{display:grid;align-content:start}
+.ed .cc>img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;margin:0;border-radius:0}
+.ed details{border:1px solid var(--t-line);border-radius:var(--t-r-md);padding:var(--t-s3) var(--t-s4)}
+.ed summary{cursor:pointer;font-weight:700;min-height:var(--t-tap);display:flex;align-items:center}
+
+@media (max-width:720px){
+  .srail-w{padding:var(--t-s4)}
+  .srail{grid-template-columns:1fr;gap:var(--t-s2)}
+  .srail::before,.srail::after{top:22px;bottom:22px;height:auto;width:2px;inset-inline-start:22px}
+  .srail::before{width:2px}
+  .srail::after{width:2px;height:calc((100% - 44px) * var(--p,0) / 100);bottom:auto}
+  .srn{display:flex;align-items:center;text-align:start;gap:var(--t-s3);padding:var(--t-s1) 0}
+  .srn small{max-width:none;margin:0}
+  .sgrid{grid-template-columns:1fr}
+  .svc{padding:var(--t-s4)}
+  .cta{padding:var(--t-s5)}
+}
+@media (prefers-reduced-motion:reduce){.svc{animation:none}.svc,.svc::before,.srail::after,.srn i{transition:none}}

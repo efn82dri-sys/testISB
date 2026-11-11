@@ -1,0 +1,110 @@
+/* صفحهٔ اول (هیرو با چهره‌های تیم) و صفحهٔ «تیم و اعتبارنامه»: آمار اعتماد، مدیریت، فیلتر دپارتمان، کارت‌ها، کشوی پروفایل، گواهینامه‌ها و نظرها. */
+
+/* ---------- هیرو ---------- */
+.hfaces{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.hf{width:46px;height:46px;border-radius:50%;object-fit:cover;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--bright));color:#fff;font-weight:700;font-size:.95rem;border:2px solid var(--t-navy-900);margin-inline-end:-22px;box-shadow:0 6px 18px rgba(5,12,35,.5);animation:tr-pop .5s var(--t-ease) both;animation-delay:calc(var(--i,0)*70ms + 250ms)}
+.hf-t{margin-inline-start:30px;color:var(--t-mist-100);font-size:var(--t-fs-sm)}
+.hf-t b{color:var(--t-gold-400);font-size:var(--t-fs-lg)}
+#hv h1{font-size:var(--t-fs-2xl);line-height:var(--t-lh-tight)}
+#hv h1,#hv .lead{margin:0}
+#hv .hh{gap:var(--t-s5)}
+
+/* ---------- صفحهٔ تیم ---------- */
+.tr{gap:var(--t-s7)}
+.tr>*{min-width:0}
+/* قاب عکس. اگر عکس کوچک‌تر از ۴۸۰ پیکسل باشد (مثل عکس‌های دایره‌ای کوچک) کشیده نمی‌شود و داخل یک دایره وسط قاب آبی می‌نشیند؛ با عکس بزرگ‌تر خودکار تمام‌قاب می‌شود. */
+.tpw{display:block;aspect-ratio:4/5;border-radius:var(--t-r-md);overflow:hidden;background:#06163a}
+.tpw .tp-img{aspect-ratio:auto;width:100%;height:100%;border-radius:0}
+.tpw.lowres{display:grid;place-items:center;background:radial-gradient(120% 90% at 30% 20%,var(--t-blue-500),var(--t-navy-700) 60%,var(--t-navy-950))}
+.tpw.lowres .tp-img{width:62%;height:auto;aspect-ratio:1;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.28)}
+.tpw.mdrw{width:100%;max-height:48vh;border-radius:0}
+.tr h3{margin:0 0 var(--t-s4)}
+.tr-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:var(--t-s3)}
+.tr-stat{border:1px solid var(--t-line);border-radius:var(--t-r-md);padding:var(--t-s4);text-align:center;background:rgba(14,26,64,.4)}
+.tr-stat b{display:block;font-size:var(--t-fs-xl);line-height:1.2;color:var(--t-gold-400)}
+.tr-stat span{font-size:var(--t-fs-sm);color:var(--t-ice-300)}
+
+.tcard{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:var(--t-s3);border:1px solid var(--t-line);border-radius:var(--t-r-lg);padding:var(--t-s3);background:rgba(14,26,64,.5);transition:transform var(--t-dur) var(--t-ease),border-color var(--t-dur),box-shadow var(--t-dur);animation:tr-up .55s var(--t-ease) both;animation-delay:calc(var(--i,0)*45ms)}
+.tcard:hover{transform:translateY(-4px);border-color:var(--t-blue-500);box-shadow:0 18px 40px -16px rgba(47,95,208,.55)}
+.tcard:focus-visible{outline:2px solid var(--t-gold-400);outline-offset:3px}
+.tp-img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--t-r-md);background:#06163a}
+.tp-ph{display:grid;place-items:center;background:radial-gradient(120% 90% at 30% 20%,var(--t-blue-500),var(--t-navy-700) 60%,var(--t-navy-950));color:rgba(255,255,255,.9);font-weight:900;font-size:clamp(2rem,6vw,3.4rem);letter-spacing:.04em}
+.tc-b{display:grid;gap:2px;padding:0 var(--t-s2) var(--t-s2)}
+.tc-b b{font-size:var(--t-fs-md);line-height:var(--t-lh-tight);color:#fff}
+.tc-b .r{font-size:var(--t-fs-sm);color:var(--t-ice-300);line-height:1.6}
+.tc-b small{color:var(--t-gold-400);font-size:var(--t-fs-xs)}
+.tc-t{font-size:var(--t-fs-sm);color:var(--t-mist-100);margin-top:var(--t-s2);line-height:1.8}
+.tc-go{margin-top:var(--t-s3);color:var(--t-cyan-300);font-size:var(--t-fs-sm);font-weight:700}
+
+.tr-lead{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:var(--t-s4)}
+.tcard.lead{flex-direction:row;align-items:stretch;gap:var(--t-s5);padding:var(--t-s4);background:linear-gradient(135deg,rgba(34,57,129,.55),rgba(14,26,64,.6));border-color:rgba(244,198,94,.35)}
+.tcard.lead .tpw,.tcard.lead .tp-ph{width:42%;flex:none;aspect-ratio:4/5}
+.tcard.lead .tc-b{align-content:center;padding:var(--t-s2) 0}
+.tcard.lead .tc-b b{font-size:var(--t-fs-lg)}
+
+.tr-filter{display:flex;gap:var(--t-s2);overflow-x:auto;padding-bottom:var(--t-s2);margin-bottom:var(--t-s4);scrollbar-width:none}
+.tr-filter::-webkit-scrollbar{display:none}
+.tr-filter .chip{flex:none;min-height:var(--t-tap);border-color:var(--t-line)}
+.tr-filter .chip.on{background:var(--t-blue-500);color:#fff;border-color:var(--t-blue-500)}
+.tr-filter small{opacity:.7}
+.tr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:var(--t-s4)}
+
+.tr-sec{display:block}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:var(--t-s4)}
+.cc{border-radius:var(--t-r-lg);overflow:hidden;animation:tr-up .55s var(--t-ease) both;animation-delay:calc(var(--i,0)*60ms)}
+.cc-img{all:unset;cursor:zoom-in;display:block;width:100%;background:#06163a}
+.cc-img img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .5s var(--t-ease)}
+.cc-img:hover img{transform:scale(1.04)}
+.cc-img:focus-visible{outline:2px solid var(--t-gold-400);outline-offset:-3px}
+.cc-b{padding:var(--t-s4) var(--t-s5) var(--t-s5);display:grid;gap:var(--t-s2)}
+.cc-b h4{margin:0;line-height:1.6}
+.cc-b .r{color:var(--t-ice-300);font-size:var(--t-fs-sm)}
+.cc-b .w{margin:0;font-size:var(--t-fs-xs)}
+.stars{color:var(--t-gold-400);letter-spacing:2px;white-space:nowrap}.stars i{font-style:normal;color:rgba(143,163,214,.3)}
+.tr-avg{display:flex;gap:var(--t-s3);align-items:center;flex-wrap:wrap;margin:0 0 var(--t-s4)}
+.tq{padding:var(--t-s5);display:grid;gap:var(--t-s3);margin:0}
+.tq blockquote{margin:0;line-height:2}
+.tq figcaption{display:grid}
+
+/* ---------- کشوی پروفایل ---------- */
+#mdr .mdr-bg{position:fixed;inset:0;z-index:60;background:rgba(2,8,26,.7);animation:tr-fade .25s both}
+#mdr .mdr-p{position:fixed;z-index:61;inset-block:0;inset-inline-end:0;width:min(480px,94vw);overflow:auto;border-radius:var(--t-r-lg) 0 0 var(--t-r-lg);padding:0;animation:tr-in-x .4s var(--t-ease) both;overscroll-behavior:contain}
+[dir=rtl] #mdr .mdr-p{border-radius:0 var(--t-r-lg) var(--t-r-lg) 0}
+.mdr-x{position:absolute;top:var(--t-s3);inset-inline-start:var(--t-s3);z-index:2;width:var(--t-tap);height:var(--t-tap);border-radius:50%;border:1px solid var(--t-line);background:rgba(5,12,38,.7);color:#fff;font-size:1.1rem;cursor:pointer}
+.mdr-img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;max-height:48vh}
+.mdr-b{padding:var(--t-s5);display:grid;gap:var(--t-s3);padding-bottom:calc(var(--t-s6) + var(--t-safe-b))}
+.mdr-b h3{margin:0;font-size:var(--t-fs-xl);line-height:1.4}
+.mdr-b h4{margin:var(--t-s3) 0 0;color:var(--t-gold-400);font-size:var(--t-fs-sm)}
+.mdr-b p{margin:0;line-height:var(--t-lh-body)}
+.mdr-b .r{color:var(--t-ice-300)}
+.mdr-t{color:var(--t-mist-100)}
+.kick2{color:var(--t-cyan-300);font-size:var(--t-fs-xs);letter-spacing:.04em}
+.mdr-ln{display:flex;gap:var(--t-s2);flex-wrap:wrap}
+.mdr-ln a{border:1px solid var(--t-line);border-radius:999px;padding:6px 16px;min-height:40px;display:inline-flex;align-items:center;color:#fff;text-decoration:none}
+.mdr-ln a:hover{background:var(--t-blue-500)}
+body.mdo #pgv{overflow:hidden}
+
+@keyframes tr-up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes tr-pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@keyframes tr-fade{from{opacity:0}to{opacity:1}}
+@keyframes tr-in-x{from{transform:translateX(-40px);opacity:0}to{transform:none;opacity:1}}
+@keyframes tr-in-y{from{transform:translateY(60px);opacity:0}to{transform:none;opacity:1}}
+
+/* ---------- موبایل ---------- */
+@media (max-width:720px){
+  .tr{gap:var(--t-s6)}
+  .tcard.lead{flex-direction:column}
+  .tcard.lead .tpw,.tcard.lead .tp-ph{width:100%}
+  .tr-grid{grid-template-columns:repeat(2,1fr);gap:var(--t-s3)}
+  .tcard{padding:var(--t-s2)}
+  #mdr .mdr-p,[dir=rtl] #mdr .mdr-p{inset-block:auto 0;inset-inline:0;width:100%;max-height:90dvh;border-radius:var(--t-r-lg) var(--t-r-lg) 0 0;animation-name:tr-in-y}
+  .mdr-img,.tpw.mdrw{max-height:38vh;aspect-ratio:16/11}
+  .hf{width:40px;height:40px;margin-inline-end:-18px}
+  .hf-t{margin-inline-start:24px}
+  #hv{align-items:flex-start;padding-top:92px}
+  #hv .hh{gap:var(--t-s4)}
+  #hv h1{font-size:clamp(1.9rem,8.4vw,2.5rem)}
+  #hv .btns{flex-wrap:nowrap;gap:var(--t-s2)}
+  #hv .btn{padding:8px 14px;font-size:.98rem;white-space:nowrap}
+}
+@media (prefers-reduced-motion:reduce){.tcard,.cc,.hf,#mdr .mdr-p,#mdr .mdr-bg{animation:none}.tcard,.cc-img img{transition:none}}
